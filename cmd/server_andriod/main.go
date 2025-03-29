@@ -22,8 +22,8 @@ import (
 var (
 	shareKey     string
 	version      string
-	simulatorURL = must(url.Parse("https://gcsim.app/simulator"))
-	viewerURL    = must(url.Parse("https://gcsim.app/web"))
+	simulatorURL = must(url.Parse("https://wfpsim.com/simulator"))
+	viewerURL    = must(url.Parse("https://wfpsim.com/web"))
 )
 
 type opts struct {
@@ -75,7 +75,7 @@ func main() {
 	a := app.New()
 	w := a.NewWindow("gcsim server mode")
 
-	w.SetContent(widget.NewButton("Head to https://gcsim.app/simulator to use", func() { a.OpenURL(simulatorURL) }))
+	w.SetContent(widget.NewButton("Head to https://wfpsim.com/simulator to use", func() { a.OpenURL(simulatorURL) }))
 	go func() {
 		log.Fatal(http.ListenAndServe(fmt.Sprintf("%v:%v", opt.host, opt.port), server.Router))
 	}()
@@ -86,7 +86,7 @@ func main() {
 			cont := container.NewVBox()
 			for id := range bars {
 				if _, ok := progress[id]; !ok {
-					cont.Add(widget.NewButton("Head to https://gcsim.app/web to view results", func() { a.OpenURL(viewerURL) }))
+					cont.Add(widget.NewButton("Head to https://wfpsim.com/web to view results", func() { a.OpenURL(viewerURL) }))
 					delete(bars, id)
 				}
 			}

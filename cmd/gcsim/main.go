@@ -250,7 +250,7 @@ can be viewed in the browser via "go tool pprof -http=localhost:3000 mem.prof" (
 		serve(idleConnectionsClosed, resultServeFile+".gz", hash, sampleServeFile+".gz", opt.keepserving)
 
 		openBrowser := func() {
-			url := "https://gcsim.app/local"
+			url := "https://wfpsim.com/local"
 			if opt.nobrowser {
 				return
 			}

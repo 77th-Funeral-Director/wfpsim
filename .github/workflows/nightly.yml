@@ -2,7 +2,7 @@ name: "build cmd line tool"
 on:
   push:
     branches:
-      - main
+      - publish
 
 jobs:
   tagged-release:
@@ -17,5 +17,5 @@ jobs:
         uses: ./.github/actions/deploy-binary
         with:
           prerelease: true
-          tag: 'nightly'
+          tag: "nightly"
           shareKey: ${{ secrets.AES_KEY }}
