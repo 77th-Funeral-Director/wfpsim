@@ -32,6 +32,6 @@ runs:
         tag_name: ${{ inputs.tag }}
         files: |
           LICENSE
-          gcsim.exe
-          server.exe
-          gcsim_server.apk
+          gcsim_windows_amd64.exe
+          server_windows_amd64.exe
+          wfpsim_server.apk
