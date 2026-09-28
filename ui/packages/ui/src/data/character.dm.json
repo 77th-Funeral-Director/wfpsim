@@ -1393,6 +1393,23 @@
         "burst_energy_cost": 70
       }
     },
+    "mitya": {
+      "id": 10000136,
+      "sub_id": 13601,
+      "key": "mitya",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_BOY",
+      "region": "ASSOC_TYPE_SNEZHNAYA_STAR",
+      "element": "Electric",
+      "weapon_class": "WEAPON_CATALYST",
+      "icon_name": "UI_AvatarIcon_Mitya",
+      "skill_details": {
+        "skill": 11362,
+        "burst": 11364,
+        "attack": 11361,
+        "burst_energy_cost": 60
+      }
+    },
     "mona": {
       "id": 10000041,
       "sub_id": 4101,

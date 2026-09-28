@@ -1,0 +1,38 @@
+use: pipeline
+kind: character
+name: mitya
+override:
+  id: 10000136
+
+talents:
+  - attack:
+      - attack(1-Hit DMG)
+      - attack(2-Hit DMG)
+      - attack(3-Hit DMG)
+  - charge: attack(Charged Attack DMG)
+  - chargeSpecial: attack(Gradient Detonation DMG)
+  - chargeSSC: attack(Gradient Detonation Stellar-Conduct DMG)
+
+  - skillPress: skill(Tap Skill DMG)
+  - skillHold: skill(Hold Skill DMG)
+  - skillPulse: skill(Steady State Core DMG)
+  - skillPrismSurge: skill(Steady State Core Gradient Beacon Consumption DMG)
+  - skillPrismShardPerPrism: skill(Steady State Core Detonation DMG)
+
+  - burst: burst(Skill DMG) # {} ATK+{} Elemental Mastery
+  - burstEM: burst(Skill DMG|1) # {} ATK+{} Elemental Mastery
+
+docs:
+  frames:
+
+abilities:
+  - name: attack
+
+  - name: charge
+    note: Need to use attack right before charge.
+
+  - name: skill
+    params:
+      hold: 0 for Tap (default), 1 for Hold.
+
+  - name: burst
