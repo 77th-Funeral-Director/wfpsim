@@ -1137,6 +1137,33 @@
       "desc": "Projectile travel time for Starlight Slugs. Default 22 frames."
     }
   ],
+  "linnea": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
+    },
+    {
+      "ability": "aim",
+      "param": "hold",
+      "desc": "0 for Physical Aimed Shot, 1 for Fully-Charged Aimed Shot (default)."
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. Default 0 (false), 1 for true."
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
   "lisa": [
     {
       "ability": "low_plunge",
