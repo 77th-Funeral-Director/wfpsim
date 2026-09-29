@@ -1,0 +1,20 @@
+use: pipeline
+kind: character
+name: vodyanitsa
+
+talents:
+  - attack:
+      - attack(1-Hit DMG)
+      - attack(2-Hit DMG)
+      - attack(3-Hit DMG)
+      - attack(4-Hit DMG)
+  - charge: attack(Charged Attack DMG)
+
+  - skill: skill(Skill DMG)
+  - skillDot: skill(Horn of Spring's Call DMG)
+  - skillHealFlat: skill(Song of Ages Past Healing) # {} + {} Max HP
+  - skillHealRatio: skill(Song of Ages Past Healing|1) # {} + {} Max HP
+  - skillShred: skill(Hydro/Cryo RES Reduction)
+
+  - burst: burst(Skill DMG)
+  - burstBonus: burst(Song of Ages Past DMG Bonus)

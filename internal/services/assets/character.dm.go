@@ -117,6 +117,7 @@ var avatarMap = map[string]string{
 	"varka":             "UI_AvatarIcon_Varka",
 	"venti":             "UI_AvatarIcon_Venti",
 	"vesna":             "UI_AvatarIcon_Vesna",
+	"vodyanitsa":        "UI_AvatarIcon_Vodyanitsa",
 	"wanderer":          "UI_AvatarIcon_Wanderer",
 	"wriothesley":       "UI_AvatarIcon_Wriothesley",
 	"xiangling":         "UI_AvatarIcon_Xiangling",

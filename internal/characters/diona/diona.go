@@ -70,7 +70,7 @@ func (c *char) getRadiance() radianceState {
 		return radianceStellarConduct
 	}
 
-	if c.StatusIsActive(radianceSwirlKey) {
+	if c.StatusIsActive(reactable.SswKey) {
 		return radianceStellarSwirl
 	}
 

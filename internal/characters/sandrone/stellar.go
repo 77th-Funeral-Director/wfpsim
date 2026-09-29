@@ -4,7 +4,6 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/glog"
 	"github.com/genshinsim/gcsim/pkg/core/info"
-	"github.com/genshinsim/gcsim/pkg/enemy"
 	"github.com/genshinsim/gcsim/pkg/reactable"
 )
 
@@ -16,17 +15,14 @@ const (
 	radianceStellarSwirl
 )
 
-const (
-	stellarBonusKey  = "sandrone-stellar-bonus"
-	radianceSwirlKey = "radiance-stellar-swirl"
-)
+const stellarBonusKey = "sandrone-stellar-bonus"
 
 func (c *char) getRadiance() radianceState {
 	if c.StatusIsActive(reactable.PolestarFieldKey) {
 		return radianceStellarConduct
 	}
 
-	if c.StatusIsActive(radianceSwirlKey) {
+	if c.StatusIsActive(reactable.SswKey) {
 		return radianceStellarSwirl
 	}
 
@@ -68,12 +64,4 @@ func (c *char) stellarInit() {
 
 		atk.Info.BaseDmgBonus += bonus
 	}, stellarBonusKey+"-reaction")
-
-	c.Core.Events.Subscribe(event.OnStellarSwirl, func(args ...any) {
-		if _, ok := args[0].(*enemy.Enemy); !ok {
-			return
-		}
-
-		c.AddStatus(radianceSwirlKey, 8*60, false)
-	}, stellarBonusKey)
 }

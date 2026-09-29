@@ -118,6 +118,7 @@ import (
 	_ "github.com/genshinsim/gcsim/internal/characters/varka"
 	_ "github.com/genshinsim/gcsim/internal/characters/venti"
 	_ "github.com/genshinsim/gcsim/internal/characters/vesna"
+	_ "github.com/genshinsim/gcsim/internal/characters/vodyanitsa"
 	_ "github.com/genshinsim/gcsim/internal/characters/wanderer"
 	_ "github.com/genshinsim/gcsim/internal/characters/wriothesley"
 	_ "github.com/genshinsim/gcsim/internal/characters/xiangling"

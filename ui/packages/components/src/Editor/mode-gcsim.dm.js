@@ -238,6 +238,7 @@ ace.define(
         'varka',
         'venti',
         'vesna',
+        'vodyanitsa',
         'wanderer',
         'kabukimono',
         'kuni',

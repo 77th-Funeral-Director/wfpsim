@@ -11,6 +11,7 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 	"github.com/genshinsim/gcsim/pkg/enemy"
 	"github.com/genshinsim/gcsim/pkg/modifier"
+	"github.com/genshinsim/gcsim/pkg/reactable"
 )
 
 const (
@@ -27,7 +28,6 @@ const (
 	revelationKey                 = "mizuki-revelation"
 	revelationEMKey               = "mizuki-revelation-em"
 	revelationICDKey              = "mizuki-revelation-icd"
-	radianceSwirlKey              = "radiance-stellar-swirl"
 )
 
 // When Yumemizuki Mizuki triggers Swirl while in her Dreamdrifter state, Dreamdrifter's duration increases by 2.5s.
@@ -185,14 +185,6 @@ func (c *char) revelationInit() {
 			},
 		})
 	}
-
-	c.Core.Events.Subscribe(event.OnStellarSwirl, func(args ...any) {
-		if _, ok := args[0].(*enemy.Enemy); !ok {
-			return
-		}
-
-		c.AddStatus(radianceSwirlKey, 8*60, false)
-	}, "mizuki-"+radianceSwirlKey)
 }
 
 func (c *char) revelationOnSkillTick() (float64, info.AttackCBFunc) {
@@ -254,5 +246,5 @@ func (c *char) isRadianceSSw() bool {
 		return false
 	}
 
-	return c.StatusIsActive(radianceSwirlKey)
+	return c.StatusIsActive(reactable.SswKey)
 }

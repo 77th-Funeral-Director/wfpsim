@@ -12,7 +12,6 @@ import (
 )
 
 const (
-	radianceSwirlKey   = "radiance-stellar-swirl"
 	revelationSkillKey = "diona-revelation-skill"
 	revelationKey      = "diona-revelation"
 	revelationICDKey   = "diona-revelation-icd"
@@ -38,14 +37,6 @@ func (c *char) revelationInit() {
 	if !c.revelation {
 		return
 	}
-
-	c.Core.Events.Subscribe(event.OnStellarSwirl, func(args ...any) {
-		if _, ok := args[0].(*enemy.Enemy); !ok {
-			return
-		}
-
-		c.AddStatus(radianceSwirlKey, 8*60, false)
-	}, "diona-"+radianceSwirlKey)
 
 	hook := func(args ...any) {
 		if _, ok := args[0].(*enemy.Enemy); !ok {

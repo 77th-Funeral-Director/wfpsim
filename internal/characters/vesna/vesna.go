@@ -4,10 +4,9 @@ import (
 	tmpl "github.com/genshinsim/gcsim/internal/template/character"
 	"github.com/genshinsim/gcsim/pkg/core"
 	"github.com/genshinsim/gcsim/pkg/core/action"
-	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
-	"github.com/genshinsim/gcsim/pkg/enemy"
+	"github.com/genshinsim/gcsim/pkg/reactable"
 )
 
 type char struct {
@@ -19,10 +18,7 @@ type char struct {
 	a1Stacks         RingQueue[int]
 }
 
-const (
-	radianceSwirlKey = "radiance-stellar-swirl"
-	stellarSwirlText = " (Stellar Swirl)"
-)
+const stellarSwirlText = " (Stellar Swirl)"
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
 	c := char{}
@@ -41,7 +37,6 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
-	c.stellarRadianceInit()
 	c.skillInit()
 	c.a1Init()
 	c.a4Init()
@@ -84,15 +79,5 @@ func (c *char) Condition(fields []string) (any, error) {
 }
 
 func (c *char) isRadianceSSw() bool {
-	return c.StatusIsActive(radianceSwirlKey)
-}
-
-func (c *char) stellarRadianceInit() {
-	c.Core.Events.Subscribe(event.OnStellarSwirl, func(args ...any) {
-		if _, ok := args[0].(*enemy.Enemy); !ok {
-			return
-		}
-
-		c.AddStatus(radianceSwirlKey, 8*60, false)
-	}, "vesna-"+radianceSwirlKey)
+	return c.StatusIsActive(reactable.SswKey)
 }
