@@ -86,6 +86,9 @@ func (c *Compiled) GenerateCurve() error {
 	b.WriteString(")\n")
 
 	b.WriteString("var GrowCurve = ")
+	for i := range c.GrowCurveData {
+		c.GrowCurveData[i] = roundFloats(c.GrowCurveData[i])
+	}
 	b.WriteString(dumpGo(c.GrowCurveData, false))
 	b.WriteString("\n")
 
@@ -110,7 +113,7 @@ func (c *Compiled) GenerateElementCoeff() error {
 	b := bytes.NewBuffer(nil)
 	b.WriteString("package combat\n")
 	b.WriteString("var reactionLvlBase = ")
-	b.WriteString(dumpGo(c.ElementCoeff, false))
+	b.WriteString(dumpGo(roundFloats(c.ElementCoeff), false))
 	b.WriteString("\n")
 	writeFile("pkg/core/combat/reaction.dm.go", b.Bytes())
 	return nil

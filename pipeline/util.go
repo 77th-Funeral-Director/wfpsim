@@ -117,7 +117,7 @@ func ConvertAddProps(in []*excel.PropValue) ([]*model.PromotionAddProp, error) {
 		}
 		out = append(out, &model.PromotionAddProp{
 			PropType: typ,
-			Value:    add.Value,
+			Value:    roundFloat(add.Value),
 		})
 	}
 	return out, nil

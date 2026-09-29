@@ -76,7 +76,7 @@ func buildWeaponSpec(cfg *Config) (*WeaponSpec, error) {
 		}
 		spec.Model.BaseStats.BaseProps = append(spec.Model.BaseStats.BaseProps, &model.WeaponProp{
 			PropType:     typ,
-			InitialValue: add.InitValue,
+			InitialValue: roundFloat(add.InitValue),
 			Curve:        curve,
 		})
 	}

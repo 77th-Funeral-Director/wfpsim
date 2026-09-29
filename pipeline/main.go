@@ -97,6 +97,10 @@ var app = &cli.Command{
 			Name:        "qf",
 			Usage:       "translate datamine fields at runtime",
 			Destination: &optQuickfix,
+			Value: []string{
+				"EquipAffixId->equipAffixId",
+				"__unk_Q4154034434->rankLevel",
+			},
 		},
 	},
 	Before: func(_ context.Context, _ *cli.Command) (context.Context, error) {
