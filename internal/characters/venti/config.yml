@@ -24,6 +24,7 @@ talents:
   - aim: attack(Aimed Shot)
   - fullaim: attack(Fully-Charged Aimed Shot)
   - highPlunge: attack(Low/High Plunge DMG|1)
+  - hurricaneBonus: attack(Windsunder Arrow DMG)
 
   - skillPress: skill(Press DMG)
   - skillHold: skill(Hold DMG)
@@ -108,7 +109,7 @@ abilities:
         center: PrimaryTarget
         offset: [0, -0.5]
         box: [0.1, 1]
-        hitlag: {time: 0.12, scale: 0.01, deployable: true}
+        hitlag: { time: 0.12, scale: 0.01, deployable: true }
 
       - name: FullAim
         shape: Box
@@ -121,7 +122,7 @@ abilities:
         center: PrimaryTarget
         offset: [0, -0.5]
         box: [0.1, 1]
-        hitlag: {time: 0.12, scale: 0.01, deployable: true}
+        hitlag: { time: 0.12, scale: 0.01, deployable: true }
 
   - name: plunge
     hitbox:

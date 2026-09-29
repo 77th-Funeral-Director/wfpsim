@@ -227,3 +227,27 @@ func (c *Character) startCooldownQueueWorker(a action.Action) {
 	// wait for c.cooldownQueue[a][0], then add a stack
 	c.Core.Tasks.Add(worker, c.cdQueue[a][0])
 }
+
+func (c *Character) IncreaseActionCooldown(a action.Action, v int) {
+	// do nothing if stacks already maxed
+	if c.AvailableCDCharge[a] == 1+c.additionalCDCharge[a] {
+		return
+	}
+	// check if reduction > time remaing? if so then call reset cd
+	remain := c.cdQueueWorkerStartedAt[a] + c.cdQueue[a][0] - c.Core.F
+	// log.Printf("hello reducing; reduction %v, remaining %v, frame %v, old queue %v\n", v, remain, c.F, c.cdQueue[a])
+	if v >= remain {
+		c.ResetActionCooldown(a)
+		return
+	}
+
+	// otherwise increase remain and restart queue
+	c.cdQueue[a][0] = remain + v
+	c.Core.Log.NewEventBuildMsg(glog.LogCooldownEvent, c.Index(), a.String(), " cooldown forcefully increased").
+		Write("type", a.String()).
+		Write("expiry", c.Cooldown(a)).
+		Write("charges_remain", c.AvailableCDCharge).
+		Write("cooldown_queue", c.cdQueueString(a))
+	c.startCooldownQueueWorker(a)
+	// log.Printf("started: %v, new queue: %v, worker frame: %v\n", c.cdQueueWorkerStartedAt[a], c.cdQueue[a], c.cdQueueWorkerStartedAt[a])
+}

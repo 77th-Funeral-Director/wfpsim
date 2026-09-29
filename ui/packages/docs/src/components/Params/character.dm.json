@@ -279,6 +279,13 @@
       "desc": "Projectile travel time. Default 5 frames."
     }
   ],
+  "alyosha": [
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
   "amber": [
     {
       "ability": "attack",
@@ -1137,6 +1144,33 @@
       "desc": "Projectile travel time for Starlight Slugs. Default 22 frames."
     }
   ],
+  "linnea": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
+    },
+    {
+      "ability": "aim",
+      "param": "hold",
+      "desc": "0 for Physical Aimed Shot, 1 for Fully-Charged Aimed Shot (default)."
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. Default 0 (false), 1 for true."
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
   "lisa": [
     {
       "ability": "low_plunge",
@@ -1712,6 +1746,18 @@
       "ability": "skill",
       "param": "nobehind",
       "desc": "Default 0. 1 for disabling striking behind for A1 purposes."
+    }
+  ],
+  "sandrone": [
+    {
+      "ability": "charge",
+      "param": "frames",
+      "desc": "How many frames to hold the CA for. Default goes until the CA enters overdrive"
+    },
+    {
+      "ability": "skill",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
     }
   ],
   "sangonomiyakokomi": [

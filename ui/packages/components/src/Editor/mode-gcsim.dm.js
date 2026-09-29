@@ -91,6 +91,7 @@ ace.define(
         'alhaitham',
         'haitham',
         'aloy',
+        'alyosha',
         'amber',
         'aratakiitto',
         'aratakitheoneandoniitto',
@@ -169,7 +170,9 @@ ace.define(
         'lanyan',
         'lauma',
         'layla',
+        'linnea',
         'lisa',
+        'lohen',
         'lumineanemo',
         'traveleranemo',
         'luminecryo',
@@ -215,6 +218,7 @@ ace.define(
         'razor',
         'rosaria',
         'rosa',
+        'sandrone',
         'sangonomiyakokomi',
         'koko',
         'kokomi',
@@ -233,6 +237,8 @@ ace.define(
         'varesa',
         'varka',
         'venti',
+        'vesna',
+        'vodyanitsa',
         'wanderer',
         'kabukimono',
         'kuni',
@@ -265,6 +271,7 @@ ace.define(
         'zhongli',
         'zhong',
         'zl',
+        'zibai',
       ];
 
       var gcsimKeywords =

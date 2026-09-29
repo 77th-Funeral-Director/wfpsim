@@ -528,6 +528,52 @@
       "invalid": false
     }
   ],
+  "alyosha": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "amber": [
     {
       "ability": "attack",
@@ -3214,6 +3260,52 @@
       "invalid": false
     }
   ],
+  "linnea": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": false
+    },
+    {
+      "ability": "charge",
+      "invalid": true
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "lisa": [
     {
       "ability": "attack",
@@ -3256,6 +3348,52 @@
     {
       "ability": "walk",
       "note": "No action followed by walk (except low_plunge and high_plunge) has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "lohen": [
+    {
+      "ability": "attack",
+      "invalid": true
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": true
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": true
+    },
+    {
+      "ability": "burst",
+      "invalid": true
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -4554,6 +4692,52 @@
       "invalid": false
     }
   ],
+  "sandrone": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "sangonomiyakokomi": [
     {
       "ability": "attack",
@@ -5212,6 +5396,98 @@
     {
       "ability": "walk",
       "note": "Only aim followed by walk has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "vesna": [
+    {
+      "ability": "attack",
+      "invalid": true
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": true
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": true
+    },
+    {
+      "ability": "burst",
+      "invalid": true
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "vodyanitsa": [
+    {
+      "ability": "attack",
+      "invalid": true
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": true
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": true
+    },
+    {
+      "ability": "burst",
+      "invalid": true
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -5984,6 +6260,53 @@
     {
       "ability": "walk",
       "note": "No action followed by walk has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "zibai": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "note": "Need to use attack right before charge.",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {

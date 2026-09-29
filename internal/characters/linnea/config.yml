@@ -1,0 +1,34 @@
+use: pipeline
+kind: character
+name: linnea
+
+abilities:
+  - name: attack
+    params:
+      travel: Projectile travel time. Default 10 frames.
+  - name: aim
+    params:
+      hold: 0 for Physical Aimed Shot, 1 for Fully-Charged Aimed Shot (default).
+      travel: Projectile travel time. Default 10 frames.
+      weakspot: Hit weakspot with aimed shot. Default 0 (false), 1 for true.
+  - name: skill
+    params:
+      hold: 0 for Tap (default), 1 for Hold.
+  - name: burst
+
+talents:
+  - attack:
+      - attack(1-Hit DMG)
+      - attack(2-Hit DMG)
+      - attack(3-Hit DMG)
+  - aim: attack(Aimed Shot)
+  - fullAim: attack(Fully-Charged Aimed Shot)
+
+  - skillPound: skill(Lumi Pound-Pound Pummeler DMG)
+  - skillHeavy: skill(Lumi Heavy Overdrive Hammer DMG)
+  - skillMillion: skill(Lumi Million Ton Crush DMG)
+
+  - burstInitialDef: burst(Initial Healing Amount) # {} DEF+{}
+  - burstInitialFlat: burst(Initial Healing Amount|1) # {} DEF+{}
+  - burstTickDef: burst(Continuous Healing) # {} DEF+{}
+  - burstTickFlat: burst(Continuous Healing|1) # {} DEF+{}

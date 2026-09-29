@@ -54,6 +54,7 @@ const (
 	Albedo                        // albedo
 	Alhaitham                     // alhaitham
 	Aloy                          // aloy
+	Alyosha                       // alyosha
 	Amber                         // amber
 	AratakiItto                   // aratakiitto
 	Arlecchino                    // arlecchino
@@ -110,7 +111,9 @@ const (
 	LanYan                        // lanyan
 	Lauma                         // lauma
 	Layla                         // layla
+	Linnea                        // linnea
 	Lisa                          // lisa
+	Lohen                         // lohen
 	LumineAnemo                   // lumineanemo
 	LumineCryo                    // luminecryo
 	LumineDendro                  // luminedendro
@@ -138,6 +141,7 @@ const (
 	RaidenShogun                  // raidenshogun
 	Razor                         // razor
 	Rosaria                       // rosaria
+	Sandrone                      // sandrone
 	SangonomiyaKokomi             // sangonomiyakokomi
 	Sayu                          // sayu
 	Sethos                        // sethos
@@ -152,6 +156,8 @@ const (
 	Varesa                        // varesa
 	Varka                         // varka
 	Venti                         // venti
+	Vesna                         // vesna
+	Vodyanitsa                    // vodyanitsa
 	Wanderer                      // wanderer
 	Wriothesley                   // wriothesley
 	Xiangling                     // xiangling
@@ -168,6 +174,7 @@ const (
 	YumemizukiMizuki              // yumemizukimizuki
 	YunJin                        // yunjin
 	Zhongli                       // zhongli
+	Zibai                         // zibai
 	InvalidChar                   // invalidchar
 )
 
@@ -184,6 +191,7 @@ var _CharNames = [...]string{
 	"albedo",
 	"alhaitham",
 	"aloy",
+	"alyosha",
 	"amber",
 	"aratakiitto",
 	"arlecchino",
@@ -240,7 +248,9 @@ var _CharNames = [...]string{
 	"lanyan",
 	"lauma",
 	"layla",
+	"linnea",
 	"lisa",
+	"lohen",
 	"lumineanemo",
 	"luminecryo",
 	"luminedendro",
@@ -268,6 +278,7 @@ var _CharNames = [...]string{
 	"raidenshogun",
 	"razor",
 	"rosaria",
+	"sandrone",
 	"sangonomiyakokomi",
 	"sayu",
 	"sethos",
@@ -282,6 +293,8 @@ var _CharNames = [...]string{
 	"varesa",
 	"varka",
 	"venti",
+	"vesna",
+	"vodyanitsa",
 	"wanderer",
 	"wriothesley",
 	"xiangling",
@@ -298,6 +311,7 @@ var _CharNames = [...]string{
 	"yumemizukimizuki",
 	"yunjin",
 	"zhongli",
+	"zibai",
 	"invalidchar",
 }
 
@@ -314,6 +328,7 @@ var _CharValues = [...]Char{
 	Albedo,
 	Alhaitham,
 	Aloy,
+	Alyosha,
 	Amber,
 	AratakiItto,
 	Arlecchino,
@@ -370,7 +385,9 @@ var _CharValues = [...]Char{
 	LanYan,
 	Lauma,
 	Layla,
+	Linnea,
 	Lisa,
+	Lohen,
 	LumineAnemo,
 	LumineCryo,
 	LumineDendro,
@@ -398,6 +415,7 @@ var _CharValues = [...]Char{
 	RaidenShogun,
 	Razor,
 	Rosaria,
+	Sandrone,
 	SangonomiyaKokomi,
 	Sayu,
 	Sethos,
@@ -412,6 +430,8 @@ var _CharValues = [...]Char{
 	Varesa,
 	Varka,
 	Venti,
+	Vesna,
+	Vodyanitsa,
 	Wanderer,
 	Wriothesley,
 	Xiangling,
@@ -428,5 +448,6 @@ var _CharValues = [...]Char{
 	YumemizukiMizuki,
 	YunJin,
 	Zhongli,
+	Zibai,
 	InvalidChar,
 }

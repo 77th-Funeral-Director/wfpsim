@@ -187,6 +187,23 @@
         "burst_energy_cost": 40
       }
     },
+    "alyosha": {
+      "id": 10000148,
+      "sub_id": 14801,
+      "key": "alyosha",
+      "rarity": "QUALITY_PURPLE",
+      "body": "BODY_BOY",
+      "region": "ASSOC_TYPE_SNEZHNAYA",
+      "element": "Electric",
+      "weapon_class": "WEAPON_POLE",
+      "icon_name": "UI_AvatarIcon_Alyosha",
+      "skill_details": {
+        "skill": 11482,
+        "burst": 11485,
+        "attack": 11481,
+        "burst_energy_cost": 70
+      }
+    },
     "amber": {
       "id": 10000021,
       "sub_id": 2101,
@@ -1139,6 +1156,23 @@
         "burst_energy_cost": 40
       }
     },
+    "linnea": {
+      "id": 10000130,
+      "sub_id": 13001,
+      "key": "linnea",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_GIRL",
+      "region": "ASSOC_TYPE_NODKRAI",
+      "element": "Rock",
+      "weapon_class": "WEAPON_BOW",
+      "icon_name": "UI_AvatarIcon_Linnea",
+      "skill_details": {
+        "skill": 11302,
+        "burst": 11305,
+        "attack": 11301,
+        "burst_energy_cost": 60
+      }
+    },
     "lisa": {
       "id": 10000006,
       "sub_id": 601,
@@ -1154,6 +1188,23 @@
         "burst": 10062,
         "attack": 10060,
         "burst_energy_cost": 80
+      }
+    },
+    "lohen": {
+      "id": 10000129,
+      "sub_id": 12901,
+      "key": "lohen",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_BOY",
+      "region": "ASSOC_TYPE_MONDSTADT",
+      "element": "Ice",
+      "weapon_class": "WEAPON_POLE",
+      "icon_name": "UI_AvatarIcon_Lohen",
+      "skill_details": {
+        "skill": 11292,
+        "burst": 11295,
+        "attack": 11291,
+        "burst_energy_cost": 60
       }
     },
     "lumineanemo": {
@@ -1614,6 +1665,23 @@
         "burst_energy_cost": 60
       }
     },
+    "sandrone": {
+      "id": 10000133,
+      "sub_id": 13301,
+      "key": "sandrone",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_GIRL",
+      "region": "ASSOC_TYPE_SNEZHNAYA_STAR",
+      "element": "Ice",
+      "weapon_class": "WEAPON_CLAYMORE",
+      "icon_name": "UI_AvatarIcon_MarionetteNew",
+      "skill_details": {
+        "skill": 11332,
+        "burst": 11335,
+        "attack": 11331,
+        "burst_energy_cost": 60
+      }
+    },
     "sangonomiyakokomi": {
       "id": 10000054,
       "sub_id": 5401,
@@ -1848,6 +1916,40 @@
         "skill": 10224,
         "burst": 10225,
         "attack": 10221,
+        "burst_energy_cost": 60
+      }
+    },
+    "vesna": {
+      "id": 10000143,
+      "sub_id": 14301,
+      "key": "vesna",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_GIRL",
+      "region": "ASSOC_TYPE_SNEZHNAYA_STAR",
+      "element": "Wind",
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "icon_name": "UI_AvatarIcon_Vesna",
+      "skill_details": {
+        "skill": 11432,
+        "burst": 11435,
+        "attack": 11431,
+        "burst_energy_cost": 60
+      }
+    },
+    "vodyanitsa": {
+      "id": 10000140,
+      "sub_id": 14001,
+      "key": "vodyanitsa",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_GIRL",
+      "region": "ASSOC_TYPE_SNEZHNAYA",
+      "element": "Water",
+      "weapon_class": "WEAPON_CATALYST",
+      "icon_name": "UI_AvatarIcon_Vodyanitsa",
+      "skill_details": {
+        "skill": 11402,
+        "burst": 11405,
+        "attack": 11401,
         "burst_energy_cost": 60
       }
     },
@@ -2121,6 +2223,23 @@
         "burst": 10303,
         "attack": 10301,
         "burst_energy_cost": 40
+      }
+    },
+    "zibai": {
+      "id": 10000126,
+      "sub_id": 12601,
+      "key": "zibai",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_LADY",
+      "region": "ASSOC_TYPE_NODKRAI_ZIBAI",
+      "element": "Rock",
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "icon_name": "UI_AvatarIcon_Zibai",
+      "skill_details": {
+        "skill": 11262,
+        "burst": 11265,
+        "attack": 11261,
+        "burst_energy_cost": 60
       }
     }
   }

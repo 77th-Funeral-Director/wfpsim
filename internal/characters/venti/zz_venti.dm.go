@@ -230,6 +230,24 @@ var (
 		3.597872,
 		3.79592,
 	}
+	// attack: DivineMarksmanship - Windsunder Arrow DMG: {11} Normal Attack DMG
+	hurricaneBonus = []float64{
+		1.6,
+		1.7,
+		1.8,
+		1.9,
+		2.0,
+		2.1,
+		2.2,
+		2.3,
+		2.4,
+		2.5,
+		2.6,
+		2.7,
+		2.8,
+		2.9,
+		3.0,
+	}
 	// skill: SkywardSonnet - Press DMG: {0}
 	skillPress = []float64{
 		2.76,
