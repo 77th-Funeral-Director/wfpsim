@@ -2,20 +2,13 @@ import { initI18n } from "@gcsim/localization";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import { kqmCharacterNames } from "./characters";
 
 initI18n().addResourceBundle(
 	"en",
 	"game",
 	{
-		character_names: {
-			alyosha: "Alyosha",
-			linnea: "Linnea",
-			lohen: "Lohen",
-			sandrone: "Sandrone",
-			vesna: "Vesna",
-			vodyanitsa: "Vodyanitsa",
-			zibai: "Zibai",
-		},
+		character_names: kqmCharacterNames,
 	},
 	true,
 	true,

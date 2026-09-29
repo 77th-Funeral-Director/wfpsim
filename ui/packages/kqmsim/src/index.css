@@ -30,3 +30,17 @@
 .kqm-footer {text-align:center;padding:24px;border-top:1px solid var(--g-border-soft)}
 .kqm-error {border:1px solid var(--g-danger);padding:16px;margin-block:16px;white-space:pre-wrap}
 .kqm-header a,.kqm-main a,.kqm-footer a {color:var(--g-accent)}
+
+.kqm-main select,
+.kqm-main input[type="number"] {
+  color: var(--g-text);
+  background: var(--g-surface);
+  border: 1px solid var(--g-border);
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
+.kqm-main select option {
+  color: var(--g-text);
+  background: var(--g-surface);
+}

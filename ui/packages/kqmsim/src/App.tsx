@@ -1,4 +1,4 @@
-import { Label, Switch } from "@gcsim/primitives";
+import { Label, Switch, Toaster } from "@gcsim/primitives";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import ServerMode from "./ServerMode";
@@ -34,6 +34,7 @@ const App = () => {
 
 	return (
 		<>
+			<Toaster position="top-right" theme="dark" />
 			<header className="kqm-header">
 				<a href="https://keqingmains.com">
 					<img src="/kqm-logo.png" alt="KQM" width="48" height="48" />

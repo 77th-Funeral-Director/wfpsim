@@ -23,6 +23,7 @@ import {
 import type { Executor, ExecutorSupplier, model, Sample } from "@gcsim/types";
 import { useLocalStorage } from "@gcsim/utils";
 import { type ReactNode, useEffect, useState } from "react";
+import { teamCharacters } from "./characters";
 
 export function UI({
 	exec,
@@ -196,6 +197,7 @@ function Workspace({ settings }: { settings: ReactNode }) {
 						config={config}
 						setConfig={setConfig}
 						parsedTeam={parsedTeam}
+						teamCharacters={teamCharacters}
 						error={configError}
 						prefs={prefs}
 						onPrefsChange={setPrefs}
