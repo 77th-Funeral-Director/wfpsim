@@ -11,7 +11,8 @@ type char struct {
 	*tmpl.Character
 	skillSrc             int
 	skillState           skillState
-	skillChargeFinalAnim bool
+	specialChargeDur     int
+	specialChargeTickSrc int
 	prisms               int
 	prismSrc             int
 	prismRemoveSrc       int

@@ -1,10 +1,13 @@
 package mitya
 
 import (
+	"fmt"
+
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/combat"
 	"github.com/genshinsim/gcsim/pkg/core/event"
+	"github.com/genshinsim/gcsim/pkg/core/glog"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
@@ -45,7 +48,11 @@ func (c *char) prismTicker(src int) {
 
 func (c *char) addPrism() {
 	c.prisms++
+
 	if c.getSkillState() == skillStatePress && c.prisms > maxPrismStacks+c.c1MaxPrisms() {
+		if c.Core.Combat.Debug {
+			c.Core.Log.NewEvent(fmt.Sprintf("mitya gained prism beyond max (%d) during tap skill", maxPrismStacks+c.c1MaxPrisms()), glog.LogCharacterEvent, c.Index())
+		}
 		c.consumePrism(1)
 		ai := info.AttackInfo{
 			ActorIndex:       c.Index(),
@@ -59,12 +66,12 @@ func (c *char) addPrism() {
 
 		ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), info.Point{Y: 2}, 5)
 		c.Core.QueueAttack(ai, ap, 0, 0)
-	} else if c.getSkillState() == skillStatePress && c.skillChargeFinalAnim {
-		// preempt the final CA hitmark if we go from 1 prism to 2
-		// trigger the wave immediately
+	} else {
+		c.prisms = min(c.prisms, maxPrismStacks+c.c1MaxPrisms())
+		if c.Core.Combat.Debug {
+			c.Core.Log.NewEvent(fmt.Sprintf("mitya gained prism (%d)", c.prisms), glog.LogCharacterEvent, c.Index())
+		}
 	}
-
-	c.prisms = min(c.prisms, maxPrismStacks+c.c1MaxPrisms())
 
 	c.a4OnPrismGain()
 	c.c4OnPrismGain()
@@ -82,6 +89,9 @@ func (c *char) addPrism() {
 func (c *char) consumePrism(count int) {
 	for range count {
 		c.prisms--
+		if c.Core.Combat.Debug {
+			c.Core.Log.NewEvent(fmt.Sprintf("mitya consumed prism (%d)", c.prisms), glog.LogCharacterEvent, c.Index())
+		}
 		c.c1OnPrismConsume()
 		c.c6OnPrismConsume()
 	}

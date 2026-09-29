@@ -1,8 +1,6 @@
 package mitya
 
 import (
-	"fmt"
-
 	"github.com/genshinsim/gcsim/internal/frames"
 	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
@@ -33,12 +31,12 @@ func init() {
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
 	if p["hold"] != 0 {
-		return action.Info{}, fmt.Errorf("mitya: hold skill not implemented")
+		return c.skillHold(), nil
 	}
-	return c.skillPress(p), nil
+	return c.skillPress(), nil
 }
 
-func (c *char) skillPress(_ map[string]int) action.Info {
+func (c *char) skillPress() action.Info {
 	c.QueueCharTask(func() {
 		ai := info.AttackInfo{
 			ActorIndex: c.Index(),
@@ -74,25 +72,29 @@ func (c *char) skillPress(_ map[string]int) action.Info {
 }
 
 func (c *char) skillHold() action.Info {
-	ai := info.AttackInfo{
-		ActorIndex: c.Index(),
-		Abil:       "Skill (Hold)",
-		AttackTag:  attacks.AttackTagElementalArt,
-		ICDTag:     attacks.ICDTagNone,
-		ICDGroup:   attacks.ICDGroupDefault,
-		StrikeType: attacks.StrikeTypeDefault,
-		Element:    attributes.Electro,
-		Durability: 25,
-		Mult:       skillHold[c.TalentLvlSkill()],
-	}
+	c.QueueCharTask(func() {
+		ai := info.AttackInfo{
+			ActorIndex: c.Index(),
+			Abil:       "Skill (Hold)",
+			AttackTag:  attacks.AttackTagElementalArt,
+			ICDTag:     attacks.ICDTagNone,
+			ICDGroup:   attacks.ICDGroupDefault,
+			StrikeType: attacks.StrikeTypeDefault,
+			Element:    attributes.Electro,
+			Durability: 25,
+			Mult:       skillHold[c.TalentLvlSkill()],
+		}
 
-	c.Core.QueueAttack(
-		ai,
-		combat.NewSingleTargetHit(c.Core.Combat.PrimaryTarget().Key()),
-		skillHoldHitmark,
-		skillHoldHitmark,
-		c.particleCB,
-	)
+		c.Core.QueueAttack(
+			ai,
+			combat.NewSingleTargetHit(c.Core.Combat.PrimaryTarget().Key()),
+			0,
+			0,
+			c.particleCB,
+		)
+		c.addSkillState(skillStateHold)
+		c.addPrism()
+	}, skillHoldHitmark)
 
 	c.SetCDWithDelay(action.ActionSkill, 15*60, skillHoldHitmark)
 
