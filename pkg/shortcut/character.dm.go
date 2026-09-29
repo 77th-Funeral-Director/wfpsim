@@ -145,6 +145,7 @@ var CharNameToKey = map[string]keys.Char{
 	"razor":             keys.Razor,
 	"rosaria":           keys.Rosaria,
 	"rosa":              keys.Rosaria,
+	"sandrone":          keys.Sandrone,
 	"sangonomiyakokomi": keys.SangonomiyaKokomi,
 	"koko":              keys.SangonomiyaKokomi,
 	"kokomi":            keys.SangonomiyaKokomi,

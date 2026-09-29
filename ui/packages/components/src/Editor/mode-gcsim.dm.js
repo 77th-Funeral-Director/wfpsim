@@ -217,6 +217,7 @@ ace.define(
         'razor',
         'rosaria',
         'rosa',
+        'sandrone',
         'sangonomiyakokomi',
         'koko',
         'kokomi',

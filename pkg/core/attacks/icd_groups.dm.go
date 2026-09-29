@@ -54,6 +54,7 @@ const (
 	ICDGroupNilou
 	ICDGroupOdetteDanceDuo
 	ICDGroupOroronElementalBurst
+	ICDGroupSandroneSweepingFire
 	ICDGroupSigewinne
 	ICDGroupSigewinneBurst
 	ICDGroupTighnari
@@ -121,6 +122,7 @@ var ICDGroupResetTimer = []int{
 	ICDGroupNilou:                     114,  // 1.9s
 	ICDGroupOdetteDanceDuo:            180,  // 3s
 	ICDGroupOroronElementalBurst:      180,  // 3s
+	ICDGroupSandroneSweepingFire:      84,   // 1.4s
 	ICDGroupSigewinne:                 120,  // 2s
 	ICDGroupSigewinneBurst:            114,  // 1.9s
 	ICDGroupTighnari:                  150,  // 2.5s
@@ -188,6 +190,7 @@ var ICDGroupEleApplicationSequence = [][]float64{
 	ICDGroupNilou:                     {1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0},
 	ICDGroupOdetteDanceDuo:            {1.0, 0.0, 0.0, 0.0},
 	ICDGroupOroronElementalBurst:      {1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+	ICDGroupSandroneSweepingFire:      {1.0, 0.0},
 	ICDGroupSigewinne:                 {1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
 	ICDGroupSigewinneBurst:            {1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
 	ICDGroupTighnari:                  {1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0},
@@ -255,6 +258,7 @@ var ICDGroupDamageSequence = [][]float64{
 	ICDGroupNilou:                     {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
 	ICDGroupOdetteDanceDuo:            {1.0, 1.0, 1.0, 1.0},
 	ICDGroupOroronElementalBurst:      {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
+	ICDGroupSandroneSweepingFire:      {1.0, 1.0},
 	ICDGroupSigewinne:                 {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
 	ICDGroupSigewinneBurst:            {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
 	ICDGroupTighnari:                  {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},

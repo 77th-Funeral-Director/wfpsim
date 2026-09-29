@@ -1741,6 +1741,18 @@
       "desc": "Default 0. 1 for disabling striking behind for A1 purposes."
     }
   ],
+  "sandrone": [
+    {
+      "ability": "charge",
+      "param": "frames",
+      "desc": "How many frames to hold the CA for. Default goes until the CA enters overdrive"
+    },
+    {
+      "ability": "skill",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
+    }
+  ],
   "sangonomiyakokomi": [
     {
       "ability": "attack",
