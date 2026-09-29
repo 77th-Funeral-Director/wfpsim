@@ -192,6 +192,7 @@ ace.define(
         'mavuika',
         'mav',
         'mika',
+        'mitya',
         'mona',
         'mualani',
         'nahida',

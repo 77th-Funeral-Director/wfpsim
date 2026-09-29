@@ -125,6 +125,7 @@ const (
 	Lyney                         // lyney
 	Mavuika                       // mavuika
 	Mika                          // mika
+	Mitya                         // mitya
 	Mona                          // mona
 	Mualani                       // mualani
 	Nahida                        // nahida
@@ -262,6 +263,7 @@ var _CharNames = [...]string{
 	"lyney",
 	"mavuika",
 	"mika",
+	"mitya",
 	"mona",
 	"mualani",
 	"nahida",
@@ -399,6 +401,7 @@ var _CharValues = [...]Char{
 	Lyney,
 	Mavuika,
 	Mika,
+	Mitya,
 	Mona,
 	Mualani,
 	Nahida,

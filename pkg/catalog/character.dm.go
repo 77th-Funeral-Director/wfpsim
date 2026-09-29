@@ -12472,6 +12472,159 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 			BurstEnergyCost: 70.0,
 		},
 	},
+	keys.Mitya: {
+		Id:          10000136,
+		SubId:       13601,
+		Key:         "mitya",
+		Rarity:      model.QualityType_QUALITY_ORANGE,
+		Body:        model.BodyType_BODY_BOY,
+		Region:      model.AssocType_ASSOC_TYPE_SNEZHNAYA_STAR,
+		Element:     model.ElementType_Electric,
+		WeaponClass: model.WeaponType_WEAPON_CATALYST,
+		IconName:    "UI_AvatarIcon_Mitya",
+		Stats: &model.AvatarStatsData{
+			BaseHp:   905.6539916992188,
+			BaseAtk:  20.48200035095215,
+			BaseDef:  61.624900817871094,
+			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
+			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
+			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    776.5164,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    52.839,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    17.56018,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    1328.252,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    90.3825,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    30.03715,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
+							Value:    0.096,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    2063.899,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    140.4405,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    46.67311,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
+							Value:    0.192,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    2615.634,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    177.984,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    59.15008,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
+							Value:    0.192,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    3167.37,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    215.5275,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    71.62705,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
+							Value:    0.288,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    3719.105,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    253.071,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    84.10402,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
+							Value:    0.384,
+						},
+					},
+				},
+			},
+			ElementMastery: 100.0,
+		},
+		SkillDetails: &model.AvatarSkillsData{
+			Skill:           11362,
+			Burst:           11364,
+			Attack:          11361,
+			BurstEnergyCost: 60.0,
+		},
+	},
 	keys.Mona: {
 		Id:          10000041,
 		SubId:       4101,

@@ -1525,6 +1525,13 @@
       "desc": "0 for Tap (default), 1 for Hold."
     }
   ],
+  "mitya": [
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
   "mona": [
     {
       "ability": "skill",
