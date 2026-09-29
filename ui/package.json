@@ -33,7 +33,12 @@
 		"test:e2e": "pnpm --filter @gcsim/e2e test",
 		"test:e2e:docs": "pnpm --filter @gcsim/e2e test:docs",
 		"test:e2e:db": "pnpm --filter @gcsim/e2e test:db",
-		"test:e2e:taghelper": "pnpm --filter @gcsim/e2e test:taghelper"
+		"test:e2e:taghelper": "pnpm --filter @gcsim/e2e test:taghelper",
+		"build:kqmsim": "pnpm --filter @gcsim/kqmsim build:wasm && pnpm build:kqmsim-ui",
+		"build:kqmsim-ui": "pnpm --filter @gcsim/kqmsim build && pnpm --filter @gcsim/kqmembed build",
+		"build:kqmdb": "pnpm --filter @gcsim/kqmdb build",
+		"deploy:kqmsim": "pnpm --filter @gcsim/kqmworkers deploy",
+		"deploy:kqmdb": "pnpm --filter @gcsim/kqmdb deploy"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.13",

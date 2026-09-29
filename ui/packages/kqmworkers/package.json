@@ -1,0 +1,27 @@
+{
+	"name": "@gcsim/kqmworkers",
+	"version": "0.0.0",
+	"private": true,
+	"main": "src/index.ts",
+	"scripts": {
+		"start": "wrangler dev",
+		"upload:wasm": "wrangler r2 object put kqmsim/$(git rev-parse HEAD).wasm --file=../kqmsim/public/main.wasm --remote --content-type=application/wasm",
+		"deploy": "pnpm upload:wasm && wrangler deploy",
+		"version": "pnpm upload:wasm && wrangler versions upload",
+		"typecheck": "tsc --noEmit",
+		"test": "node --test tests/*.test.mjs"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^5.20260911.1",
+		"@types/pako": "^2.0.0",
+		"typescript": "^5.9.3",
+		"wrangler": "4.131.1"
+	},
+	"dependencies": {
+		"@cfworker/json-schema": "^1.12.5",
+		"@cfworker/uuid": "^1.12.4",
+		"axios": "^1.6.7",
+		"itty-router": "^3.0.11",
+		"pako": "^2.1.0"
+	}
+}

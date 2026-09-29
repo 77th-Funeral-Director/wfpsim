@@ -1,0 +1,28 @@
+{
+	"name": "@gcsim/kqmembed",
+	"private": true,
+	"scripts": {
+		"dev": "vite --host",
+		"build": "vite build",
+		"preview": "vite preview --host",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@gcsim/components": "workspace:^",
+		"@gcsim/executors": "workspace:^",
+		"@gcsim/localization": "workspace:^",
+		"@gcsim/primitives": "workspace:^",
+		"@gcsim/types": "workspace:^",
+		"@gcsim/utils": "workspace:^",
+		"react": "^19.3.0",
+		"react-dom": "^19.3.0",
+		"react-i18next": "^17.0.14"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.3.3",
+		"@vitejs/plugin-react": "^6",
+		"git-rev-sync": "^3.0.2",
+		"tailwindcss": "^4.3.3",
+		"vite": "^8"
+	}
+}

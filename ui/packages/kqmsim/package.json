@@ -1,0 +1,33 @@
+{
+	"name": "@gcsim/kqmsim",
+	"private": true,
+	"scripts": {
+		"dev": "vite --host",
+		"build": "vite build",
+		"preview": "vite preview --host",
+		"typecheck": "tsc --noEmit",
+		"build:wasm": "node scripts/build-wasm.mjs",
+		"generate:og": "node scripts/generate-og.mjs"
+	},
+	"dependencies": {
+		"@gcsim/components": "workspace:^",
+		"@gcsim/executors": "workspace:^",
+		"@gcsim/localization": "workspace:^",
+		"@gcsim/primitives": "workspace:^",
+		"@gcsim/types": "workspace:^",
+		"@gcsim/utils": "workspace:^",
+		"react": "^19.3.0",
+		"react-dom": "^19.3.0",
+		"react-i18next": "^17.0.14"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.3.3",
+		"@vitejs/plugin-react": "^6",
+		"git-rev-sync": "^3.0.2",
+		"tailwindcss": "^4.3.3",
+		"vite": "^8",
+		"@fontsource/inter": "^5.3.0",
+		"@resvg/resvg-js": "^2.6.2",
+		"satori": "^0.33.4"
+	}
+}

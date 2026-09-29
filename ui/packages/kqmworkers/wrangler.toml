@@ -1,0 +1,28 @@
+name = "kqmsim"
+account_id = "c102bcadcefa0897a01701fd28bed543"
+main = "src/index.ts"
+compatibility_date = "2026-08-31"
+
+routes = [
+  { pattern = "sim.kqm.gg", custom_domain = true }
+]
+
+[assets]
+binding = "ASSETS"
+  directory = "../kqmsim/dist"
+  not_found_handling = "single-page-application"
+  run_worker_first = ["/api/*", "/sh/*"]
+
+[vars]
+  KQMSIM_ASSETS_ENDPOINT = "https://gcsim.app"
+
+[[r2_buckets]]
+  binding = 'kqmsim_r2'
+  bucket_name = 'kqmsim'
+
+[[kv_namespaces]]
+  binding = 'kqmsim_kv'
+  id = 'bf233d51805e4ebc83ecf7189f7e6f54'
+
+[browser]
+binding = "BROWSER"

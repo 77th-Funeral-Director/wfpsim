@@ -1,0 +1,10 @@
+@import "@gcsim/components/src/index.css";
+@source ".";
+body { margin:0; overflow:hidden; background:#232024; color:white; }
+.kqm-preview {width:540px;height:250px;}
+.preview-card {width:540px;height:250px;display:flex;flex-direction:column;background:#232024;font-family:monospace;}
+.preview-summary {display:flex;align-items:center;justify-content:space-around;gap:6px;margin:0 4px 4px;padding:10px 6px;height:44px;border:1px solid #685572;border-radius:4px;background:#392c40;font-size:11px;}
+.preview-summary strong {font-size:16px;color:white;}
+.preview-summary .preview-brand {font-size:13px;color:#e7b9fa;}
+.preview-charts {display:flex;gap:4px;margin:0 4px 4px;}
+.preview-charts > div {height:84px;border-radius:4px;background:#302936;}
