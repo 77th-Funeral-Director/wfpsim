@@ -171,6 +171,7 @@ ace.define(
         'layla',
         'linnea',
         'lisa',
+        'lohen',
         'lumineanemo',
         'traveleranemo',
         'luminecryo',

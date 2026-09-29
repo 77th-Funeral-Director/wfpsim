@@ -1,0 +1,25 @@
+use: pipeline
+kind: character
+name: lohen
+
+talents:
+  - attack:
+      - attack(1-Hit DMG)
+      - attack(2-Hit DMG)
+      - attack(3-Hit DMG)
+      - attack(4-Hit DMG)
+      - - attack(5-Hit DMG) # {}+{}
+        - attack(5-Hit DMG|1) # {}+{}
+  - charge: attack(Charged Attack DMG)
+
+  - skillAttack:
+      - skill(1-Hit DMG)
+      - skill(2-Hit DMG)
+      - skill(3-Hit DMG)
+      - skill(4-Hit DMG)
+      - - skill(5-Hit DMG) # {}+{}
+        - skill(5-Hit DMG|1) # {}+{}
+  - skillCharge: skill(Charged Attack DMG)
+  - skillPierce: skill(Etched Into Bone and Soul DMG)
+
+  - burst: burst(Skill DMG)

@@ -1173,6 +1173,23 @@
         "burst_energy_cost": 80
       }
     },
+    "lohen": {
+      "id": 10000129,
+      "sub_id": 12901,
+      "key": "lohen",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_BOY",
+      "region": "ASSOC_TYPE_MONDSTADT",
+      "element": "Ice",
+      "weapon_class": "WEAPON_POLE",
+      "icon_name": "UI_AvatarIcon_Lohen",
+      "skill_details": {
+        "skill": 11292,
+        "burst": 11295,
+        "attack": 11291,
+        "burst_energy_cost": 60
+      }
+    },
     "lumineanemo": {
       "id": 10000007,
       "sub_id": 704,
