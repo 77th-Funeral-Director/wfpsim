@@ -121,13 +121,15 @@ describe("TeamComposer", () => {
 		expect(screen.getByText("bad action list")).toBeTruthy();
 	});
 
-	it("removes a card by rewriting the config", async () => {
+	it("removes only the selected character and preserves other character parameters", async () => {
 		const setConfig = vi.fn();
 		render(
 			<TeamComposer
 				parsedTeam={[char("amber"), char("bennett")]}
 				error={null}
-				config="amber char lvl=1/1 cons=0 talent=1,1,1;\ntarget lvl=100;"
+				config={
+					"amber char lvl=1/1 cons=0 talent=1,1,1;\nbennett char lvl=80/90 cons=6 talent=9,9,9;\nbennett char params=[test=1];\ntarget lvl=100;"
+				}
 				setConfig={setConfig}
 				characters={source}
 			/>,
@@ -136,16 +138,20 @@ describe("TeamComposer", () => {
 		expect(setConfig).toHaveBeenCalledTimes(1);
 		const written = setConfig.mock.calls[0][0] as string;
 		expect(written).toContain("bennett char");
+		expect(written).toContain("bennett char params=[test=1];");
+		expect(written).toContain("target lvl=100;");
 		expect(written).not.toContain("amber char");
 	});
 
-	it("adds a character through the picker by rewriting the config", async () => {
+	it("adds a character without replacing existing config text", async () => {
 		const setConfig = vi.fn();
 		render(
 			<TeamComposer
 				parsedTeam={[char("amber")]}
 				error={null}
-				config=""
+				config={
+					"# Keep this comment\namber char lvl=80/90 cons=6 talent=9,9,9;\namber char params=[test=1];\nactive amber;"
+				}
 				setConfig={setConfig}
 				characters={source}
 			/>,
@@ -155,6 +161,48 @@ describe("TeamComposer", () => {
 		const written = setConfig.mock.calls[0][0] as string;
 		expect(written).toContain("amber char");
 		expect(written).toContain("klee char");
+		expect(written).toContain(
+			"# Keep this comment\namber char lvl=80/90 cons=6 talent=9,9,9;\namber char params=[test=1];\nactive amber;",
+		);
+	});
+
+	it("removes character aliases without rewriting the other characters", async () => {
+		const setConfig = vi.fn();
+		render(
+			<TeamComposer
+				parsedTeam={[char("keqing"), char("bennett")]}
+				error={null}
+				config={
+					"keq char lvl=90/90; keq add stats\n atk=1000;\n# Keep this comment\nbennett char lvl=80/90;\nbennett char params=[test=1];\nactive bennett;"
+				}
+				setConfig={setConfig}
+				characters={source}
+			/>,
+		);
+		await userEvent.click(screen.getByText("delete-keqing"));
+		expect(setConfig).toHaveBeenCalledWith(
+			"# Keep this comment\nbennett char lvl=80/90;\nbennett char params=[test=1];\nactive bennett;",
+		);
+	});
+
+	it("keeps unparsed characters and excludes them from the picker while the config is incomplete", async () => {
+		const setConfig = vi.fn();
+		const config =
+			'amber char lvl=80/90 cons=0 talent=6,6,6;\namber add weapon="dullblade" refine=1 lvl=1/20;\n';
+		render(
+			<TeamComposer
+				parsedTeam={[]}
+				error="Missing target and active character"
+				config={config}
+				setConfig={setConfig}
+				characters={source}
+			/>,
+		);
+		await userEvent.click(screen.getByRole("button", { name: "add" }));
+		expect(screen.queryByText("default:amber")).toBeNull();
+		await userEvent.click(screen.getByText("default:klee"));
+		expect(setConfig.mock.calls[0][0]).toContain(config);
+		expect(setConfig.mock.calls[0][0]).toContain("klee char");
 	});
 
 	it("hides the add affordance when no character source is injected", () => {

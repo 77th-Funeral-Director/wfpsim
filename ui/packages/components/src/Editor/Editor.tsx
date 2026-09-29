@@ -10,6 +10,7 @@ import { SectionDivider } from "./SectionDivider";
 import { TeamComposer } from "./TeamComposer";
 import { ActionListTip, TeamTip } from "./Tips";
 import {
+	defaultEditorPrefs,
 	type EditorPrefs,
 	type EditorProps,
 	type EditorToggles,
@@ -32,7 +33,13 @@ export const Editor = ({
 	onPrefsChange,
 }: EditorProps) => {
 	const { t } = useTranslation();
-	const { toggles, theme, fontSize } = prefs;
+	const { toggles, theme } = prefs;
+	const fontSize =
+		Number.isFinite(prefs.fontSize) &&
+		prefs.fontSize >= 8 &&
+		prefs.fontSize <= 72
+			? prefs.fontSize
+			: defaultEditorPrefs.fontSize;
 	const showTeam = showHelpers && toggles.team;
 	const showTips = showHelpers && toggles.tips;
 
@@ -84,7 +91,10 @@ export const Editor = ({
 						{t("simple.font_size")}
 						<input
 							type="number"
-							value={fontSize}
+							min={8}
+							max={72}
+							value={prefs.fontSize}
+							onBlur={() => updatePrefs({ fontSize })}
 							onChange={(e) =>
 								updatePrefs({ fontSize: Number(e.currentTarget.value) })
 							}

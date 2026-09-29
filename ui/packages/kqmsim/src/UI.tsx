@@ -110,7 +110,10 @@ function Workspace({ settings }: { settings: ReactNode }) {
 		setLoadError("");
 		setShare("");
 		setShareError("");
+		setCopied(false);
 		setSample(null);
+		setSeed(null);
+		setSampleError("");
 		if (window.location.pathname.startsWith("/sh/"))
 			window.history.replaceState(null, "", "/");
 		run(config);

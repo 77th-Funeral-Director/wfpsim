@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import type React from "react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
@@ -14,15 +14,18 @@ vi.mock("./AceEditorWrapper", () => ({
 		cfg,
 		onChange,
 		onRun,
+		fontSize,
 	}: {
 		cfg: string;
 		onChange: (v: string) => void;
 		onRun?: () => void;
+		fontSize?: number;
 	}) => {
 		mountedRun ??= onRun;
 		return (
 			<textarea
 				data-testid="ace"
+				style={{ fontSize }}
 				value={cfg}
 				onChange={(e) => onChange(e.currentTarget.value)}
 			/>
@@ -133,6 +136,18 @@ describe("Editor", () => {
 		expect(runButton()).toBeDisabled();
 		rerender(<Editor {...baseProps} canRun={true} />);
 		expect(runButton()).toBeEnabled();
+	});
+
+	it("keeps text visible with invalid saved font sizes and repairs them on blur", () => {
+		const onPrefsChange = vi.fn();
+		renderEditor({
+			onPrefsChange,
+			showThemeSelector: true,
+			prefs: { ...defaultEditorPrefs, fontSize: 0 },
+		});
+		expect(screen.getByTestId("ace")).toHaveStyle({ fontSize: "14px" });
+		fireEvent.blur(screen.getByRole("spinbutton"));
+		expect(onPrefsChange).toHaveBeenLastCalledWith(defaultEditorPrefs);
 	});
 
 	it("calls onRun from the Run button", async () => {

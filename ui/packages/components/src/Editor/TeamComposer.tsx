@@ -1,3 +1,4 @@
+import characterAliases from "@gcsim/data/src/character-aliases.dm.json";
 import { CommandItem } from "@gcsim/primitives";
 import type { model } from "@gcsim/types";
 import React from "react";
@@ -5,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { TeamCard } from "../Cards";
 import { characterLabel, characters, OmniSelect } from "../common/gcsim";
 import { ConfigError } from "./ConfigError";
-import { cfgFromTeam } from "./teamConfig";
+import { charToCfg } from "./teamConfig";
 import type { TeamComposerCharacterSource } from "./types";
 
 export interface TeamComposerProps {
@@ -24,6 +25,13 @@ type PickerItem = {
 };
 
 const itemKey = (item: PickerItem) => `${item.source}-${item.key}`;
+
+const characterKeys = new Map(
+	Object.entries(characterAliases).flatMap(([key, aliases]) =>
+		aliases.map((alias) => [alias, key] as const),
+	),
+);
+const characterKey = (name: string) => characterKeys.get(name) ?? name;
 
 const itemPredicate = (item: PickerItem, query: string) => {
 	const normalized = query.trim().toLowerCase();
@@ -46,13 +54,21 @@ export function TeamComposer({
 	const [pickerOpen, setPickerOpen] = React.useState(false);
 
 	const onTeam = new Set(parsedTeam.map((c) => c.name ?? ""));
-
-	const writeTeam = (team: model.Character[]) => {
-		setConfig(cfgFromTeam(team, config));
-	};
+	for (const match of config.matchAll(
+		/(?:^|(?<=;))[ \t]*(\w+)[ \t]+char\b/gm,
+	)) {
+		onTeam.add(characterKey(match[1]));
+	}
 
 	const handleRemove = (index: number) => () => {
-		writeTeam(parsedTeam.filter((_, i) => i !== index));
+		const name = parsedTeam[index]?.name;
+		if (!name) return;
+		setConfig(
+			config.replace(
+				/(?:^|(?<=;))[ \t]*(\w+)[ \t]+(?:char|add)[ \t]+[^;]*;(?:[ \t]*\r?\n)?/gm,
+				(statement, key) => (characterKey(key) === name ? "" : statement),
+			),
+		);
 	};
 
 	const handleAdd = (item: PickerItem) => {
@@ -67,7 +83,7 @@ export function TeamComposer({
 					)
 				: source.createCharacter(item.key);
 		if (character) {
-			writeTeam([...parsedTeam, character]);
+			setConfig(`${charToCfg(character)}\n${config}`);
 		}
 	};
 
@@ -102,7 +118,9 @@ export function TeamComposer({
 			<TeamCard
 				team={parsedTeam}
 				handleRemove={handleRemove}
-				handleAdd={source ? () => setPickerOpen(true) : undefined}
+				handleAdd={
+					source && onTeam.size < 4 ? () => setPickerOpen(true) : undefined
+				}
 			/>
 
 			{source ? (

@@ -189,6 +189,9 @@ func (t *ShortcutTmpl) Write() {
 	data, err := dumpJSON(input)
 	assert(err)
 	writeFile(fmt.Sprintf("ui/packages/docs/src/components/Names/%s.dm.json", t.Kind), data)
+	if t.Kind == KindCharacter {
+		writeFile("ui/packages/data/src/character-aliases.dm.json", data)
+	}
 }
 
 type AssetsTmpl struct {

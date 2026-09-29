@@ -21,7 +21,8 @@ export class ServerExecutor implements Executor {
 	}
 
 	public ready(): Promise<boolean> {
-		if (this.ready_cache !== undefined) {
+		// Retry failed connections when the server starts after the UI.
+		if (this.ready_cache === true) {
 			const ready = this.ready_cache;
 			return new Promise((resolve) => resolve(ready));
 		}

@@ -1,4 +1,7 @@
-import type { TeamComposerCharacterSource } from "@gcsim/components";
+import {
+	characters,
+	type TeamComposerCharacterSource,
+} from "@gcsim/components";
 import type { model } from "@gcsim/types";
 
 export const kqmCharacterNames = {
@@ -10,6 +13,10 @@ export const kqmCharacterNames = {
 	vodyanitsa: "Vodyanitsa",
 	zibai: "Zibai",
 };
+
+for (const key of Object.keys(kqmCharacterNames)) {
+	if (!characters.includes(key)) characters.push(key);
+}
 
 function createCharacter(name: string): model.Character {
 	return {
@@ -27,8 +34,4 @@ function createCharacter(name: string): model.Character {
 
 export const teamCharacters: TeamComposerCharacterSource = {
 	createCharacter,
-	imported: Object.keys(kqmCharacterNames).map((key) => ({
-		key,
-		character: createCharacter(key),
-	})),
 };
