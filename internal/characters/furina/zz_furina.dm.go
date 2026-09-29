@@ -286,20 +286,20 @@ var (
 	// skill: SalonSolitaire - Singer of Many Waters Healing: {8} Max HP+{9}
 	skillSingerHealFlat = []float64{
 		462.2253,
-		508.45425,
-		558.53564,
+		508.4543,
+		558.5356,
 		612.4694,
 		670.2556,
 		731.8942,
 		797.3852,
-		866.72864,
+		866.7286,
 		939.9245,
-		1016.9728,
-		1097.8734,
-		1182.6265,
+		1016.973,
+		1097.873,
+		1182.626,
 		1271.232,
 		1363.69,
-		1460.0002,
+		1460.0,
 	}
 	// burst: LetThePeopleRejoice - Skill DMG: {0} Max HP
 	burstDMG = []float64{

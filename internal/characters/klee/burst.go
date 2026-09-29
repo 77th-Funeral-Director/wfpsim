@@ -17,11 +17,7 @@ var (
 	waveHitmarks = []int{186, 294, 401, 503, 610, 718}
 )
 
-const (
-	burstKey      = "klee-burst"
-	burstSnapshot = 100
-	burstStart    = 146
-)
+const burstStart = 146
 
 func init() {
 	burstFrames = frames.InitAbilSlice(139) // Q -> N1/CA/E
@@ -46,14 +42,8 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 		CanBeDefenseHalted: true,
 		IsDeployable:       true,
 	}
-
-	// Force burst to reset counter so N1Q is reset... perhaps there is a better way
-	if c.IsHexerei && c.Core.Player.GetHexereiCount() > 1 {
-		c.savedNormalCounter = 0
-	}
-
 	// lasts 10 seconds, starts after 2.2 seconds maybe?
-	c.Core.Status.Add(burstKey, 600+burstStart)
+	c.Core.Status.Add("kleeq", 600+burstStart)
 
 	// every 1.8 second +on added shoots between 3 to 5, ignore the queue thing.. space it out .2 between each wave i guess
 
@@ -61,12 +51,12 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 	var snap info.Snapshot
 	c.Core.Tasks.Add(func() {
 		snap = c.Snapshot(&ai)
-	}, burstSnapshot)
+	}, 100)
 
 	for _, start := range waveHitmarks {
 		c.Core.Tasks.Add(func() {
 			// no more if burst has ended early
-			if c.Core.Status.Duration(burstKey) <= 0 {
+			if c.Core.Status.Duration("kleeq") <= 0 {
 				return
 			}
 			// wave 1 = 1
@@ -84,18 +74,6 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 		}, start)
 	}
 
-	// Hexerei bonus:
-	// When the duration of Sparks 'n' Splash ends, or if Klee leaves the field early, an explosion will be triggered,
-	// dealing 555% of her ATK as AoE Pyro DMG. If Klee is active when the explosion occurs, its DMG will be increased by 100%.
-	if c.Base.Cons >= 4 && c.IsHexerei {
-		c.Core.Tasks.Add(func() {
-			// check to make sure it hasn't already exploded due to exiting field
-			if c.Core.Player.Active() == c.Index() {
-				c.triggerC4()
-			}
-		}, 600+burstStart)
-	}
-
 	// every 3 seconds add energy if c6
 	if c.Base.Cons >= 6 {
 		// TODO: this should eventually use hitlag affected queue and duration
@@ -103,7 +81,7 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 		for i := burstStart + 180; i < burstStart+600; i += 180 {
 			c.Core.Tasks.Add(func() {
 				// no more if burst has ended early
-				if c.Core.Status.Duration(burstKey) <= 0 {
+				if c.Core.Status.Duration("kleeq") <= 0 {
 					return
 				}
 
@@ -118,28 +96,19 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 
 		// add 10% pyro for 25s
 		m := make([]float64, attributes.EndStatType)
+		m[attributes.PyroP] = .1
 		for _, x := range c.Core.Player.Chars() {
 			x.AddStatMod(character.StatMod{
 				Base:         modifier.NewBaseWithHitlag("klee-c6", 1500),
 				AffectedStat: attributes.PyroP,
 				Amount: func() []float64 {
-					m[attributes.PyroP] = .1
-					// Hexerei: Secret Rite- self buff is 50% pyro
-					if c.Core.Player.Active() == x.Index() && c.IsHexerei && c.Core.Player.GetHexereiCount() > 1 {
-						m[attributes.PyroP] = .5
-					}
 					return m
 				},
 			})
 		}
 	}
 
-	// TODO: delay?
-	if c.IsHexerei {
-		c.addSpark()
-	}
-	// It appears that C1 procs before burst gadget is created, so assume it snaps
-	c.c1(burstSnapshot - 1)
+	c.c1(waveHitmarks[0])
 
 	c.SetCDWithDelay(action.ActionBurst, 15*60, 9)
 	c.ConsumeEnergy(12)
@@ -156,11 +125,27 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 func (c *char) onExitField() {
 	c.Core.Events.Subscribe(event.OnCharacterSwap, func(_ ...any) {
 		// check if burst is active
-		if c.Core.Status.Duration(burstKey) <= 0 {
+		if c.Core.Status.Duration("kleeq") <= 0 {
 			return
 		}
+		c.Core.Status.Delete("kleeq")
 
-		c.Core.Status.Delete(burstKey)
-		c.triggerC4()
+		if c.Base.Cons >= 4 {
+			// blow up
+			ai := info.AttackInfo{
+				ActorIndex:         c.Index(),
+				Abil:               "Sparkly Explosion (C4)",
+				AttackTag:          attacks.AttackTagNone,
+				ICDTag:             attacks.ICDTagNone,
+				ICDGroup:           attacks.ICDGroupDefault,
+				StrikeType:         attacks.StrikeTypeDefault,
+				Element:            attributes.Pyro,
+				Durability:         50,
+				Mult:               5.55,
+				CanBeDefenseHalted: true,
+				IsDeployable:       true,
+			}
+			c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 5), 0, 0)
+		}
 	}, "klee-exit")
 }

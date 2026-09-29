@@ -19,9 +19,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -34,7 +34,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -51,7 +51,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -72,7 +72,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -93,7 +93,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -114,7 +114,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -135,7 +135,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -171,9 +171,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -186,7 +186,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -203,7 +203,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -224,7 +224,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -245,7 +245,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -266,7 +266,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -287,7 +287,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -323,9 +323,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -338,7 +338,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -355,7 +355,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -376,7 +376,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -397,7 +397,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -418,7 +418,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -439,7 +439,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -475,9 +475,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -490,7 +490,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -507,7 +507,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -528,7 +528,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -549,7 +549,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -570,7 +570,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -591,7 +591,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -627,9 +627,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -642,7 +642,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -659,7 +659,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -680,7 +680,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -701,7 +701,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -722,7 +722,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -743,7 +743,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -779,9 +779,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -794,7 +794,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -811,7 +811,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -832,7 +832,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -853,7 +853,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -874,7 +874,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -895,7 +895,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -931,9 +931,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -946,7 +946,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -963,7 +963,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -984,7 +984,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1005,7 +1005,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1026,7 +1026,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1047,7 +1047,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1083,9 +1083,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Aino",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   939.1447,
-			BaseAtk:  20.30112,
-			BaseDef:  50.93025,
+			BaseHp:   939.1447143554688,
+			BaseAtk:  20.30112075805664,
+			BaseDef:  50.93024826049805,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -1106,7 +1106,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.166332,
+							Value:    15.16633,
 						},
 					},
 				},
@@ -1115,7 +1115,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1200.0868,
+							Value:    1200.087,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1136,15 +1136,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1864.7502,
+							Value:    1864.75,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    101.12625,
+							Value:    101.1263,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.310513,
+							Value:    40.31051,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -1157,7 +1157,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2363.2478,
+							Value:    2363.248,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1165,7 +1165,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    51.086594,
+							Value:    51.08659,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -1178,11 +1178,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2861.7454,
+							Value:    2861.745,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    155.19376,
+							Value:    155.1938,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -1235,9 +1235,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Albedo",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1029.5856,
-			BaseAtk:  19.551,
-			BaseDef:  68.2062,
+			BaseHp:   1029.5855712890625,
+			BaseAtk:  19.551000595092773,
+			BaseDef:  68.2061996459961,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -1250,7 +1250,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    882.77655,
+							Value:    882.7766,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1267,7 +1267,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1510.0126,
+							Value:    1510.013,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1275,7 +1275,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    28.671825,
+							Value:    28.67183,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ROCK_ADD_HURT,
@@ -1288,7 +1288,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2346.3271,
+							Value:    2346.327,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1296,7 +1296,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    44.551605,
+							Value:    44.55161,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ROCK_ADD_HURT,
@@ -1309,7 +1309,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2973.5632,
+							Value:    2973.563,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1387,9 +1387,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Alhatham",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.1188,
-			BaseAtk:  24.3922,
-			BaseDef:  60.84711,
+			BaseHp:   1039.1187744140625,
+			BaseAtk:  24.392200469970703,
+			BaseDef:  60.847110748291016,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -1402,7 +1402,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    890.95044,
+							Value:    890.9504,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1410,7 +1410,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    20.912579,
+							Value:    20.91258,
 						},
 					},
 				},
@@ -1419,7 +1419,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1523.9941,
+							Value:    1523.994,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1427,7 +1427,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    35.771515,
+							Value:    35.77151,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_GRASS_ADD_HURT,
@@ -1440,11 +1440,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.0525,
+							Value:    2368.052,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    138.66795,
+							Value:    138.668,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -1461,7 +1461,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3001.0962,
+							Value:    3001.096,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1486,7 +1486,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    212.80725,
+							Value:    212.8073,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -1503,7 +1503,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4267.1836,
+							Value:    4267.184,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1511,7 +1511,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    100.16024,
+							Value:    100.1602,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_GRASS_ADD_HURT,
@@ -1539,9 +1539,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Aloy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   848.4548,
-			BaseAtk:  18.21036,
-			BaseDef:  52.6504,
+			BaseHp:   848.4547729492188,
+			BaseAtk:  18.210359573364258,
+			BaseDef:  52.65039825439453,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -1554,7 +1554,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    727.47327,
+							Value:    727.4733,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1562,7 +1562,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.612596,
+							Value:    15.6126,
 						},
 					},
 				},
@@ -1571,7 +1571,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1244.3622,
+							Value:    1244.362,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1579,7 +1579,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.705757,
+							Value:    26.70576,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ICE_ADD_HURT,
@@ -1592,7 +1592,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1933.5474,
+							Value:    1933.547,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1613,7 +1613,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2450.4363,
+							Value:    2450.436,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1621,7 +1621,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.589798,
+							Value:    52.5898,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ICE_ADD_HURT,
@@ -1634,7 +1634,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2967.3252,
+							Value:    2967.325,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1691,9 +1691,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Ambor",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   793.2582,
-			BaseAtk:  18.6984,
-			BaseDef:  50.358,
+			BaseHp:   793.2581787109375,
+			BaseAtk:  18.698400497436523,
+			BaseDef:  50.358001708984375,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -1723,7 +1723,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1013.6655,
+							Value:    1013.666,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1731,7 +1731,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.894325,
+							Value:    23.89433,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -1744,7 +1744,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1575.0803,
+							Value:    1575.08,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1752,7 +1752,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.128105,
+							Value:    37.12811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -1765,7 +1765,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1996.1414,
+							Value:    1996.141,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1786,7 +1786,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2417.2024,
+							Value:    2417.202,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1794,7 +1794,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.978775,
+							Value:    56.97878,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -1807,7 +1807,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2838.2634,
+							Value:    2838.263,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1843,9 +1843,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Itto",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1000.986,
-			BaseAtk:  17.689,
-			BaseDef:  74.66784,
+			BaseHp:   1000.9860229492188,
+			BaseAtk:  17.68899917602539,
+			BaseDef:  74.66783905029297,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -1875,7 +1875,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1468.0677,
+							Value:    1468.068,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1883,7 +1883,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    25.941175,
+							Value:    25.94118,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -1896,7 +1896,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2281.1514,
+							Value:    2281.151,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1904,7 +1904,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.308594,
+							Value:    40.30859,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -1938,7 +1938,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3500.7769,
+							Value:    3500.777,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1946,7 +1946,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.859726,
+							Value:    61.85973,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -1995,9 +1995,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Arlecchino",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1020.0524,
-			BaseAtk:  26.6266,
-			BaseDef:  59.53085,
+			BaseHp:   1020.0524291992188,
+			BaseAtk:  26.62660026550293,
+			BaseDef:  59.53084945678711,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -2018,7 +2018,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.828234,
+							Value:    22.82823,
 						},
 					},
 				},
@@ -2027,7 +2027,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1496.0309,
+							Value:    1496.031,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2035,7 +2035,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.048294,
+							Value:    39.04829,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -2048,11 +2048,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2324.6018,
+							Value:    2324.602,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    135.66824,
+							Value:    135.6682,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -2090,15 +2090,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3567.4585,
+							Value:    3567.458,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    208.20375,
+							Value:    208.2038,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    93.115166,
+							Value:    93.11517,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -2111,7 +2111,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4188.8867,
+							Value:    4188.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2119,7 +2119,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    109.33523,
+							Value:    109.3352,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -2147,9 +2147,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Baizhuer",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.1188,
-			BaseAtk:  14.9891,
-			BaseDef:  38.8895,
+			BaseHp:   1039.1187744140625,
+			BaseAtk:  14.989100456237793,
+			BaseDef:  38.88949966430664,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -2162,7 +2162,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    890.95044,
+							Value:    890.9504,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2170,7 +2170,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.850859,
+							Value:    12.85086,
 						},
 					},
 				},
@@ -2179,7 +2179,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1523.9941,
+							Value:    1523.994,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2187,7 +2187,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.981731,
+							Value:    21.98173,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2200,7 +2200,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.0525,
+							Value:    2368.052,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2221,7 +2221,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3001.0962,
+							Value:    3001.096,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2229,7 +2229,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    43.287106,
+							Value:    43.28711,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2250,7 +2250,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.417976,
+							Value:    52.41798,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2263,7 +2263,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4267.1836,
+							Value:    4267.184,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2299,9 +2299,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Barbara",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.6119,
-			BaseAtk:  13.356,
-			BaseDef:  56.0805,
+			BaseHp:   820.6118774414062,
+			BaseAtk:  13.355999946594238,
+			BaseDef:  56.080501556396484,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2331,7 +2331,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1048.6195,
+							Value:    1048.62,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2339,7 +2339,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    17.067375,
+							Value:    17.06738,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2352,7 +2352,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1629.3934,
+							Value:    1629.393,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2360,7 +2360,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.520075,
+							Value:    26.52007,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2373,7 +2373,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2064.9739,
+							Value:    2064.974,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2394,7 +2394,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2500.5542,
+							Value:    2500.554,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2402,7 +2402,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.699123,
+							Value:    40.69912,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2415,7 +2415,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2936.1348,
+							Value:    2936.135,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2451,9 +2451,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Beidou",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1094.1492,
-			BaseAtk:  18.87648,
-			BaseDef:  54.36375,
+			BaseHp:   1094.149169921875,
+			BaseAtk:  18.876480102539062,
+			BaseDef:  54.36375045776367,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2474,7 +2474,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.102028,
+							Value:    14.10203,
 						},
 					},
 				},
@@ -2483,7 +2483,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1398.1593,
+							Value:    1398.159,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2504,15 +2504,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2172.5247,
+							Value:    2172.525,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    107.94375,
+							Value:    107.9437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.481705,
+							Value:    37.4817,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEC_ADD_HURT,
@@ -2525,7 +2525,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2753.2983,
+							Value:    2753.298,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2533,7 +2533,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    47.501568,
+							Value:    47.50157,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEC_ADD_HURT,
@@ -2546,11 +2546,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3334.0723,
+							Value:    3334.072,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    165.65625,
+							Value:    165.6563,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -2567,7 +2567,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3914.8462,
+							Value:    3914.846,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2603,9 +2603,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Bennett",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.4418,
-			BaseAtk:  16.0272,
-			BaseDef:  64.66425,
+			BaseHp:   1039.4417724609375,
+			BaseAtk:  16.02720069885254,
+			BaseDef:  64.66425323486328,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2635,7 +2635,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1328.2513,
+							Value:    1328.251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2656,11 +2656,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2063.8984,
+							Value:    2063.898,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    128.39626,
+							Value:    128.3963,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -2677,7 +2677,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2615.6335,
+							Value:    2615.634,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2698,11 +2698,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3167.3687,
+							Value:    3167.369,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    197.04375,
+							Value:    197.0437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -2755,9 +2755,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Candace",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2770,7 +2770,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2787,7 +2787,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2808,7 +2808,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2829,7 +2829,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2850,7 +2850,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2871,7 +2871,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2907,9 +2907,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Charlotte",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   902.6731,
-			BaseAtk:  14.51352,
-			BaseDef:  45.78,
+			BaseHp:   902.673095703125,
+			BaseAtk:  14.513520240783691,
+			BaseDef:  45.779998779296875,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2930,7 +2930,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    10.842597,
+							Value:    10.8426,
 						},
 					},
 				},
@@ -2939,7 +2939,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1153.4814,
+							Value:    1153.481,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2947,7 +2947,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    18.546547,
+							Value:    18.54655,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -2960,7 +2960,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1792.3328,
+							Value:    1792.333,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2968,7 +2968,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    28.818481,
+							Value:    28.81848,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -2981,7 +2981,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2271.4712,
+							Value:    2271.471,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3002,7 +3002,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2750.6096,
+							Value:    2750.61,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3010,7 +3010,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    44.226383,
+							Value:    44.22638,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -3031,7 +3031,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    51.930332,
+							Value:    51.93033,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -3059,9 +3059,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Chasca",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   762.656,
-			BaseAtk:  26.999,
-			BaseDef:  47.864,
+			BaseHp:   762.656005859375,
+			BaseAtk:  26.999000549316406,
+			BaseDef:  47.86399841308594,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -3074,7 +3074,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    653.90857,
+							Value:    653.9086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3091,7 +3091,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1118.5278,
+							Value:    1118.528,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3099,7 +3099,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.594425,
+							Value:    39.59443,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3112,7 +3112,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1738.0201,
+							Value:    1738.02,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3120,7 +3120,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.523643,
+							Value:    61.52364,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3133,7 +3133,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2202.6394,
+							Value:    2202.639,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3154,7 +3154,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2667.2585,
+							Value:    2667.259,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3183,7 +3183,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    110.86439,
+							Value:    110.8644,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3211,9 +3211,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Chevreuse",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.9701,
-			BaseAtk:  16.20528,
-			BaseDef:  50.70135,
+			BaseHp:   1002.9700927734375,
+			BaseAtk:  16.205280303955078,
+			BaseDef:  50.701351165771484,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -3234,7 +3234,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.106458,
+							Value:    12.10646,
 						},
 					},
 				},
@@ -3243,7 +3243,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1281.6461,
+							Value:    1281.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3251,7 +3251,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    20.708414,
+							Value:    20.70841,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -3264,15 +3264,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1991.4808,
+							Value:    1991.481,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    100.67175,
+							Value:    100.6718,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    32.177692,
+							Value:    32.17769,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -3293,7 +3293,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.779648,
+							Value:    40.77965,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -3310,11 +3310,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    154.49625,
+							Value:    154.4962,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    49.381603,
+							Value:    49.3816,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -3327,7 +3327,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3588.6091,
+							Value:    3588.609,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3335,7 +3335,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    57.983562,
+							Value:    57.98356,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -3363,9 +3363,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Chiori",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   890.4009,
-			BaseAtk:  25.137,
-			BaseDef:  74.1892,
+			BaseHp:   890.40087890625,
+			BaseAtk:  25.136999130249023,
+			BaseDef:  74.18920135498047,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -3378,7 +3378,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    763.43823,
+							Value:    763.4382,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3395,7 +3395,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1305.8812,
+							Value:    1305.881,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3403,7 +3403,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.863773,
+							Value:    36.86377,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3416,7 +3416,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2029.1385,
+							Value:    2029.139,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3424,7 +3424,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    57.280636,
+							Value:    57.28064,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3437,7 +3437,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2571.5815,
+							Value:    2571.582,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3458,7 +3458,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3114.0244,
+							Value:    3114.024,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3479,7 +3479,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3656.4673,
+							Value:    3656.467,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3487,7 +3487,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    103.21857,
+							Value:    103.2186,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3515,9 +3515,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Chongyun",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   920.90894,
-			BaseAtk:  18.6984,
-			BaseDef:  54.36375,
+			BaseHp:   920.908935546875,
+			BaseAtk:  18.698400497436523,
+			BaseDef:  54.36375045776367,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -3547,7 +3547,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1176.7842,
+							Value:    1176.784,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3555,7 +3555,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.894325,
+							Value:    23.89433,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -3568,15 +3568,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1828.5415,
+							Value:    1828.542,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    107.94375,
+							Value:    107.9437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.128105,
+							Value:    37.12811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -3589,7 +3589,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2317.3596,
+							Value:    2317.36,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3610,15 +3610,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2806.1775,
+							Value:    2806.177,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    165.65625,
+							Value:    165.6563,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.978775,
+							Value:    56.97878,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -3631,7 +3631,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3294.9956,
+							Value:    3294.996,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3667,9 +3667,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Citlali",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   905.654,
-			BaseAtk:  9.8686,
-			BaseDef:  59.41119,
+			BaseHp:   905.6539916992188,
+			BaseAtk:  9.868599891662598,
+			BaseDef:  59.411190032958984,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -3699,7 +3699,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1328.2517,
+							Value:    1328.252,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3707,7 +3707,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.472445,
+							Value:    14.47244,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -3724,11 +3724,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    135.39555,
+							Value:    135.3956,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.487953,
+							Value:    22.48795,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -3741,7 +3741,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2615.6343,
+							Value:    2615.634,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3749,7 +3749,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    28.499584,
+							Value:    28.49958,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -3762,15 +3762,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3167.3696,
+							Value:    3167.37,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    207.78525,
+							Value:    207.7852,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    34.511215,
+							Value:    34.51122,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -3791,7 +3791,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.522846,
+							Value:    40.52285,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -3819,9 +3819,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Clorinde",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1008.61255,
-			BaseAtk:  26.2542,
-			BaseDef:  61.0266,
+			BaseHp:   1008.612548828125,
+			BaseAtk:  26.254199981689453,
+			BaseDef:  61.0265998840332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -3834,7 +3834,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    864.79407,
+							Value:    864.7941,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3842,7 +3842,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.508959,
+							Value:    22.50896,
 						},
 					},
 				},
@@ -3859,7 +3859,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    38.502167,
+							Value:    38.50217,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3872,7 +3872,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2298.5315,
+							Value:    2298.531,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3880,7 +3880,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    59.826443,
+							Value:    59.82644,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3893,7 +3893,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2912.9905,
+							Value:    2912.99,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3914,7 +3914,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3527.4495,
+							Value:    3527.449,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3943,7 +3943,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    107.80606,
+							Value:    107.8061,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -3971,9 +3971,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Collei",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.6119,
-			BaseAtk:  16.73952,
-			BaseDef:  50.358,
+			BaseHp:   820.6118774414062,
+			BaseAtk:  16.739519119262695,
+			BaseDef:  50.358001708984375,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -3994,7 +3994,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.505572,
+							Value:    12.50557,
 						},
 					},
 				},
@@ -4003,7 +4003,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1048.6195,
+							Value:    1048.62,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4024,7 +4024,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1629.3934,
+							Value:    1629.393,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4032,7 +4032,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    33.238495,
+							Value:    33.23849,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -4045,7 +4045,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2064.9739,
+							Value:    2064.974,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4066,7 +4066,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2500.5542,
+							Value:    2500.554,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4087,7 +4087,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2936.1348,
+							Value:    2936.135,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4095,7 +4095,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    59.895107,
+							Value:    59.89511,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -4123,9 +4123,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Columbina",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.984,
-			BaseAtk:  7.448,
-			BaseDef:  40.0861,
+			BaseHp:   1143.9840087890625,
+			BaseAtk:  7.447999954223633,
+			BaseDef:  40.08610153198242,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -4138,7 +4138,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    980.86285,
+							Value:    980.8629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4155,7 +4155,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1677.7917,
+							Value:    1677.792,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4176,7 +4176,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2607.0303,
+							Value:    2607.03,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4275,9 +4275,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Cyno",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   972.3864,
-			BaseAtk:  24.7646,
-			BaseDef:  66.88994,
+			BaseHp:   972.3864135742188,
+			BaseAtk:  24.76460075378418,
+			BaseDef:  66.88993835449219,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -4298,7 +4298,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.231853,
+							Value:    21.23185,
 						},
 					},
 				},
@@ -4307,7 +4307,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1426.1229,
+							Value:    1426.123,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4315,7 +4315,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.317646,
+							Value:    36.31765,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -4328,7 +4328,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2215.9756,
+							Value:    2215.976,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4336,7 +4336,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.432034,
+							Value:    56.43203,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -4349,7 +4349,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2808.3652,
+							Value:    2808.365,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4370,7 +4370,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3400.7546,
+							Value:    3400.755,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4378,7 +4378,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    86.603615,
+							Value:    86.60361,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -4391,7 +4391,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3993.1443,
+							Value:    3993.144,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4399,7 +4399,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    101.68941,
+							Value:    101.6894,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -4427,9 +4427,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Dahlia",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1048.5597,
-			BaseAtk:  15.84912,
-			BaseDef:  46.9245,
+			BaseHp:   1048.5596923828125,
+			BaseAtk:  15.849120140075684,
+			BaseDef:  46.92449951171875,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -4442,7 +4442,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    783.32776,
+							Value:    783.3278,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4450,7 +4450,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    11.840382,
+							Value:    11.84038,
 						},
 					},
 				},
@@ -4459,7 +4459,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1339.9027,
+							Value:    1339.903,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4467,7 +4467,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    20.253284,
+							Value:    20.25328,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4480,7 +4480,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2082.0027,
+							Value:    2082.003,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4501,7 +4501,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2638.5776,
+							Value:    2638.578,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4509,7 +4509,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.883392,
+							Value:    39.88339,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4522,7 +4522,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3195.1526,
+							Value:    3195.153,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4530,7 +4530,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    48.296295,
+							Value:    48.2963,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4543,7 +4543,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3751.7275,
+							Value:    3751.728,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4551,7 +4551,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.709198,
+							Value:    56.7092,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4579,9 +4579,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Dehya",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1220.2496,
-			BaseAtk:  20.6682,
-			BaseDef:  48.88111,
+			BaseHp:   1220.2496337890625,
+			BaseAtk:  20.66819953918457,
+			BaseDef:  48.88111114501953,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -4594,7 +4594,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1046.2537,
+							Value:    1046.254,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4602,7 +4602,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    17.719818,
+							Value:    17.71982,
 						},
 					},
 				},
@@ -4611,7 +4611,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1789.6445,
+							Value:    1789.645,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4619,7 +4619,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    30.310215,
+							Value:    30.31021,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4632,15 +4632,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2780.8323,
+							Value:    2780.832,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    111.39795,
+							Value:    111.3979,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    47.097412,
+							Value:    47.09741,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4678,11 +4678,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    170.95724,
+							Value:    170.9572,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    72.278206,
+							Value:    72.27821,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4695,7 +4695,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    5011.0044,
+							Value:    5011.004,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4731,9 +4731,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Diluc",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1010.5192,
-			BaseAtk:  26.068,
-			BaseDef:  61.0266,
+			BaseHp:   1010.5192260742188,
+			BaseAtk:  26.06800079345703,
+			BaseDef:  61.0265998840332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -4746,7 +4746,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    866.42883,
+							Value:    866.4288,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4763,7 +4763,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1482.0493,
+							Value:    1482.049,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4784,7 +4784,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2302.8767,
+							Value:    2302.877,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4826,7 +4826,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3534.1177,
+							Value:    3534.118,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4847,7 +4847,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4149.7383,
+							Value:    4149.738,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4855,7 +4855,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    107.04148,
+							Value:    107.0415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -4883,9 +4883,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Diona",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   802.3761,
-			BaseAtk:  17.808,
-			BaseDef:  50.358,
+			BaseHp:   802.3760986328125,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  50.358001708984375,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -4915,7 +4915,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1025.3169,
+							Value:    1025.317,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4936,7 +4936,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1593.1847,
+							Value:    1593.185,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4957,7 +4957,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2019.0854,
+							Value:    2019.085,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4978,7 +4978,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2444.9863,
+							Value:    2444.986,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4999,7 +4999,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2870.8872,
+							Value:    2870.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5035,9 +5035,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Dori",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.4418,
-			BaseAtk:  18.6984,
-			BaseDef:  60.6585,
+			BaseHp:   1039.4417724609375,
+			BaseAtk:  18.698400497436523,
+			BaseDef:  60.65850067138672,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -5067,7 +5067,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1328.2513,
+							Value:    1328.251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5075,7 +5075,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.894325,
+							Value:    23.89433,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -5088,7 +5088,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2063.8984,
+							Value:    2063.898,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5096,7 +5096,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.128105,
+							Value:    37.12811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -5109,7 +5109,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2615.6335,
+							Value:    2615.634,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5130,7 +5130,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3167.3687,
+							Value:    3167.369,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5138,7 +5138,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.978775,
+							Value:    56.97878,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -5187,9 +5187,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Durin",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   967.6198,
-			BaseAtk:  26.999,
-			BaseDef:  64.0181,
+			BaseHp:   967.6198120117188,
+			BaseAtk:  26.999000549316406,
+			BaseDef:  64.01809692382812,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5219,7 +5219,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1419.1322,
+							Value:    1419.132,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5227,7 +5227,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.594425,
+							Value:    39.59443,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -5248,7 +5248,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.523643,
+							Value:    61.52364,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -5261,7 +5261,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2794.5986,
+							Value:    2794.599,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5282,7 +5282,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3384.0842,
+							Value:    3384.084,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5311,7 +5311,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    110.86439,
+							Value:    110.8644,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -5339,9 +5339,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Emilie",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1056.2786,
-			BaseAtk:  26.068,
-			BaseDef:  56.8385,
+			BaseHp:   1056.278564453125,
+			BaseAtk:  26.06800079345703,
+			BaseDef:  56.8385009765625,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5413,7 +5413,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3050.6555,
+							Value:    3050.656,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5463,7 +5463,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    107.04148,
+							Value:    107.0415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -5491,9 +5491,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Escoffier",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.1188,
-			BaseAtk:  26.999,
-			BaseDef:  56.95816,
+			BaseHp:   1039.1187744140625,
+			BaseAtk:  26.999000549316406,
+			BaseDef:  56.958160400390625,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5506,7 +5506,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    890.95044,
+							Value:    890.9504,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5523,7 +5523,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1523.9941,
+							Value:    1523.994,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5531,7 +5531,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.594425,
+							Value:    39.59443,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -5544,7 +5544,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.0525,
+							Value:    2368.052,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5552,7 +5552,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.523643,
+							Value:    61.52364,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -5565,7 +5565,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3001.0962,
+							Value:    3001.096,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5607,7 +5607,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4267.1836,
+							Value:    4267.184,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5615,7 +5615,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    110.86439,
+							Value:    110.8644,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -5643,9 +5643,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Eula",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1029.5856,
-			BaseAtk:  26.6266,
-			BaseDef:  58.45391,
+			BaseHp:   1029.5855712890625,
+			BaseAtk:  26.62660026550293,
+			BaseDef:  58.45391082763672,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5658,7 +5658,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    882.77655,
+							Value:    882.7766,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5666,7 +5666,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.828234,
+							Value:    22.82823,
 						},
 					},
 				},
@@ -5675,7 +5675,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1510.0126,
+							Value:    1510.013,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5683,7 +5683,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.048294,
+							Value:    39.04829,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -5696,11 +5696,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2346.3271,
+							Value:    2346.327,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    133.21394,
+							Value:    133.2139,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -5717,7 +5717,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2973.5632,
+							Value:    2973.563,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5742,11 +5742,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    204.43726,
+							Value:    204.4373,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    93.115166,
+							Value:    93.11517,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -5767,7 +5767,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    109.33523,
+							Value:    109.3352,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -5795,9 +5795,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Faruzan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   802.3761,
-			BaseAtk:  16.4724,
-			BaseDef:  52.647,
+			BaseHp:   802.3760986328125,
+			BaseAtk:  16.472400665283203,
+			BaseDef:  52.64699935913086,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -5818,7 +5818,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.306015,
+							Value:    12.30602,
 						},
 					},
 				},
@@ -5827,7 +5827,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1025.3169,
+							Value:    1025.317,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5835,7 +5835,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.049763,
+							Value:    21.04976,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -5848,7 +5848,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1593.1847,
+							Value:    1593.185,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5869,7 +5869,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2019.0856,
+							Value:    2019.086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5890,7 +5890,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2444.9863,
+							Value:    2444.986,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5898,7 +5898,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    50.195587,
+							Value:    50.19559,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -5911,7 +5911,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2870.8872,
+							Value:    2870.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5919,7 +5919,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    58.939335,
+							Value:    58.93933,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -5947,9 +5947,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Fischl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   770.4634,
-			BaseAtk:  20.4792,
-			BaseDef:  49.78575,
+			BaseHp:   770.46337890625,
+			BaseAtk:  20.47920036315918,
+			BaseDef:  49.78575134277344,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -5979,7 +5979,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    984.53723,
+							Value:    984.5372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5987,7 +5987,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.169975,
+							Value:    26.16998,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -6000,7 +6000,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1529.8193,
+							Value:    1529.819,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6008,7 +6008,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.664116,
+							Value:    40.66412,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -6042,15 +6042,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2347.7427,
+							Value:    2347.743,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    151.70625,
+							Value:    151.7063,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    62.405327,
+							Value:    62.40533,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -6099,9 +6099,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Flins",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   972.3864,
-			BaseAtk:  27.3714,
-			BaseDef:  62.94116,
+			BaseHp:   972.3864135742188,
+			BaseAtk:  27.371400833129883,
+			BaseDef:  62.941158294677734,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -6122,7 +6122,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.466785,
+							Value:    23.46679,
 						},
 					},
 				},
@@ -6131,7 +6131,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1426.1229,
+							Value:    1426.123,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6139,7 +6139,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.140556,
+							Value:    40.14056,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -6152,7 +6152,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2215.9756,
+							Value:    2215.976,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6160,7 +6160,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    62.372246,
+							Value:    62.37225,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -6173,7 +6173,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2808.3652,
+							Value:    2808.365,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6194,7 +6194,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3400.7546,
+							Value:    3400.755,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6215,7 +6215,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3993.1443,
+							Value:    3993.144,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6223,7 +6223,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    112.393555,
+							Value:    112.3936,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -6251,9 +6251,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Freminet",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1012.088,
-			BaseAtk:  21.3696,
-			BaseDef:  59.39955,
+			BaseHp:   1012.0880126953125,
+			BaseAtk:  21.369600296020508,
+			BaseDef:  59.39955139160156,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -6266,7 +6266,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    756.08154,
+							Value:    756.0815,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6283,7 +6283,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1293.2974,
+							Value:    1293.297,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6304,11 +6304,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2009.5852,
+							Value:    2009.585,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    117.94275,
+							Value:    117.9427,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -6346,11 +6346,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3084.0168,
+							Value:    3084.017,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    181.00125,
+							Value:    181.0013,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -6367,7 +6367,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3621.2327,
+							Value:    3621.233,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6403,9 +6403,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Furina",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1191.65,
-			BaseAtk:  18.9924,
-			BaseDef:  54.14615,
+			BaseHp:   1191.6500244140625,
+			BaseAtk:  18.992399215698242,
+			BaseDef:  54.146148681640625,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -6418,7 +6418,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1021.7321,
+							Value:    1021.732,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6426,7 +6426,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    16.283075,
+							Value:    16.28308,
 						},
 					},
 				},
@@ -6435,7 +6435,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1747.6997,
+							Value:    1747.7,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6456,11 +6456,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2715.6565,
+							Value:    2715.656,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    123.39675,
+							Value:    123.3968,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -6485,7 +6485,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    54.848255,
+							Value:    54.84826,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -6502,7 +6502,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    189.37125,
+							Value:    189.3712,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -6527,7 +6527,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    77.987366,
+							Value:    77.98737,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -6555,9 +6555,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Gaming",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   957.38055,
-			BaseAtk:  25.28736,
-			BaseDef:  58.94175,
+			BaseHp:   957.3805541992188,
+			BaseAtk:  25.2873592376709,
+			BaseDef:  58.941749572753906,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -6578,7 +6578,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    18.891396,
+							Value:    18.8914,
 						},
 					},
 				},
@@ -6587,7 +6587,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1223.3894,
+							Value:    1223.389,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6612,7 +6612,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    117.03375,
+							Value:    117.0338,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -6629,7 +6629,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2409.1362,
+							Value:    2409.136,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6637,7 +6637,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    63.634174,
+							Value:    63.63417,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -6650,11 +6650,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2917.3132,
+							Value:    2917.313,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    179.60625,
+							Value:    179.6062,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -6671,7 +6671,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3425.4905,
+							Value:    3425.49,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6707,9 +6707,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Ganyu",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   762.656,
-			BaseAtk:  26.068,
-			BaseDef:  49.0606,
+			BaseHp:   762.656005859375,
+			BaseAtk:  26.06800079345703,
+			BaseDef:  49.06060028076172,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -6722,7 +6722,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    653.90857,
+							Value:    653.9086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6739,7 +6739,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1118.5278,
+							Value:    1118.528,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6760,7 +6760,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1738.0201,
+							Value:    1738.02,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6781,7 +6781,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2202.6394,
+							Value:    2202.639,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6802,7 +6802,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2667.2585,
+							Value:    2667.259,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6831,7 +6831,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    107.04148,
+							Value:    107.0415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -6859,9 +6859,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Gorou",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   802.3761,
-			BaseAtk:  15.31488,
-			BaseDef:  54.36375,
+			BaseHp:   802.3760986328125,
+			BaseAtk:  15.31488037109375,
+			BaseDef:  54.36375045776367,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -6882,7 +6882,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    11.441268,
+							Value:    11.44127,
 						},
 					},
 				},
@@ -6891,7 +6891,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1025.3169,
+							Value:    1025.317,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6912,15 +6912,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1593.1847,
+							Value:    1593.185,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    107.94375,
+							Value:    107.9437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    30.409685,
+							Value:    30.40969,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ROCK_ADD_HURT,
@@ -6933,7 +6933,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2019.0856,
+							Value:    2019.086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6954,11 +6954,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2444.9863,
+							Value:    2444.986,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    165.65625,
+							Value:    165.6563,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -6975,7 +6975,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2870.8872,
+							Value:    2870.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6983,7 +6983,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    54.797653,
+							Value:    54.79765,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ROCK_ADD_HURT,
@@ -7011,9 +7011,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Hutao",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1210.7164,
-			BaseAtk:  8.2859,
-			BaseDef:  68.2062,
+			BaseHp:   1210.7164306640625,
+			BaseAtk:  8.285900115966797,
+			BaseDef:  68.2061996459961,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -7026,7 +7026,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1038.0798,
+							Value:    1038.08,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7043,7 +7043,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1775.6628,
+							Value:    1775.663,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7051,7 +7051,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.151393,
+							Value:    12.15139,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -7072,7 +7072,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    18.881393,
+							Value:    18.88139,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -7093,7 +7093,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.928896,
+							Value:    23.9289,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -7114,7 +7114,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    28.976398,
+							Value:    28.9764,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -7163,9 +7163,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Iansan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   893.5552,
-			BaseAtk:  21.54768,
-			BaseDef:  53.505375,
+			BaseHp:   893.55517578125,
+			BaseAtk:  21.547679901123047,
+			BaseDef:  53.505374908447266,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7186,7 +7186,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    16.097597,
+							Value:    16.0976,
 						},
 					},
 				},
@@ -7195,7 +7195,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1141.8302,
+							Value:    1141.83,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7203,7 +7203,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    27.535364,
+							Value:    27.53536,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -7216,11 +7216,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1774.2284,
+							Value:    1774.228,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    106.23937,
+							Value:    106.2394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -7245,7 +7245,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    54.223488,
+							Value:    54.22349,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -7258,15 +7258,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2722.8257,
+							Value:    2722.826,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    163.04062,
+							Value:    163.0406,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    65.661255,
+							Value:    65.66125,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -7279,11 +7279,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3197.1245,
+							Value:    3197.125,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    191.44125,
+							Value:    191.4413,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -7315,9 +7315,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Ifa",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   845.2303,
-			BaseAtk:  14.95872,
-			BaseDef:  50.758575,
+			BaseHp:   845.2302856445312,
+			BaseAtk:  14.958720207214355,
+			BaseDef:  50.758575439453125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7338,7 +7338,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    11.175192,
+							Value:    11.17519,
 						},
 					},
 				},
@@ -7347,7 +7347,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1080.0781,
+							Value:    1080.078,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7368,15 +7368,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1678.2753,
+							Value:    1678.275,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    100.78538,
+							Value:    100.7854,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    29.702484,
+							Value:    29.70248,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -7397,7 +7397,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.642754,
+							Value:    37.64275,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -7410,11 +7410,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2575.5708,
+							Value:    2575.571,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    154.67062,
+							Value:    154.6706,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -7431,11 +7431,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3024.2188,
+							Value:    3024.219,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    181.61325,
+							Value:    181.6133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -7467,9 +7467,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Illuga",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.9701,
-			BaseAtk:  16.0272,
-			BaseDef:  68.2122,
+			BaseHp:   1002.9700927734375,
+			BaseAtk:  16.02720069885254,
+			BaseDef:  68.21219635009766,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7499,7 +7499,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1281.6461,
+							Value:    1281.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7520,7 +7520,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1991.4808,
+							Value:    1991.481,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7583,7 +7583,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3588.6091,
+							Value:    3588.609,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7619,9 +7619,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Ineffa",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   981.9196,
-			BaseAtk:  25.6956,
-			BaseDef:  64.43691,
+			BaseHp:   981.9196166992188,
+			BaseAtk:  25.695600509643555,
+			BaseDef:  64.4369125366211,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -7642,7 +7642,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.030045,
+							Value:    22.03004,
 						},
 					},
 				},
@@ -7651,7 +7651,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1440.1045,
+							Value:    1440.104,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7676,7 +7676,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    146.84895,
+							Value:    146.849,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -7693,7 +7693,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2835.8982,
+							Value:    2835.898,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7714,11 +7714,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3434.0955,
+							Value:    3434.095,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    225.36224,
+							Value:    225.3622,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -7735,7 +7735,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4032.2927,
+							Value:    4032.293,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7743,7 +7743,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    105.512314,
+							Value:    105.5123,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -7771,9 +7771,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Jahoda",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   808.7586,
-			BaseAtk:  18.6984,
-			BaseDef:  48.64125,
+			BaseHp:   808.7586059570312,
+			BaseAtk:  18.698400497436523,
+			BaseDef:  48.64125061035156,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7803,7 +7803,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1033.4728,
+							Value:    1033.473,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7811,7 +7811,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.894325,
+							Value:    23.89433,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HEAL_ADD,
@@ -7824,7 +7824,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1605.8577,
+							Value:    1605.858,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7832,7 +7832,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.128105,
+							Value:    37.12811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HEAL_ADD,
@@ -7845,7 +7845,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2035.1465,
+							Value:    2035.146,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7870,11 +7870,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    148.21875,
+							Value:    148.2188,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.978775,
+							Value:    56.97878,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HEAL_ADD,
@@ -7887,7 +7887,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2893.7239,
+							Value:    2893.724,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7923,9 +7923,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Qin",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.984,
-			BaseAtk:  18.62,
-			BaseDef:  59.83,
+			BaseHp:   1143.9840087890625,
+			BaseAtk:  18.6200008392334,
+			BaseDef:  59.83000183105469,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -7938,7 +7938,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    980.86285,
+							Value:    980.8629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7955,7 +7955,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1677.7917,
+							Value:    1677.792,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7976,7 +7976,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2607.0303,
+							Value:    2607.03,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8075,9 +8075,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Kazuha",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.1188,
-			BaseAtk:  23.0888,
-			BaseDef:  62.8215,
+			BaseHp:   1039.1187744140625,
+			BaseAtk:  23.08880043029785,
+			BaseDef:  62.82149887084961,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8090,7 +8090,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    890.95044,
+							Value:    890.9504,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8098,7 +8098,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    19.795113,
+							Value:    19.79511,
 						},
 					},
 				},
@@ -8107,7 +8107,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1523.9941,
+							Value:    1523.994,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8128,7 +8128,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.0525,
+							Value:    2368.052,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8136,7 +8136,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.613323,
+							Value:    52.61332,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -8149,7 +8149,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3001.0962,
+							Value:    3001.096,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8191,7 +8191,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4267.1836,
+							Value:    4267.184,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8227,9 +8227,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Kaeya",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   975.6164,
-			BaseAtk:  18.6984,
-			BaseDef:  66.381,
+			BaseHp:   975.6163940429688,
+			BaseAtk:  18.698400497436523,
+			BaseDef:  66.38099670410156,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -8259,7 +8259,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1246.6921,
+							Value:    1246.692,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8267,7 +8267,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.894325,
+							Value:    23.89433,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CHARGE_EFFICIENCY,
@@ -8280,7 +8280,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1937.1677,
+							Value:    1937.168,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8288,7 +8288,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.128105,
+							Value:    37.12811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CHARGE_EFFICIENCY,
@@ -8301,7 +8301,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2455.0244,
+							Value:    2455.024,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8330,7 +8330,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.978775,
+							Value:    56.97878,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CHARGE_EFFICIENCY,
@@ -8343,7 +8343,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3490.7378,
+							Value:    3490.738,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8379,9 +8379,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Ayaka",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1000.986,
-			BaseAtk:  26.6266,
-			BaseDef:  61.0266,
+			BaseHp:   1000.9860229492188,
+			BaseAtk:  26.62660026550293,
+			BaseDef:  61.0265998840332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8402,7 +8402,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.828234,
+							Value:    22.82823,
 						},
 					},
 				},
@@ -8411,7 +8411,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1468.0677,
+							Value:    1468.068,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8419,7 +8419,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.048294,
+							Value:    39.04829,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8432,7 +8432,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2281.1514,
+							Value:    2281.151,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8474,7 +8474,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3500.7769,
+							Value:    3500.777,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8482,7 +8482,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    93.115166,
+							Value:    93.11517,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8503,7 +8503,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    109.33523,
+							Value:    109.3352,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8531,9 +8531,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Ayato",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1067.7184,
-			BaseAtk:  23.275,
-			BaseDef:  59.83,
+			BaseHp:   1067.7183837890625,
+			BaseAtk:  23.274999618530273,
+			BaseDef:  59.83000183105469,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8571,7 +8571,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    34.133125,
+							Value:    34.13313,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8584,7 +8584,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2433.2283,
+							Value:    2433.228,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8592,7 +8592,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    53.037624,
+							Value:    53.03762,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8683,9 +8683,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Kaveh",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.9701,
-			BaseAtk:  19.5888,
-			BaseDef:  62.9475,
+			BaseHp:   1002.9700927734375,
+			BaseAtk:  19.58880043029785,
+			BaseDef:  62.9474983215332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -8715,7 +8715,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1281.6461,
+							Value:    1281.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8736,7 +8736,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1991.4808,
+							Value:    1991.481,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8799,7 +8799,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3588.6091,
+							Value:    3588.609,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8835,9 +8835,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Keqing",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1020.0524,
-			BaseAtk:  25.137,
-			BaseDef:  62.2232,
+			BaseHp:   1020.0524291992188,
+			BaseAtk:  25.136999130249023,
+			BaseDef:  62.223201751708984,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8867,7 +8867,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1496.0309,
+							Value:    1496.031,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8875,7 +8875,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.863773,
+							Value:    36.86377,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8888,7 +8888,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2324.6018,
+							Value:    2324.602,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8896,7 +8896,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    57.280636,
+							Value:    57.28064,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8930,7 +8930,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3567.4585,
+							Value:    3567.458,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8951,7 +8951,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4188.8867,
+							Value:    4188.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8959,7 +8959,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    103.21857,
+							Value:    103.2186,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -8987,9 +8987,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Kinich",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1000.986,
-			BaseAtk:  25.8818,
-			BaseDef:  62.40269,
+			BaseHp:   1000.9860229492188,
+			BaseAtk:  25.881799697875977,
+			BaseDef:  62.40269088745117,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -9010,7 +9010,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.189682,
+							Value:    22.18968,
 						},
 					},
 				},
@@ -9019,7 +9019,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1468.0677,
+							Value:    1468.068,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9027,7 +9027,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.956036,
+							Value:    37.95604,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -9040,11 +9040,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2281.1514,
+							Value:    2281.151,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    142.21304,
+							Value:    142.213,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -9069,7 +9069,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    74.744194,
+							Value:    74.74419,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -9082,15 +9082,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3500.7769,
+							Value:    3500.777,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    218.24776,
+							Value:    218.2478,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    90.510544,
+							Value:    90.51054,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -9139,9 +9139,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Momoka",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1021.20593,
-			BaseAtk:  18.6984,
-			BaseDef:  45.78,
+			BaseHp:   1021.2059326171875,
+			BaseAtk:  18.698400497436523,
+			BaseDef:  45.779998779296875,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -9171,7 +9171,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1304.9487,
+							Value:    1304.949,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9179,7 +9179,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.894325,
+							Value:    23.89433,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -9192,7 +9192,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2027.6896,
+							Value:    2027.69,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9200,7 +9200,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.128105,
+							Value:    37.12811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -9234,7 +9234,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3111.8008,
+							Value:    3111.801,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9242,7 +9242,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.978775,
+							Value:    56.97878,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -9255,7 +9255,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3653.8564,
+							Value:    3653.856,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9291,9 +9291,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Klee",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   800.7888,
-			BaseAtk:  24.206,
-			BaseDef:  47.864,
+			BaseHp:   800.788818359375,
+			BaseAtk:  24.20599937438965,
+			BaseDef:  47.86399841308594,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -9323,7 +9323,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1174.4542,
+							Value:    1174.454,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9344,7 +9344,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1824.9211,
+							Value:    1824.921,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9365,7 +9365,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2312.7712,
+							Value:    2312.771,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9386,7 +9386,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2800.6216,
+							Value:    2800.622,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9407,7 +9407,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3288.4717,
+							Value:    3288.472,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9443,9 +9443,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Sara",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   802.3761,
-			BaseAtk:  16.38336,
-			BaseDef:  52.647,
+			BaseHp:   802.3760986328125,
+			BaseAtk:  16.383359909057617,
+			BaseDef:  52.64699935913086,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -9466,7 +9466,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.239496,
+							Value:    12.2395,
 						},
 					},
 				},
@@ -9475,7 +9475,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1025.3169,
+							Value:    1025.317,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9496,7 +9496,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1593.1847,
+							Value:    1593.185,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9504,7 +9504,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    32.531292,
+							Value:    32.53129,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -9517,7 +9517,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2019.0856,
+							Value:    2019.086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9525,7 +9525,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    41.227776,
+							Value:    41.22778,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -9538,7 +9538,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2444.9863,
+							Value:    2444.986,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9559,7 +9559,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2870.8872,
+							Value:    2870.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9567,7 +9567,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    58.620743,
+							Value:    58.62074,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -9595,9 +9595,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Shinobu",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1030.3239,
-			BaseAtk:  17.808,
-			BaseDef:  62.9475,
+			BaseHp:   1030.3238525390625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  62.9474983215332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -9610,7 +9610,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    769.70465,
+							Value:    769.7047,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9627,7 +9627,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1316.6001,
+							Value:    1316.6,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9669,7 +9669,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2592.6895,
+							Value:    2592.689,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9690,7 +9690,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3139.5847,
+							Value:    3139.585,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9711,7 +9711,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3686.4802,
+							Value:    3686.48,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9747,9 +9747,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Lanyan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   775.02234,
-			BaseAtk:  21.01344,
-			BaseDef:  48.64125,
+			BaseHp:   775.0223388671875,
+			BaseAtk:  21.013439178466797,
+			BaseDef:  48.64125061035156,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -9770,7 +9770,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.698484,
+							Value:    15.69848,
 						},
 					},
 				},
@@ -9779,7 +9779,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    990.36285,
+							Value:    990.3629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9800,7 +9800,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1538.8716,
+							Value:    1538.872,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9829,7 +9829,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.879105,
+							Value:    52.8791,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -9842,11 +9842,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2361.6345,
+							Value:    2361.635,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    148.21875,
+							Value:    148.2188,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -9899,9 +9899,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Lauma",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   829.3884,
-			BaseAtk:  19.84892,
-			BaseDef:  52.0521,
+			BaseHp:   829.388427734375,
+			BaseAtk:  19.848920822143555,
+			BaseDef:  52.052101135253906,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -9914,7 +9914,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    711.12555,
+							Value:    711.1255,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9931,7 +9931,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1216.3989,
+							Value:    1216.399,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9939,7 +9939,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    29.108728,
+							Value:    29.10873,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -9952,7 +9952,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1890.0969,
+							Value:    1890.097,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9960,7 +9960,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    45.230488,
+							Value:    45.23049,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -9973,7 +9973,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2395.3704,
+							Value:    2395.37,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9981,7 +9981,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    57.321804,
+							Value:    57.3218,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -9994,7 +9994,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2900.6438,
+							Value:    2900.644,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10002,7 +10002,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    69.413124,
+							Value:    69.41312,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10015,7 +10015,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3405.9172,
+							Value:    3405.917,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10052,9 +10052,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Layla",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   930.0268,
-			BaseAtk:  18.16416,
-			BaseDef:  54.936,
+			BaseHp:   930.0267944335938,
+			BaseAtk:  18.164159774780273,
+			BaseDef:  54.93600082397461,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10067,7 +10067,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    694.77765,
+							Value:    694.7776,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10075,7 +10075,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    13.569876,
+							Value:    13.56988,
 						},
 					},
 				},
@@ -10084,7 +10084,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1188.4354,
+							Value:    1188.435,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10105,7 +10105,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1846.6459,
+							Value:    1846.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10113,7 +10113,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.067303,
+							Value:    36.0673,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -10126,7 +10126,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2340.3037,
+							Value:    2340.304,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10134,7 +10134,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    45.709057,
+							Value:    45.70906,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -10147,7 +10147,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2833.9614,
+							Value:    2833.961,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10168,7 +10168,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3327.6194,
+							Value:    3327.619,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10204,9 +10204,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Lisa",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   802.3761,
-			BaseAtk:  19.41072,
-			BaseDef:  48.069,
+			BaseHp:   802.3760986328125,
+			BaseAtk:  19.410720825195312,
+			BaseDef:  48.069000244140625,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10227,7 +10227,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.501142,
+							Value:    14.50114,
 						},
 					},
 				},
@@ -10236,7 +10236,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1025.3169,
+							Value:    1025.317,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10244,7 +10244,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    24.804585,
+							Value:    24.80458,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10257,7 +10257,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1593.1847,
+							Value:    1593.185,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10265,7 +10265,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    38.542507,
+							Value:    38.54251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10278,7 +10278,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2019.0856,
+							Value:    2019.086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10299,7 +10299,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2444.9863,
+							Value:    2444.986,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10307,7 +10307,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    59.149395,
+							Value:    59.14939,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10320,7 +10320,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2870.8872,
+							Value:    2870.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10328,7 +10328,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    69.452835,
+							Value:    69.45284,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10356,9 +10356,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10371,7 +10371,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10388,7 +10388,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10409,7 +10409,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10430,7 +10430,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10451,7 +10451,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10472,7 +10472,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10508,9 +10508,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10523,7 +10523,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10540,7 +10540,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10561,7 +10561,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10582,7 +10582,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10603,7 +10603,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10624,7 +10624,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10660,9 +10660,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10675,7 +10675,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10692,7 +10692,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10713,7 +10713,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10734,7 +10734,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10755,7 +10755,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10776,7 +10776,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10812,9 +10812,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10827,7 +10827,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10844,7 +10844,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10865,7 +10865,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10886,7 +10886,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10907,7 +10907,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10928,7 +10928,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10964,9 +10964,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10979,7 +10979,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -10996,7 +10996,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11017,7 +11017,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11038,7 +11038,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11059,7 +11059,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11080,7 +11080,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11116,9 +11116,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11131,7 +11131,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11148,7 +11148,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11169,7 +11169,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11190,7 +11190,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11211,7 +11211,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11232,7 +11232,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11268,9 +11268,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  17.808,
-			BaseDef:  57.225,
+			BaseHp:   911.791015625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  57.224998474121094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11283,7 +11283,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11300,7 +11300,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11321,7 +11321,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11342,7 +11342,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11363,7 +11363,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11384,7 +11384,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11420,9 +11420,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Linette",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.4418,
-			BaseAtk:  19.41072,
-			BaseDef:  59.685677,
+			BaseHp:   1039.4417724609375,
+			BaseAtk:  19.410720825195312,
+			BaseDef:  59.68567657470703,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11443,7 +11443,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.501142,
+							Value:    14.50114,
 						},
 					},
 				},
@@ -11452,7 +11452,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1328.2513,
+							Value:    1328.251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11460,7 +11460,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    24.804585,
+							Value:    24.80458,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -11473,15 +11473,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2063.8984,
+							Value:    2063.898,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    118.51087,
+							Value:    118.5109,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    38.542507,
+							Value:    38.54251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -11494,7 +11494,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2615.6335,
+							Value:    2615.634,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11515,15 +11515,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3167.3687,
+							Value:    3167.369,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    181.87312,
+							Value:    181.8731,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    59.149395,
+							Value:    59.14939,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -11540,11 +11540,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    213.55424,
+							Value:    213.5542,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    69.452835,
+							Value:    69.45284,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -11572,9 +11572,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Liney",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   857.988,
-			BaseAtk:  24.7646,
-			BaseDef:  41.881,
+			BaseHp:   857.9879760742188,
+			BaseAtk:  24.76460075378418,
+			BaseDef:  41.88100051879883,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -11587,7 +11587,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    735.64716,
+							Value:    735.6472,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11595,7 +11595,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.231853,
+							Value:    21.23185,
 						},
 					},
 				},
@@ -11604,7 +11604,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1258.3438,
+							Value:    1258.344,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11612,7 +11612,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.317646,
+							Value:    36.31765,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -11625,7 +11625,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1955.2726,
+							Value:    1955.273,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11633,7 +11633,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.432034,
+							Value:    56.43203,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -11646,7 +11646,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2477.9692,
+							Value:    2477.969,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11675,7 +11675,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    86.603615,
+							Value:    86.60361,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -11688,7 +11688,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3523.3625,
+							Value:    3523.363,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11696,7 +11696,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    101.68941,
+							Value:    101.6894,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -11724,9 +11724,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Mavuika",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   977.153,
-			BaseAtk:  27.93,
-			BaseDef:  61.6249,
+			BaseHp:   977.1530151367188,
+			BaseAtk:  27.93000030517578,
+			BaseDef:  61.624900817871094,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -11756,7 +11756,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1433.1138,
+							Value:    1433.114,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11777,7 +11777,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2226.8384,
+							Value:    2226.838,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11798,7 +11798,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2822.1316,
+							Value:    2822.132,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11840,7 +11840,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4012.7185,
+							Value:    4012.719,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11875,9 +11875,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Mika",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1048.5597,
-			BaseAtk:  18.6984,
-			BaseDef:  59.800125,
+			BaseHp:   1048.5596923828125,
+			BaseAtk:  18.698400497436523,
+			BaseDef:  59.80012512207031,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11890,7 +11890,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    783.32776,
+							Value:    783.3278,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11907,7 +11907,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1339.9027,
+							Value:    1339.903,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11915,7 +11915,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.894325,
+							Value:    23.89433,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -11928,15 +11928,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2082.0027,
+							Value:    2082.003,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    118.73813,
+							Value:    118.7381,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.128105,
+							Value:    37.12811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -11949,7 +11949,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2638.5776,
+							Value:    2638.578,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -11970,15 +11970,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3195.1526,
+							Value:    3195.153,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    182.22188,
+							Value:    182.2219,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.978775,
+							Value:    56.97878,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -11991,11 +11991,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3751.7275,
+							Value:    3751.728,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    213.96375,
+							Value:    213.9637,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -12027,9 +12027,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Mona",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   810.322,
-			BaseAtk:  22.344,
-			BaseDef:  50.8555,
+			BaseHp:   810.322021484375,
+			BaseAtk:  22.3439998626709,
+			BaseDef:  50.855499267578125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12042,7 +12042,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    694.77783,
+							Value:    694.7778,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12059,7 +12059,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1188.4358,
+							Value:    1188.436,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12080,7 +12080,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1846.6464,
+							Value:    1846.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12101,7 +12101,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2340.3042,
+							Value:    2340.304,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12122,7 +12122,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2833.9622,
+							Value:    2833.962,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12179,9 +12179,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Mualani",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1182.1168,
-			BaseAtk:  14.1512,
-			BaseDef:  44.39386,
+			BaseHp:   1182.1168212890625,
+			BaseAtk:  14.151200294494629,
+			BaseDef:  44.39385986328125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12194,7 +12194,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1013.5583,
+							Value:    1013.558,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12202,7 +12202,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.132488,
+							Value:    12.13249,
 						},
 					},
 				},
@@ -12211,7 +12211,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1733.7181,
+							Value:    1733.718,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12232,7 +12232,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2693.9312,
+							Value:    2693.931,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12240,7 +12240,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    32.246876,
+							Value:    32.24688,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -12295,7 +12295,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4854.4106,
+							Value:    4854.411,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12331,9 +12331,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Nahida",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   806.5087,
-			BaseAtk:  23.275,
-			BaseDef:  49.0606,
+			BaseHp:   806.5087280273438,
+			BaseAtk:  23.274999618530273,
+			BaseDef:  49.06060028076172,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12363,7 +12363,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1182.8431,
+							Value:    1182.843,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12371,7 +12371,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    34.133125,
+							Value:    34.13313,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -12384,7 +12384,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1837.9563,
+							Value:    1837.956,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12392,7 +12392,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    53.037624,
+							Value:    53.03762,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -12483,9 +12483,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Navia",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   984.77954,
-			BaseAtk:  27.3714,
-			BaseDef:  61.74456,
+			BaseHp:   984.779541015625,
+			BaseAtk:  27.371400833129883,
+			BaseDef:  61.74456024169922,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12498,7 +12498,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    844.35944,
+							Value:    844.3594,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12506,7 +12506,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.466785,
+							Value:    23.46679,
 						},
 					},
 				},
@@ -12515,7 +12515,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1444.2991,
+							Value:    1444.299,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12523,7 +12523,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.140556,
+							Value:    40.14056,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -12536,7 +12536,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2244.2185,
+							Value:    2244.219,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12544,7 +12544,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    62.372246,
+							Value:    62.37225,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -12578,7 +12578,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3444.0977,
+							Value:    3444.098,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12599,7 +12599,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4044.0374,
+							Value:    4044.037,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12607,7 +12607,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    112.393555,
+							Value:    112.3936,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -12635,9 +12635,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Neuvillette",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.984,
-			BaseAtk:  16.21802,
-			BaseDef:  44.8725,
+			BaseHp:   1143.9840087890625,
+			BaseAtk:  16.218019485473633,
+			BaseDef:  44.872501373291016,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12650,7 +12650,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    980.86285,
+							Value:    980.8629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12667,7 +12667,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1677.7917,
+							Value:    1677.792,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12675,7 +12675,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.783962,
+							Value:    23.78396,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -12688,7 +12688,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2607.0303,
+							Value:    2607.03,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12696,7 +12696,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.956615,
+							Value:    36.95662,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -12738,7 +12738,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    56.715603,
+							Value:    56.7156,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -12787,9 +12787,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Nicole",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   810.322,
-			BaseAtk:  26.6266,
-			BaseDef:  43.79556,
+			BaseHp:   810.322021484375,
+			BaseAtk:  26.62660026550293,
+			BaseDef:  43.79555892944336,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12802,7 +12802,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    694.77783,
+							Value:    694.7778,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12810,7 +12810,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.828234,
+							Value:    22.82823,
 						},
 					},
 				},
@@ -12819,7 +12819,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1188.4358,
+							Value:    1188.436,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12827,7 +12827,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.048294,
+							Value:    39.04829,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -12840,7 +12840,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1846.6464,
+							Value:    1846.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12861,7 +12861,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2340.3042,
+							Value:    2340.304,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12882,7 +12882,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2833.9622,
+							Value:    2833.962,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12890,7 +12890,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    93.115166,
+							Value:    93.11517,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -12911,7 +12911,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    109.33523,
+							Value:    109.3352,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -12939,9 +12939,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Nilou",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1182.1168,
-			BaseAtk:  17.8752,
-			BaseDef:  56.71884,
+			BaseHp:   1182.1168212890625,
+			BaseAtk:  17.875200271606445,
+			BaseDef:  56.718841552734375,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12954,7 +12954,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1013.5583,
+							Value:    1013.558,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12962,7 +12962,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.325248,
+							Value:    15.32525,
 						},
 					},
 				},
@@ -12971,7 +12971,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1733.7181,
+							Value:    1733.718,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -12992,7 +12992,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2693.9312,
+							Value:    2693.931,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13000,7 +13000,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.732895,
+							Value:    40.73289,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -13021,7 +13021,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    51.621887,
+							Value:    51.62189,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -13055,7 +13055,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4854.4106,
+							Value:    4854.411,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13091,9 +13091,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Ningguang",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.6119,
-			BaseAtk:  17.808,
-			BaseDef:  48.069,
+			BaseHp:   820.6118774414062,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  48.069000244140625,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -13123,7 +13123,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1048.6195,
+							Value:    1048.62,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13144,7 +13144,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1629.3934,
+							Value:    1629.393,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13165,7 +13165,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2064.9739,
+							Value:    2064.974,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13186,7 +13186,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2500.5542,
+							Value:    2500.554,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13207,7 +13207,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2936.1348,
+							Value:    2936.135,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13243,9 +13243,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Noel",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1012.088,
-			BaseAtk:  16.0272,
-			BaseDef:  66.95325,
+			BaseHp:   1012.0880126953125,
+			BaseAtk:  16.02720069885254,
+			BaseDef:  66.9532470703125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -13258,7 +13258,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    756.08154,
+							Value:    756.0815,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13275,7 +13275,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1293.2974,
+							Value:    1293.297,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13296,11 +13296,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2009.5852,
+							Value:    2009.585,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    132.94125,
+							Value:    132.9413,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -13338,11 +13338,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3084.0168,
+							Value:    3084.017,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    204.01875,
+							Value:    204.0188,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -13359,7 +13359,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3621.2327,
+							Value:    3621.233,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13395,9 +13395,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Odette",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1010.5192,
-			BaseAtk:  26.068,
-			BaseDef:  61.26592,
+			BaseHp:   1010.5192260742188,
+			BaseAtk:  26.06800079345703,
+			BaseDef:  61.26591873168945,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -13410,7 +13410,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    866.42883,
+							Value:    866.4288,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13427,7 +13427,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1482.0493,
+							Value:    1482.049,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13448,7 +13448,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2302.8767,
+							Value:    2302.877,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13490,7 +13490,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3534.1177,
+							Value:    3534.118,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13511,7 +13511,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4149.7383,
+							Value:    4149.738,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13519,7 +13519,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    107.04148,
+							Value:    107.0415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -13547,9 +13547,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Olorun",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   775.02234,
-			BaseAtk:  20.4792,
-			BaseDef:  49.2135,
+			BaseHp:   775.0223388671875,
+			BaseAtk:  20.47920036315918,
+			BaseDef:  49.2135009765625,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -13579,7 +13579,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    990.36285,
+							Value:    990.3629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13587,7 +13587,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.169975,
+							Value:    26.16998,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -13600,7 +13600,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1538.8716,
+							Value:    1538.872,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13608,7 +13608,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.664116,
+							Value:    40.66412,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -13642,7 +13642,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2361.6345,
+							Value:    2361.635,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13650,7 +13650,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    62.405327,
+							Value:    62.40533,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -13699,9 +13699,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Prune",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   811.494,
-			BaseAtk:  18.52032,
-			BaseDef:  48.64125,
+			BaseHp:   811.4940185546875,
+			BaseAtk:  18.520320892333984,
+			BaseDef:  48.64125061035156,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -13714,7 +13714,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    606.22754,
+							Value:    606.2275,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13722,7 +13722,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    13.835952,
+							Value:    13.83595,
 						},
 					},
 				},
@@ -13731,7 +13731,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1036.9681,
+							Value:    1036.968,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13752,7 +13752,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1611.2891,
+							Value:    1611.289,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13760,7 +13760,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.774506,
+							Value:    36.77451,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -13773,7 +13773,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2042.0297,
+							Value:    2042.03,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13781,7 +13781,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    46.605312,
+							Value:    46.60531,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -13794,11 +13794,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2472.7703,
+							Value:    2472.77,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    148.21875,
+							Value:    148.2188,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -13851,9 +13851,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Qiqi",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   962.8532,
-			BaseAtk:  22.344,
-			BaseDef:  71.796,
+			BaseHp:   962.8532104492188,
+			BaseAtk:  22.3439998626709,
+			BaseDef:  71.7959976196289,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -13883,7 +13883,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1412.1414,
+							Value:    1412.141,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13904,7 +13904,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2194.2505,
+							Value:    2194.25,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13925,7 +13925,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2780.8323,
+							Value:    2780.832,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -13967,7 +13967,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3953.9958,
+							Value:    3953.996,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14003,9 +14003,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Shougun",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1004.79926,
-			BaseAtk:  26.2542,
-			BaseDef:  61.44541,
+			BaseHp:   1004.7992553710938,
+			BaseAtk:  26.254199981689453,
+			BaseDef:  61.445411682128906,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -14018,7 +14018,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    861.52454,
+							Value:    861.5245,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14026,7 +14026,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.508959,
+							Value:    22.50896,
 						},
 					},
 				},
@@ -14035,7 +14035,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1473.6604,
+							Value:    1473.66,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14043,7 +14043,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    38.502167,
+							Value:    38.50217,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CHARGE_EFFICIENCY,
@@ -14056,15 +14056,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2289.8416,
+							Value:    2289.842,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    140.03145,
+							Value:    140.0314,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    59.826443,
+							Value:    59.82644,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CHARGE_EFFICIENCY,
@@ -14077,7 +14077,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2901.9773,
+							Value:    2901.977,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14098,11 +14098,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3514.1133,
+							Value:    3514.113,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    214.89975,
+							Value:    214.8997,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -14127,7 +14127,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    107.80606,
+							Value:    107.8061,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CHARGE_EFFICIENCY,
@@ -14155,9 +14155,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Razor",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.9701,
-			BaseAtk:  19.5888,
-			BaseDef:  62.9475,
+			BaseHp:   1002.9700927734375,
+			BaseAtk:  19.58880043029785,
+			BaseDef:  62.9474983215332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14187,7 +14187,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1281.6461,
+							Value:    1281.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14208,7 +14208,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1991.4808,
+							Value:    1991.481,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14271,7 +14271,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3588.6091,
+							Value:    3588.609,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14307,9 +14307,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Rosaria",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1030.3239,
-			BaseAtk:  20.12304,
-			BaseDef:  59.514,
+			BaseHp:   1030.3238525390625,
+			BaseAtk:  20.12303924560547,
+			BaseDef:  59.513999938964844,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14322,7 +14322,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    769.70465,
+							Value:    769.7047,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14330,7 +14330,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.033294,
+							Value:    15.03329,
 						},
 					},
 				},
@@ -14339,7 +14339,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1316.6001,
+							Value:    1316.6,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14347,7 +14347,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    25.714846,
+							Value:    25.71485,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -14368,7 +14368,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.956913,
+							Value:    39.95691,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -14381,7 +14381,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2592.6895,
+							Value:    2592.689,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14389,7 +14389,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    50.638466,
+							Value:    50.63847,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -14402,7 +14402,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3139.5847,
+							Value:    3139.585,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14410,7 +14410,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.320015,
+							Value:    61.32001,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -14423,7 +14423,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3686.4802,
+							Value:    3686.48,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14431,7 +14431,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    72.001564,
+							Value:    72.00156,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -14459,9 +14459,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Kokomi",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1048.652,
-			BaseAtk:  18.2476,
-			BaseDef:  51.15465,
+			BaseHp:   1048.6519775390625,
+			BaseAtk:  18.247600555419922,
+			BaseDef:  51.1546516418457,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -14474,7 +14474,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    899.12427,
+							Value:    899.1243,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14482,7 +14482,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.644524,
+							Value:    15.64452,
 						},
 					},
 				},
@@ -14491,7 +14491,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1537.9757,
+							Value:    1537.976,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14512,15 +14512,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2389.7776,
+							Value:    2389.778,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    116.57925,
+							Value:    116.5792,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    41.581497,
+							Value:    41.5815,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WATER_ADD_HURT,
@@ -14533,7 +14533,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3028.6292,
+							Value:    3028.629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14541,7 +14541,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.697346,
+							Value:    52.69735,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WATER_ADD_HURT,
@@ -14554,11 +14554,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3667.4805,
+							Value:    3667.48,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    178.90875,
+							Value:    178.9088,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -14611,9 +14611,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Sayu",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   993.8522,
-			BaseAtk:  20.4792,
-			BaseDef:  62.432476,
+			BaseHp:   993.8521728515625,
+			BaseAtk:  20.47920036315918,
+			BaseDef:  62.43247604370117,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14643,7 +14643,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1269.9948,
+							Value:    1269.995,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14651,7 +14651,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.169975,
+							Value:    26.16998,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14664,15 +14664,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1973.3765,
+							Value:    1973.376,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    123.964874,
+							Value:    123.9649,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.664116,
+							Value:    40.66412,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14685,7 +14685,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2500.9128,
+							Value:    2500.913,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14710,11 +14710,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    190.24312,
+							Value:    190.2431,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    62.405327,
+							Value:    62.40533,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14727,11 +14727,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3555.9854,
+							Value:    3555.985,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    223.38225,
+							Value:    223.3822,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -14763,9 +14763,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Sethos",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.6119,
-			BaseAtk:  19.05456,
-			BaseDef:  46.9245,
+			BaseHp:   820.6118774414062,
+			BaseAtk:  19.0545597076416,
+			BaseDef:  46.92449951171875,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14786,7 +14786,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.235066,
+							Value:    14.23507,
 						},
 					},
 				},
@@ -14795,7 +14795,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1048.6195,
+							Value:    1048.62,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14803,7 +14803,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    24.349455,
+							Value:    24.34945,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14816,7 +14816,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1629.3934,
+							Value:    1629.393,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14824,7 +14824,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.835308,
+							Value:    37.83531,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14837,7 +14837,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2064.9739,
+							Value:    2064.974,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14845,7 +14845,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    47.949696,
+							Value:    47.9497,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14858,7 +14858,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2500.5542,
+							Value:    2500.554,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14866,7 +14866,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    58.064083,
+							Value:    58.06408,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14879,7 +14879,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2936.1348,
+							Value:    2936.135,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14887,7 +14887,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    68.178474,
+							Value:    68.17847,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -14915,9 +14915,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Shenhe",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1011.47253,
-			BaseAtk:  23.6474,
-			BaseDef:  64.6164,
+			BaseHp:   1011.4725341796875,
+			BaseAtk:  23.64739990234375,
+			BaseDef:  64.61640167236328,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -14938,7 +14938,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    20.274027,
+							Value:    20.27403,
 						},
 					},
 				},
@@ -14947,7 +14947,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1483.4475,
+							Value:    1483.448,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14955,7 +14955,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    34.679256,
+							Value:    34.67926,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -14976,7 +14976,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    53.886227,
+							Value:    53.88623,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -14989,7 +14989,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2921.2505,
+							Value:    2921.25,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15010,7 +15010,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3537.4517,
+							Value:    3537.452,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15018,7 +15018,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    82.696686,
+							Value:    82.69669,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -15067,9 +15067,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Heizo",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   893.5552,
-			BaseAtk:  18.87648,
-			BaseDef:  57.33945,
+			BaseHp:   893.55517578125,
+			BaseAtk:  18.876480102539062,
+			BaseDef:  57.33945083618164,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -15090,7 +15090,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.102028,
+							Value:    14.10203,
 						},
 					},
 				},
@@ -15099,7 +15099,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1141.8302,
+							Value:    1141.83,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15120,15 +15120,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1774.2284,
+							Value:    1774.228,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    113.85225,
+							Value:    113.8522,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.481705,
+							Value:    37.4817,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -15149,7 +15149,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    47.501568,
+							Value:    47.50157,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -15162,11 +15162,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2722.8257,
+							Value:    2722.826,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    174.72375,
+							Value:    174.7238,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -15183,7 +15183,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3197.1245,
+							Value:    3197.125,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15219,9 +15219,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Sigewinne",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.1188,
-			BaseAtk:  14.9891,
-			BaseDef:  38.8895,
+			BaseHp:   1039.1187744140625,
+			BaseAtk:  14.989100456237793,
+			BaseDef:  38.88949966430664,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -15234,7 +15234,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    890.95044,
+							Value:    890.9504,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15242,7 +15242,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.850859,
+							Value:    12.85086,
 						},
 					},
 				},
@@ -15251,7 +15251,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1523.9941,
+							Value:    1523.994,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15259,7 +15259,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.981731,
+							Value:    21.98173,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -15272,7 +15272,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.0525,
+							Value:    2368.052,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15293,7 +15293,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3001.0962,
+							Value:    3001.096,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15301,7 +15301,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    43.287106,
+							Value:    43.28711,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -15322,7 +15322,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.417976,
+							Value:    52.41798,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -15335,7 +15335,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4267.1836,
+							Value:    4267.184,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15371,9 +15371,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_SkirkNew",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   966.6665,
-			BaseAtk:  27.93,
-			BaseDef:  62.76167,
+			BaseHp:   966.66650390625,
+			BaseAtk:  27.93000030517578,
+			BaseDef:  62.76166915893555,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -15424,11 +15424,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2202.9404,
+							Value:    2202.94,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    143.03114,
+							Value:    143.0311,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -15445,7 +15445,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2791.8455,
+							Value:    2791.845,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15466,11 +15466,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3380.7502,
+							Value:    3380.75,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    219.50325,
+							Value:    219.5033,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -15487,7 +15487,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3969.6553,
+							Value:    3969.655,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15522,9 +15522,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Sucrose",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   775.02234,
-			BaseAtk:  14.2464,
-			BaseDef:  58.94175,
+			BaseHp:   775.0223388671875,
+			BaseAtk:  14.246399879455566,
+			BaseDef:  58.941749572753906,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -15554,7 +15554,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    990.36285,
+							Value:    990.3629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15575,11 +15575,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1538.8716,
+							Value:    1538.872,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    117.03375,
+							Value:    117.0338,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -15617,11 +15617,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2361.6345,
+							Value:    2361.635,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    179.60625,
+							Value:    179.6062,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -15674,9 +15674,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Tartaglia",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1020.0524,
-			BaseAtk:  23.4612,
-			BaseDef:  63.4198,
+			BaseHp:   1020.0524291992188,
+			BaseAtk:  23.461200714111328,
+			BaseDef:  63.4197998046875,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -15697,7 +15697,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    20.114388,
+							Value:    20.11439,
 						},
 					},
 				},
@@ -15706,7 +15706,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1496.0309,
+							Value:    1496.031,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15727,7 +15727,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2324.6018,
+							Value:    2324.602,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15735,7 +15735,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    53.461926,
+							Value:    53.46193,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WATER_ADD_HURT,
@@ -15769,7 +15769,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3567.4585,
+							Value:    3567.458,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15790,7 +15790,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4188.8867,
+							Value:    4188.887,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15826,9 +15826,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Tohma",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   866.2015,
-			BaseAtk:  16.9176,
-			BaseDef:  62.9475,
+			BaseHp:   866.2014770507812,
+			BaseAtk:  16.917600631713867,
+			BaseDef:  62.9474983215332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -15858,7 +15858,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1106.8762,
+							Value:    1106.876,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15866,7 +15866,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.618675,
+							Value:    21.61868,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -15879,7 +15879,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1719.9153,
+							Value:    1719.915,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15887,7 +15887,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    33.592094,
+							Value:    33.59209,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -15900,7 +15900,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2179.6946,
+							Value:    2179.695,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15921,7 +15921,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2639.4739,
+							Value:    2639.474,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15929,7 +15929,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    51.552223,
+							Value:    51.55222,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -15942,7 +15942,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3099.2532,
+							Value:    3099.253,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15978,9 +15978,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Tighnari",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   844.64154,
-			BaseAtk:  20.8544,
-			BaseDef:  49.0606,
+			BaseHp:   844.6415405273438,
+			BaseAtk:  20.854400634765625,
+			BaseDef:  49.06060028076172,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -15993,7 +15993,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    724.20374,
+							Value:    724.2037,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16001,7 +16001,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    17.879456,
+							Value:    17.87946,
 						},
 					},
 				},
@@ -16010,7 +16010,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1238.7695,
+							Value:    1238.77,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16031,7 +16031,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1924.8573,
+							Value:    1924.857,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16039,7 +16039,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    47.521713,
+							Value:    47.52171,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_GRASS_ADD_HURT,
@@ -16060,7 +16060,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    60.225536,
+							Value:    60.22554,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_GRASS_ADD_HURT,
@@ -16094,7 +16094,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3468.5547,
+							Value:    3468.555,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16130,9 +16130,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Varesa",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   988.59283,
-			BaseAtk:  27.7438,
-			BaseDef:  60.84711,
+			BaseHp:   988.5928344726562,
+			BaseAtk:  27.743799209594727,
+			BaseDef:  60.847110748291016,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -16145,7 +16145,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    847.62897,
+							Value:    847.629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16153,7 +16153,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.786062,
+							Value:    23.78606,
 						},
 					},
 				},
@@ -16162,7 +16162,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1449.8916,
+							Value:    1449.892,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16170,7 +16170,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.686684,
+							Value:    40.68668,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -16183,15 +16183,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2252.9087,
+							Value:    2252.909,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    138.66795,
+							Value:    138.668,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    63.220848,
+							Value:    63.22085,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -16204,7 +16204,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2855.1714,
+							Value:    2855.171,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16212,7 +16212,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    80.121475,
+							Value:    80.12148,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -16229,11 +16229,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    212.80725,
+							Value:    212.8073,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    97.022095,
+							Value:    97.02209,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -16246,7 +16246,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4059.6965,
+							Value:    4059.697,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16254,7 +16254,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    113.922714,
+							Value:    113.9227,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -16282,9 +16282,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Varka",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   981.9196,
-			BaseAtk:  27.4645,
-			BaseDef:  61.92405,
+			BaseHp:   981.9196166992188,
+			BaseAtk:  27.464500427246094,
+			BaseDef:  61.924049377441406,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -16305,7 +16305,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.546604,
+							Value:    23.5466,
 						},
 					},
 				},
@@ -16314,7 +16314,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1440.1045,
+							Value:    1440.104,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16339,11 +16339,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    141.12225,
+							Value:    141.1223,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    62.584396,
+							Value:    62.5844,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -16356,7 +16356,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2835.8982,
+							Value:    2835.898,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16377,15 +16377,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3434.0955,
+							Value:    3434.095,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    216.57375,
+							Value:    216.5737,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    96.045364,
+							Value:    96.04536,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -16398,7 +16398,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4032.2927,
+							Value:    4032.293,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16406,7 +16406,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    112.77585,
+							Value:    112.7758,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -16434,9 +16434,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Venti",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   819.8552,
-			BaseAtk:  20.482,
-			BaseDef:  52.0521,
+			BaseHp:   819.855224609375,
+			BaseAtk:  20.48200035095215,
+			BaseDef:  52.052101135253906,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -16466,7 +16466,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1202.4174,
+							Value:    1202.417,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16487,7 +16487,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1868.3716,
+							Value:    1868.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16508,7 +16508,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2367.8374,
+							Value:    2367.837,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16550,7 +16550,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3366.7688,
+							Value:    3366.769,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16586,9 +16586,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Wanderer",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   791.2556,
-			BaseAtk:  25.5094,
-			BaseDef:  47.2657,
+			BaseHp:   791.255615234375,
+			BaseAtk:  25.5093994140625,
+			BaseDef:  47.26570129394531,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -16609,7 +16609,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.870405,
+							Value:    21.87041,
 						},
 					},
 				},
@@ -16618,7 +16618,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1160.4725,
+							Value:    1160.473,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16626,7 +16626,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.409904,
+							Value:    37.4099,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -16639,7 +16639,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1803.1959,
+							Value:    1803.196,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16660,7 +16660,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2285.2383,
+							Value:    2285.238,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16681,7 +16681,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2767.2808,
+							Value:    2767.281,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16702,7 +16702,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3249.3232,
+							Value:    3249.323,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16710,7 +16710,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    104.747734,
+							Value:    104.7477,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -16738,9 +16738,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Wriothesley",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1058.1852,
-			BaseAtk:  24.206,
-			BaseDef:  59.41119,
+			BaseHp:   1058.1851806640625,
+			BaseAtk:  24.20599937438965,
+			BaseDef:  59.411190032958984,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -16753,7 +16753,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    907.29816,
+							Value:    907.2982,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16770,7 +16770,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1551.9573,
+							Value:    1551.957,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16795,7 +16795,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    135.39555,
+							Value:    135.3956,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -16833,11 +16833,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3700.8213,
+							Value:    3700.821,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    207.78525,
+							Value:    207.7852,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -16854,7 +16854,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4345.4805,
+							Value:    4345.48,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16890,9 +16890,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Xiangling",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.791,
-			BaseAtk:  18.87648,
-			BaseDef:  56.0805,
+			BaseHp:   911.791015625,
+			BaseAtk:  18.876480102539062,
+			BaseDef:  56.080501556396484,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -16905,7 +16905,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    681.15454,
+							Value:    681.1545,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16913,7 +16913,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.102028,
+							Value:    14.10203,
 						},
 					},
 				},
@@ -16922,7 +16922,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1165.1328,
+							Value:    1165.133,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16943,7 +16943,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1810.4371,
+							Value:    1810.437,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16951,7 +16951,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.481705,
+							Value:    37.4817,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -16964,7 +16964,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2294.4153,
+							Value:    2294.415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16972,7 +16972,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    47.501568,
+							Value:    47.50157,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -16985,7 +16985,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2778.3936,
+							Value:    2778.394,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17006,7 +17006,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3262.3718,
+							Value:    3262.372,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17042,9 +17042,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Liuyun",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   810.322,
-			BaseAtk:  26.068,
-			BaseDef:  44.57335,
+			BaseHp:   810.322021484375,
+			BaseAtk:  26.06800079345703,
+			BaseDef:  44.57334899902344,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17057,7 +17057,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    694.77783,
+							Value:    694.7778,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17074,7 +17074,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1188.4358,
+							Value:    1188.436,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17095,11 +17095,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1846.6464,
+							Value:    1846.646,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    101.58075,
+							Value:    101.5807,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -17116,7 +17116,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2340.3042,
+							Value:    2340.304,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17137,11 +17137,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2833.9622,
+							Value:    2833.962,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    155.89125,
+							Value:    155.8913,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -17166,7 +17166,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    107.04148,
+							Value:    107.0415,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -17194,9 +17194,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Xiao",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   991.4528,
-			BaseAtk:  27.1852,
-			BaseDef:  62.2232,
+			BaseHp:   991.4528198242188,
+			BaseAtk:  27.185199737548828,
+			BaseDef:  62.223201751708984,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17217,7 +17217,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.307148,
+							Value:    23.30715,
 						},
 					},
 				},
@@ -17226,7 +17226,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1454.0862,
+							Value:    1454.086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17247,7 +17247,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2259.4263,
+							Value:    2259.426,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17255,7 +17255,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.947945,
+							Value:    61.94794,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -17268,7 +17268,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2863.4312,
+							Value:    2863.431,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17276,7 +17276,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    78.508286,
+							Value:    78.50829,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -17289,7 +17289,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3467.4363,
+							Value:    3467.436,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17310,7 +17310,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4071.4412,
+							Value:    4071.441,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17318,7 +17318,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    111.628975,
+							Value:    111.629,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -17346,9 +17346,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Xilonen",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   965.71313,
-			BaseAtk:  21.413,
-			BaseDef:  72.3943,
+			BaseHp:   965.713134765625,
+			BaseAtk:  21.413000106811523,
+			BaseDef:  72.39430236816406,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17378,7 +17378,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1416.3358,
+							Value:    1416.336,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17386,7 +17386,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    31.402475,
+							Value:    31.40248,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_DEFENSE_PERCENT,
@@ -17407,7 +17407,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    48.794617,
+							Value:    48.79462,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_DEFENSE_PERCENT,
@@ -17441,7 +17441,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3377.4163,
+							Value:    3377.416,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17462,7 +17462,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3965.7402,
+							Value:    3965.74,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17498,9 +17498,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Xingqiu",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   857.08356,
-			BaseAtk:  16.9176,
-			BaseDef:  63.51975,
+			BaseHp:   857.0835571289062,
+			BaseAtk:  16.917600631713867,
+			BaseDef:  63.51974868774414,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -17530,7 +17530,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1095.2249,
+							Value:    1095.225,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17538,7 +17538,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    21.618675,
+							Value:    21.61868,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -17551,15 +17551,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1701.8109,
+							Value:    1701.811,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    126.12375,
+							Value:    126.1237,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    33.592094,
+							Value:    33.59209,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -17572,7 +17572,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2156.7505,
+							Value:    2156.75,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17597,11 +17597,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    193.55624,
+							Value:    193.5562,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    51.552223,
+							Value:    51.55222,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -17614,7 +17614,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3066.6296,
+							Value:    3066.63,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17650,9 +17650,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Xinyan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   939.1447,
-			BaseAtk:  20.83536,
-			BaseDef:  66.95325,
+			BaseHp:   939.1447143554688,
+			BaseAtk:  20.835359573364258,
+			BaseDef:  66.9532470703125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -17673,7 +17673,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.565446,
+							Value:    15.56545,
 						},
 					},
 				},
@@ -17682,7 +17682,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1200.0868,
+							Value:    1200.087,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17690,7 +17690,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.625105,
+							Value:    26.6251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -17703,11 +17703,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1864.7502,
+							Value:    1864.75,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    132.94125,
+							Value:    132.9413,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -17724,7 +17724,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2363.2478,
+							Value:    2363.248,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17732,7 +17732,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.430977,
+							Value:    52.43098,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -17745,15 +17745,15 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2861.7454,
+							Value:    2861.745,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    204.01875,
+							Value:    204.0188,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    63.490635,
+							Value:    63.49063,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -17802,9 +17802,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Yae",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   807.46204,
-			BaseAtk:  26.4404,
-			BaseDef:  44.2742,
+			BaseHp:   807.4620361328125,
+			BaseAtk:  26.440399169921875,
+			BaseDef:  44.274200439453125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17825,7 +17825,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.668596,
+							Value:    22.6686,
 						},
 					},
 				},
@@ -17834,7 +17834,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1184.2413,
+							Value:    1184.241,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17855,7 +17855,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1840.1288,
+							Value:    1840.129,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17863,7 +17863,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    60.250744,
+							Value:    60.25074,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -17876,7 +17876,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2332.0444,
+							Value:    2332.044,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17884,7 +17884,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    76.357376,
+							Value:    76.35738,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -17918,7 +17918,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3315.8757,
+							Value:    3315.876,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17926,7 +17926,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    108.57064,
+							Value:    108.5706,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -17954,9 +17954,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Feiyan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   784.14026,
-			BaseAtk:  20.12304,
-			BaseDef:  49.2135,
+			BaseHp:   784.1402587890625,
+			BaseAtk:  20.12303924560547,
+			BaseDef:  49.2135009765625,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -17977,7 +17977,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    15.033294,
+							Value:    15.03329,
 						},
 					},
 				},
@@ -17986,7 +17986,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1002.0142,
+							Value:    1002.014,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17994,7 +17994,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    25.714846,
+							Value:    25.71485,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_FIRE_ADD_HURT,
@@ -18015,7 +18015,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    39.956913,
+							Value:    39.95691,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_FIRE_ADD_HURT,
@@ -18028,7 +18028,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1973.1973,
+							Value:    1973.197,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18036,7 +18036,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    50.638466,
+							Value:    50.63847,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_FIRE_ADD_HURT,
@@ -18049,7 +18049,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2389.4185,
+							Value:    2389.418,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18057,7 +18057,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.320015,
+							Value:    61.32001,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_FIRE_ADD_HURT,
@@ -18078,7 +18078,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    72.001564,
+							Value:    72.00156,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_FIRE_ADD_HURT,
@@ -18106,9 +18106,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Yaoyao",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1030.3239,
-			BaseAtk:  17.808,
-			BaseDef:  62.9475,
+			BaseHp:   1030.3238525390625,
+			BaseAtk:  17.808000564575195,
+			BaseDef:  62.9474983215332,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -18121,7 +18121,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    769.70465,
+							Value:    769.7047,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18138,7 +18138,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1316.6001,
+							Value:    1316.6,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18180,7 +18180,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2592.6895,
+							Value:    2592.689,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18201,7 +18201,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3139.5847,
+							Value:    3139.585,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18222,7 +18222,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3686.4802,
+							Value:    3686.48,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18258,9 +18258,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Yelan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1124.9176,
-			BaseAtk:  18.9924,
-			BaseDef:  42.65879,
+			BaseHp:   1124.9176025390625,
+			BaseAtk:  18.992399215698242,
+			BaseDef:  42.658790588378906,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -18273,7 +18273,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    964.51514,
+							Value:    964.5151,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18281,7 +18281,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    16.283075,
+							Value:    16.28308,
 						},
 					},
 				},
@@ -18290,7 +18290,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1649.8285,
+							Value:    1649.828,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18311,7 +18311,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2563.5796,
+							Value:    2563.58,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18340,7 +18340,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    54.848255,
+							Value:    54.84826,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -18353,11 +18353,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3934.2065,
+							Value:    3934.207,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    149.19525,
+							Value:    149.1953,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -18382,7 +18382,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    77.987366,
+							Value:    77.98737,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -18410,9 +18410,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Yoimiya",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   791.2556,
-			BaseAtk:  25.137,
-			BaseDef:  47.864,
+			BaseHp:   791.255615234375,
+			BaseAtk:  25.136999130249023,
+			BaseDef:  47.86399841308594,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -18442,7 +18442,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1160.4725,
+							Value:    1160.473,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18450,7 +18450,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    36.863773,
+							Value:    36.86377,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -18463,7 +18463,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1803.1959,
+							Value:    1803.196,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18471,7 +18471,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    57.280636,
+							Value:    57.28064,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -18484,7 +18484,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2285.2383,
+							Value:    2285.238,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18505,7 +18505,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2767.2808,
+							Value:    2767.281,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18526,7 +18526,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3249.3232,
+							Value:    3249.323,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18534,7 +18534,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    103.21857,
+							Value:    103.2186,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -18562,9 +18562,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Mizuki",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   991.4528,
-			BaseAtk:  16.758,
-			BaseDef:  58.93255,
+			BaseHp:   991.4528198242188,
+			BaseAtk:  16.757999420166016,
+			BaseDef:  58.93254852294922,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -18594,7 +18594,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1454.0862,
+							Value:    1454.086,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18615,11 +18615,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2259.4263,
+							Value:    2259.426,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    134.30475,
+							Value:    134.3047,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -18636,7 +18636,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2863.4312,
+							Value:    2863.431,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18657,11 +18657,11 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3467.4363,
+							Value:    3467.436,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
-							Value:    206.11125,
+							Value:    206.1113,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
@@ -18678,7 +18678,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4071.4412,
+							Value:    4071.441,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18714,9 +18714,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Yunjin",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   893.5552,
-			BaseAtk:  16.0272,
-			BaseDef:  61.5741,
+			BaseHp:   893.55517578125,
+			BaseAtk:  16.02720069885254,
+			BaseDef:  61.574100494384766,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -18746,7 +18746,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1141.8302,
+							Value:    1141.83,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18767,7 +18767,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1774.2284,
+							Value:    1774.228,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18809,7 +18809,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2722.8257,
+							Value:    2722.826,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18830,7 +18830,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3197.1245,
+							Value:    3197.125,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18866,9 +18866,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Zhongli",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.984,
-			BaseAtk:  19.551,
-			BaseDef:  57.4368,
+			BaseHp:   1143.9840087890625,
+			BaseAtk:  19.551000595092773,
+			BaseDef:  57.436798095703125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -18898,7 +18898,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1677.7917,
+							Value:    1677.792,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18919,7 +18919,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2607.0303,
+							Value:    2607.03,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,

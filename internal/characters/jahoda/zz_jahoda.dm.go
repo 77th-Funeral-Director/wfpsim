@@ -252,21 +252,21 @@ var (
 	}
 	// burst: HiddenAcesSevenToolsOfTheHunter - Purrsonal Coordinated Assistance Robot Healing: {3} ATK+{4}
 	burstHealFlat = []float64{
-		500.73764,
-		550.81836,
+		500.7376,
+		550.8184,
 		605.0725,
 		663.5,
 		726.1009,
 		792.8752,
 		863.8229,
 		938.944,
-		1018.23846,
-		1101.7063,
-		1189.3477,
-		1281.1622,
-		1377.1503,
-		1477.3118,
-		1581.6466,
+		1018.238,
+		1101.706,
+		1189.348,
+		1281.162,
+		1377.15,
+		1477.312,
+		1581.647,
 	}
 	// burst: HiddenAcesSevenToolsOfTheHunter - Lowest HP Character Additional Healing: {5} ATK+{6}
 	burstAdditionalHealPP = []float64{
@@ -288,20 +288,20 @@ var (
 	}
 	// burst: HiddenAcesSevenToolsOfTheHunter - Lowest HP Character Additional Healing: {5} ATK+{6}
 	burstAdditionalHealFlat = []float64{
-		192.59721,
+		192.5972,
 		211.8596,
 		232.7272,
 		255.2,
-		279.27798,
-		304.96118,
+		279.278,
+		304.9612,
 		332.2496,
 		361.1432,
 		391.642,
-		423.74597,
-		457.45517,
-		492.76956,
-		529.68915,
+		423.746,
+		457.4552,
+		492.7696,
+		529.6891,
 		568.214,
-		608.34393,
+		608.3439,
 	}
 )

@@ -319,7 +319,7 @@ var (
 		8.532586,
 		9.222721,
 		9.912857,
-		10.665732,
+		10.66573,
 	}
 	// burst: GlacialIllumination - DMG Per Stack: {2}
 	burstExplodeStack = []float64{

@@ -178,20 +178,20 @@ var (
 	// skill: NightsOfFormalFocus - Base Shield DMG Absorption: {2} Max HP+{3}
 	shieldBase = []float64{
 		1040.007,
-		1144.0221,
-		1256.7052,
-		1378.0562,
-		1508.0751,
+		1144.022,
+		1256.705,
+		1378.056,
+		1508.075,
 		1646.762,
-		1794.1167,
-		1950.1394,
+		1794.117,
+		1950.139,
 		2114.83,
-		2288.1887,
+		2288.189,
 		2470.215,
-		2660.9097,
+		2660.91,
 		2860.272,
-		3068.3022,
-		3285.0005,
+		3068.302,
+		3285.0,
 	}
 	// burst: DreamOfTheStarStreamShaker - Starlight Slug DMG: {0} Max HP
 	burst = []float64{

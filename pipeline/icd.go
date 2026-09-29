@@ -23,13 +23,13 @@ func (c *Compiled) buildICDGroup() error {
 		}
 		ref := refs[0]
 		if att.Timer == 0 {
-			att.Timer = ref.ResetCycle
+			att.Timer = roundFloat(ref.ResetCycle)
 		}
 		if len(att.Damage) == 0 {
-			att.Damage = ref.DamageSequence
+			att.Damage = roundFloats(ref.DamageSequence)
 		}
 		if len(att.Durability) == 0 {
-			att.Durability = ref.DurabilitySequence
+			att.Durability = roundFloats(ref.DurabilitySequence)
 		}
 		c.ICDGroup[name] = att
 	}

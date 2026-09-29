@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"maps"
+	"math"
 	"reflect"
 	"slices"
 	"strconv"
@@ -64,6 +65,7 @@ func ParseTalent(attributes []*AttributeSpec, hint string) (*AttributeTuple, err
 
 	if attrs := excel.Filter(attributes, find); len(attrs) == 1 {
 		t.AttributeSpec = attrs[0]
+		t.Const = roundFloats(t.Const)
 	} else {
 		return nil, fmt.Errorf("talent results in attrs=%v but we expect 1: %v", len(attrs), hint)
 	}
@@ -141,6 +143,7 @@ func emitTalents(b *bytes.Buffer, talents []map[string]any, attributes []*Attrib
 				if values == nil {
 					values = slices.Repeat([]float64{v.Const[v.pos]}, levels)
 				}
+				values = roundFloats(values)
 				s := dumpGo(values, false)
 				s = strings.TrimSpace(s)
 				s = strings.TrimPrefix(s, "[]float64")
@@ -217,4 +220,35 @@ func emitTalents(b *bytes.Buffer, talents []map[string]any, attributes []*Attrib
 		b.WriteString("\n)\n")
 	}
 	return nil
+}
+
+func roundFloats(arr []float64) []float64 {
+	// round to 8 sig digs
+	for i := range arr {
+		arr[i] = roundFloat(arr[i])
+	}
+	return arr
+}
+
+// roundFloat rounds a float64 to either 8 significant digits
+// or 5 decimal places, whichever results in fewer decimal places.
+func roundFloat(val float64) float64 {
+	if val == 0 || math.IsNaN(val) || math.IsInf(val, 0) {
+		return val
+	}
+
+	const maxSigDigs = 7
+	const maxDecimals = 6
+
+	// Decimal places required for 8 significant digits:
+	// numDecimals = maxSigDigs - 1 - magnitude
+	magnitude := math.Floor(math.Log10(math.Abs(val)))
+	sigDigDecimals := float64(maxSigDigs-1) - magnitude
+
+	// Choosing fewer decimal places means choosing min(sigDigDecimals, maxDecimals).
+	// In scaling terms, smaller decimal place count -> smaller scale factor (10^d).
+	chosenDecimals := math.Min(sigDigDecimals, maxDecimals)
+
+	scale := math.Pow(10, chosenDecimals)
+	return math.Round(val*scale) / scale
 }
