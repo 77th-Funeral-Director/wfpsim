@@ -139,20 +139,20 @@ var (
 	}
 	// skill: RevelationUncreatedLight - Shield DMG Absorption: {1} ATK+{2}
 	skillShieldFlat = []float64{
-		1386.6697,
+		1386.67,
 		1525.356,
-		1675.5994,
+		1675.599,
 		1837.4,
-		2010.7578,
-		2195.6729,
+		2010.758,
+		2195.673,
 		2392.145,
-		2600.1743,
+		2600.174,
 		2819.761,
-		3050.9045,
-		3293.6055,
-		3547.8638,
+		3050.905,
+		3293.605,
+		3547.864,
 		3813.679,
-		4091.0515,
+		4091.052,
 		4379.981,
 	}
 	// skill: RevelationUncreatedLight - Grace of Kenosis ATK Bonus Ratio: {4} ATK

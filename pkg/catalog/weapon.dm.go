@@ -16376,7 +16376,7 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 				},
 				{
 					PropType:     model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
-					InitialValue: 11.999988,
+					InitialValue: 11.99999,
 					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
 				},
 			},

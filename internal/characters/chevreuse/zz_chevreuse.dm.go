@@ -213,21 +213,21 @@ var (
 	}
 	// skill: ShortRangeRapidInterdictionFire - HP Regeneration Over Time: {4} Max HP+{5}
 	skillHpFlat = []float64{
-		256.79184,
-		282.47458,
-		310.29758,
-		340.26077,
-		372.36423,
-		406.60788,
+		256.7918,
+		282.4746,
+		310.2976,
+		340.2608,
+		372.3642,
+		406.6079,
 		442.9918,
-		481.51593,
+		481.5159,
 		522.1803,
-		564.98486,
+		564.9849,
 		609.9297,
 		657.0147,
 		706.24,
 		757.6055,
-		811.11127,
+		811.1113,
 	}
 	// skill: ShortRangeRapidInterdictionFire - Surging Blade DMG: {6}
 	arkhe = []float64{

@@ -250,20 +250,20 @@ var (
 	// burst: RadiantPsalter - Shield of Sacred Favor DMG Absorption: {2} Max HP+{1}
 	burstShieldFlat = []float64{
 		323.5577,
-		355.91797,
-		390.97495,
-		428.72858,
-		469.17892,
+		355.918,
+		390.9749,
+		428.7286,
+		469.1789,
 		512.3259,
 		558.1697,
 		606.7101,
-		657.94714,
+		657.9471,
 		711.8809,
 		768.5114,
-		827.83856,
+		827.8386,
 		889.8624,
-		954.58295,
-		1022.0002,
+		954.5829,
+		1022.0,
 	}
 	// burst: RadiantPsalter - Shield of Sacred Favor DMG Absorption: {2} Max HP+{1}
 	burstShieldPP = []float64{

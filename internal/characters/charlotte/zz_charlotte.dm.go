@@ -269,21 +269,21 @@ var (
 	}
 	// burst: StillPhotoComprehensiveConfirmation - Cast Healing: {0} ATK+{1}
 	burstInitialHealFlat = []float64{
-		1608.4863,
-		1769.3573,
-		1943.6342,
+		1608.486,
+		1769.357,
+		1943.634,
 		2131.317,
-		2332.4058,
-		2546.9004,
+		2332.406,
+		2546.9,
 		2774.801,
-		3016.1074,
-		3270.8198,
-		3538.9382,
-		3820.4624,
-		4115.3926,
-		4423.7285,
-		4745.4707,
-		5080.6187,
+		3016.107,
+		3270.82,
+		3538.938,
+		3820.462,
+		4115.393,
+		4423.729,
+		4745.471,
+		5080.619,
 	}
 	// burst: StillPhotoComprehensiveConfirmation - Skill DMG: {2}
 	burst = []float64{
@@ -323,21 +323,21 @@ var (
 	}
 	// burst: StillPhotoComprehensiveConfirmation - Kamera Continuous Regeneration: {3} ATK+{4}
 	burstDotHealFlat = []float64{
-		57.447098,
-		63.192608,
+		57.4471,
+		63.19261,
 		69.41691,
 		76.12,
 		83.30189,
 		90.96256,
-		99.102036,
+		99.10204,
 		107.7203,
-		116.81735,
-		126.393196,
-		136.44783,
-		146.98126,
+		116.8174,
+		126.3932,
+		136.4478,
+		146.9813,
 		157.9935,
-		169.48451,
-		181.45432,
+		169.4845,
+		181.4543,
 	}
 	// burst: StillPhotoComprehensiveConfirmation - Kamera DMG: {5}
 	burstDot = []float64{
