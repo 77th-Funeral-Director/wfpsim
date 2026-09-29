@@ -54,6 +54,7 @@ const (
 	Albedo                        // albedo
 	Alhaitham                     // alhaitham
 	Aloy                          // aloy
+	Alyosha                       // alyosha
 	Amber                         // amber
 	AratakiItto                   // aratakiitto
 	Arlecchino                    // arlecchino
@@ -188,6 +189,7 @@ var _CharNames = [...]string{
 	"albedo",
 	"alhaitham",
 	"aloy",
+	"alyosha",
 	"amber",
 	"aratakiitto",
 	"arlecchino",
@@ -322,6 +324,7 @@ var _CharValues = [...]Char{
 	Albedo,
 	Alhaitham,
 	Aloy,
+	Alyosha,
 	Amber,
 	AratakiItto,
 	Arlecchino,

@@ -91,6 +91,7 @@ ace.define(
         'alhaitham',
         'haitham',
         'aloy',
+        'alyosha',
         'amber',
         'aratakiitto',
         'aratakitheoneandoniitto',

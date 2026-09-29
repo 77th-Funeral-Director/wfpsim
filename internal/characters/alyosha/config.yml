@@ -1,0 +1,35 @@
+use: pipeline
+kind: character
+name: alyosha
+
+override:
+  icd_group:
+    AlyoshaBurst:
+      name: Alyosha_ElementalBurst
+
+combat:
+  icd_groups:
+    - AlyoshaBurst
+talents:
+  - attack:
+      - attack(1-Hit DMG)
+      - attack(2-Hit DMG)
+      - - attack(3-Hit DMG) # {}+{}
+        - attack(3-Hit DMG|1) # {}+{}
+      - attack(4-Hit DMG)
+  - charge: attack(Charged Attack DMG)
+
+  - skillTap: skill(Press DMG)
+  - skillHold: skill(Hold DMG)
+  - skillBuff: skill(Hunter's Precision ATK Bonus)
+
+  - burst: burst(Fulgurite Hunting Field DMG)
+  - burstTick: burst(Tugarin DMG)
+
+abilities:
+  - name: attack
+  - name: charge
+  - name: skill
+    params:
+      hold: 0 for Tap (default), 1 for Hold.
+  - name: burst
