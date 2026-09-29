@@ -37,8 +37,8 @@
 		"build:kqmsim": "pnpm --filter @gcsim/kqmsim build:wasm && pnpm build:kqmsim-ui",
 		"build:kqmsim-ui": "pnpm --filter @gcsim/kqmsim build && pnpm --filter @gcsim/kqmembed build",
 		"build:kqmdb": "pnpm --filter @gcsim/kqmdb build",
-		"deploy:kqmsim": "pnpm --filter @gcsim/kqmworkers deploy",
-		"deploy:kqmdb": "pnpm --filter @gcsim/kqmdb deploy"
+		"deploy:kqmsim": "pnpm --filter @gcsim/kqmworkers run deploy",
+		"deploy:kqmdb": "pnpm --filter @gcsim/kqmdb run deploy"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.13",
