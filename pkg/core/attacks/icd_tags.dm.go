@@ -95,4 +95,6 @@ const (
 	ICDTagYanfeiFire
 	ICDTagYelanBreakthrough
 	ICDTagYelanBurst
+	ICDTagSandroneExtraAttackSweepingFire
+	ICDTagSandroneExtraAttackLaser
 )

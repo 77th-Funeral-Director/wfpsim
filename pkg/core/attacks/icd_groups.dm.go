@@ -69,6 +69,10 @@ const (
 	ICDGroupYaoyaoRadishSkill
 	ICDGroupYelanBreakthrough
 	ICDGroupYelanBurst
+	ICDGroupAlyoshaBurst
+	ICDGroupLohenSkillAttack
+	ICDGroupSandroneSweepingFire
+	ICDGroupVesnaSkill
 )
 
 var ICDGroupResetTimer = []int{
@@ -136,6 +140,10 @@ var ICDGroupResetTimer = []int{
 	ICDGroupYaoyaoRadishSkill:         150,  // 2.5s
 	ICDGroupYelanBreakthrough:         18,   // 0.3s
 	ICDGroupYelanBurst:                120,  // 2s
+	ICDGroupAlyoshaBurst:              114,
+	ICDGroupLohenSkillAttack:          300,
+	ICDGroupSandroneSweepingFire:      85,
+	ICDGroupVesnaSkill:                120,
 }
 
 var ICDGroupEleApplicationSequence = [][]float64{
@@ -203,6 +211,10 @@ var ICDGroupEleApplicationSequence = [][]float64{
 	ICDGroupYaoyaoRadishSkill:         {1.0, 0.0, 0.0, 0.0, 0.0, 0.0},
 	ICDGroupYelanBreakthrough:         {1.0, 0.0, 0.0, 0.0},
 	ICDGroupYelanBurst:                {1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0},
+	ICDGroupAlyoshaBurst:              {1, 0, 0, 0, 0, 0, 0, 0},
+	ICDGroupLohenSkillAttack:          {1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0},
+	ICDGroupSandroneSweepingFire:      {1, 0},
+	ICDGroupVesnaSkill:                {1, 0},
 }
 
 var ICDGroupDamageSequence = [][]float64{
@@ -270,4 +282,8 @@ var ICDGroupDamageSequence = [][]float64{
 	ICDGroupYaoyaoRadishSkill:         {1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
 	ICDGroupYelanBreakthrough:         {1.0, 0.0, 0.0, 0.0},
 	ICDGroupYelanBurst:                {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
+	ICDGroupAlyoshaBurst:              {1, 1, 1, 1, 1, 1, 1, 1},
+	ICDGroupLohenSkillAttack:          {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+	ICDGroupSandroneSweepingFire:      {1, 1},
+	ICDGroupVesnaSkill:                {1, 1},
 }

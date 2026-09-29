@@ -103,6 +103,7 @@ func (r *Reactable) nearbySSwVortex() info.Gadget {
 }
 
 func (r *Reactable) calcStellarSwirlDmg(target info.Target, ai info.AttackInfo, ap info.AttackPattern, contribMap [info.MaxChars]bool, mult float64) (info.AttackInfo, info.Snapshot) {
+	owner := ai.ActorIndex
 	contributions := []sswContribution{}
 	for charInd, char := range r.core.Player.Chars() {
 		if !contribMap[charInd] {
@@ -120,7 +121,7 @@ func (r *Reactable) calcStellarSwirlDmg(target info.Target, ai info.AttackInfo, 
 		}
 
 		// Emit event so PreDamageMods can be applied to the individual contributions
-		r.core.Events.Emit(event.OnSpecialReactionAttack, target, &ae)
+		r.core.Events.Emit(event.OnSpecialReactionAttack, target, &ae, owner)
 
 		em := ae.Snapshot.Stats[attributes.EM]
 		cr := ae.Snapshot.Stats[attributes.CR]
