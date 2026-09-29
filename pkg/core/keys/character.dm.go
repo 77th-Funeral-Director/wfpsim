@@ -168,13 +168,6 @@ const (
 	YumemizukiMizuki              // yumemizukimizuki
 	YunJin                        // yunjin
 	Zhongli                       // zhongli
-	Alyosha                       // alyosha
-	Linnea                        // linnea
-	Lohen                         // lohen
-	Sandrone                      // sandrone
-	Vesna                         // vesna
-	Vodyanitsa                    // vodyanitsa
-	Zibai                         // zibai
 	InvalidChar                   // invalidchar
 )
 
@@ -305,13 +298,6 @@ var _CharNames = [...]string{
 	"yumemizukimizuki",
 	"yunjin",
 	"zhongli",
-	"alyosha",
-	"linnea",
-	"lohen",
-	"sandrone",
-	"vesna",
-	"vodyanitsa",
-	"zibai",
 	"invalidchar",
 }
 
@@ -442,12 +428,5 @@ var _CharValues = [...]Char{
 	YumemizukiMizuki,
 	YunJin,
 	Zhongli,
-	Alyosha,
-	Linnea,
-	Lohen,
-	Sandrone,
-	Vesna,
-	Vodyanitsa,
-	Zibai,
 	InvalidChar,
 }

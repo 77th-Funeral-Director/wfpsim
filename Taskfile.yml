@@ -36,8 +36,6 @@ tasks:
     cmds:
       - go generate ./pipeline
       - go run ./pipeline {{.CLI_ARGS}}
-      - python3 scripts/kqm-generate.py
-      - gofmt -w pkg/core/keys/character.dm.go pkg/core/attacks/icd_groups.dm.go pkg/core/attacks/icd_tags.dm.go
   pipeline-add:
     cmds:
       - git add -v 'ui/packages/docs/docs/reference/*/*.md' > /dev/null

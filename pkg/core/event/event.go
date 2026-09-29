@@ -77,7 +77,7 @@ const (
 	OnPlunge       // nil
 	OnAimShoot     // nil
 	OnDash
-	OnSpecialReactionAttack // target, AttackEvent, owner; event so predamagemods can be applied to the individual lunar/stellar contributions. Emitted once per contributor
+	OnSpecialReactionAttack // target, AttackEvent; event so predamagemods can be applied to the individual lunar/stellar contributions. Emitted once per contributor
 	OnMoondriftHarmony      // target, AttackEvent;
 	OnStellarVortexDetonate // src char, contribMap, AttackPattern;
 	// sim stuff

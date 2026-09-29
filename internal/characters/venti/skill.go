@@ -10,9 +10,8 @@ import (
 )
 
 var (
-	skillPressFrames     []int
-	skillShortHoldFrames []int
-	skillHoldFrames      []int
+	skillPressFrames []int
+	skillHoldFrames  []int
 )
 
 func init() {
@@ -24,15 +23,6 @@ func init() {
 	skillPressFrames[action.ActionBurst] = 22
 	skillPressFrames[action.ActionDash] = 22
 	skillPressFrames[action.ActionJump] = 22
-
-	// skill (press) -> x
-	skillShortHoldFrames = frames.InitAbilSlice(86)
-	skillShortHoldFrames[action.ActionAttack] = 10
-	skillShortHoldFrames[action.ActionAim] = 10   // assumed
-	skillShortHoldFrames[action.ActionSkill] = 10 // uses burst frames
-	skillShortHoldFrames[action.ActionBurst] = 10
-	skillShortHoldFrames[action.ActionDash] = 10
-	skillShortHoldFrames[action.ActionJump] = 10
 
 	// skill (hold) -> x
 	skillHoldFrames = frames.InitAbilSlice(289)
@@ -66,17 +56,6 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 	radius := 3.0
 	trg := c.Core.Combat.PrimaryTarget()
 	var count float64 = 3
-	if p["short_hold"] != 0 {
-		cdstart = 9
-		hitmark = 39
-		act = action.Info{
-			Frames:          frames.NewAbilFunc(skillShortHoldFrames),
-			AnimationLength: skillShortHoldFrames[action.InvalidAction],
-			CanQueueAfter:   skillShortHoldFrames[action.ActionDash], // earliest cancel
-			State:           action.SkillState,
-		}
-	}
-
 	if p["hold"] != 0 {
 		cd = 900
 		cdstart = 34
@@ -92,12 +71,9 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 			CanQueueAfter:   skillHoldFrames[action.ActionHighPlunge], // earliest cancel
 			State:           action.SkillState,
 		}
-	} else {
-		ai.Mult *= c.c2OnSkillTap()
 	}
 
-	c.c4OnSkillBurst()
-	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(trg, nil, radius), 0, hitmark, c.c2SkillCB, c.makeParticleCB(count))
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(trg, nil, radius), 0, hitmark, c.c2, c.makeParticleCB(count))
 
 	c.SetCDWithDelay(action.ActionSkill, cd, cdstart)
 

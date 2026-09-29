@@ -11,10 +11,7 @@ import (
 
 var burstFrames []int
 
-const (
-	burstKey   = "stormeye"
-	burstStart = 94
-)
+const burstStart = 94
 
 func init() {
 	burstFrames = frames.InitAbilSlice(95) // Q -> N1/CA/E/D
@@ -53,25 +50,21 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 	c.Core.Tasks.Add(func() {
 		snap = c.Snapshot(&ai)
 		c.snapAbsorb = c.Snapshot(&c.aiAbsorb)
-
-		c.qAbsorbBonusTicks = 0
-
-		c.c2OnBurst()
-		c.c4OnSkillBurst()
 	}, 104)
 
-	cb := c.c6(attributes.Anemo)
+	var cb info.AttackCBFunc
+	if c.Base.Cons >= 6 {
+		cb = c.c6(attributes.Anemo)
+	}
 
 	// starts at 106 with 24f interval between ticks. 20 total
-	c.qSrc = c.Core.F
-	c.Core.Tasks.Add(c.burstTicks(c.Core.F, ai, &snap, ap, cb), 106)
-	c.Core.Tasks.Add(func() { c.AddStatus(burstKey, 8*60, false) }, 93)
-
+	for i := range 20 {
+		c.Core.Tasks.Add(func() {
+			c.Core.QueueAttackWithSnap(ai, snap, ap, 0, cb)
+		}, 106+24*i)
+	}
 	// Infusion usually occurs after 4 ticks of anemo according to KQM library
 	c.Core.Tasks.Add(c.absorbCheckQ(c.Core.F, 0, int((480-24*4)/18)), 106+24*3)
-
-	// Ensure that the hex extension cap gets reset
-	c.hexereiBurstExtCount = 0
 
 	if c.Base.Ascension >= 4 {
 		c.Core.Tasks.Add(c.a4, 480+burstStart)
@@ -88,32 +81,16 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 	}, nil
 }
 
-func (c *char) burstTicks(src int, ai info.AttackInfo, snap *info.Snapshot, ap info.AttackPattern, cb info.AttackCBFunc) func() {
-	return func() {
-		if c.qSrc != src {
-			return
-		}
-		if !c.StatusIsActive(burstKey) {
-			return
-		}
-		c.Core.QueueAttackWithSnap(ai, *snap, ap, 0, cb)
-		ai.Mult = burstDot[c.TalentLvlBurst()] * c.hexereiBurstBuff()
-		c.Core.Tasks.Add(c.burstTicks(src, ai, snap, ap, cb), 24)
+func (c *char) burstAbsorbedTicks() {
+	var cb info.AttackCBFunc
+	if c.Base.Cons >= 6 {
+		cb = c.c6(c.qAbsorb)
 	}
-}
 
-// TODO: how does this work with the bug and the extension? just add more ticks?
-func (c *char) burstAbsorbedTicks(count int, ai info.AttackInfo, snap info.Snapshot, ap info.AttackPattern, cb info.AttackCBFunc) func() {
+	ap := combat.NewCircleHitOnTarget(c.qPos, nil, 6)
 	// ticks at 24f. 15 total
-	return func() {
-		ai.Mult = burstDot[c.TalentLvlBurst()] * c.hexereiBurstBuff()
-		c.Core.QueueAttackWithSnap(c.aiAbsorb, c.snapAbsorb, ap, 0, cb)
-		if count+c.qAbsorbBonusTicks <= 0 {
-			c.aiAbsorb.Element = attributes.NoElement
-			return
-		}
-
-		c.Core.Tasks.Add(c.burstAbsorbedTicks(count-1, ai, snap, ap, cb), 24)
+	for i := range 15 {
+		c.Core.QueueAttackWithSnap(c.aiAbsorb, c.snapAbsorb, ap, i*24, cb)
 	}
 }
 
@@ -136,11 +113,7 @@ func (c *char) absorbCheckQ(src, count, maxcount int) func() {
 				c.aiAbsorb.ICDTag = attacks.ICDTagElementalBurstCryo
 			}
 			// trigger dmg ticks here
-
-			cb := c.c6(c.qAbsorb)
-
-			ap := combat.NewCircleHitOnTarget(c.qPos, nil, 6)
-			c.Core.Tasks.Add(c.burstAbsorbedTicks(15, c.aiAbsorb, c.snapAbsorb, ap, cb), 0)
+			c.burstAbsorbedTicks()
 			return
 		}
 		// otherwise queue up
