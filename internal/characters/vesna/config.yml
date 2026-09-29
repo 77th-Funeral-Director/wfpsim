@@ -1,0 +1,35 @@
+use: pipeline
+kind: character
+name: vesna
+
+override:
+  icd_group:
+    VesnaSkill:
+      name: Vesna_MagicSword
+
+combat:
+  icd_groups:
+    - VesnaSkill
+
+talents:
+  - attack:
+      - attack(1-Hit DMG)
+      - attack(2-Hit DMG)
+      - attack(3-Hit DMG)
+      - attack(4-Hit DMG)
+      - attack(5-Hit DMG)
+      - attack(6-Hit DMG)
+  - charge: attack(Charged Attack DMG)
+
+  - skill: skill(Skill DMG)
+
+  - skillSpecial:
+      - skill(Windborne Sword Lv. 1 DMG)
+      - skill(Windborne Sword Lv. 1 DMG)
+      - skill(Windborne Sword Lv. 2 DMG)
+      - skill(Windborne Sword Lv. 2 DMG)
+  - skillSpirit2: skill(Windborne Sword Lv. 2 Spirit Blade DMG)
+  - skillSpirit3DoT: skill(Windborne Sword Lv. 3 Spirit Blade DMG)
+  - skillSpirit3Final: skill(Windborne Sword Lv. 3 Spirit Blade Final Hit DMG)
+  - skillPinion: skill(Wind Pinion DMG)
+  - burst: burst(Spirit Blade DMG)

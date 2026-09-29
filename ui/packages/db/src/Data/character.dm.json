@@ -1919,6 +1919,23 @@
         "burst_energy_cost": 60
       }
     },
+    "vesna": {
+      "id": 10000143,
+      "sub_id": 14301,
+      "key": "vesna",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_GIRL",
+      "region": "ASSOC_TYPE_SNEZHNAYA_STAR",
+      "element": "Wind",
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "icon_name": "UI_AvatarIcon_Vesna",
+      "skill_details": {
+        "skill": 11432,
+        "burst": 11435,
+        "attack": 11431,
+        "burst_energy_cost": 60
+      }
+    },
     "wanderer": {
       "id": 10000075,
       "sub_id": 7501,

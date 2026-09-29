@@ -1,0 +1,60 @@
+package vesna
+
+import (
+	"github.com/genshinsim/gcsim/internal/frames"
+	"github.com/genshinsim/gcsim/pkg/core/action"
+	"github.com/genshinsim/gcsim/pkg/core/attacks"
+	"github.com/genshinsim/gcsim/pkg/core/attributes"
+	"github.com/genshinsim/gcsim/pkg/core/combat"
+	"github.com/genshinsim/gcsim/pkg/core/info"
+)
+
+var chargeFrames []int
+
+const chargeHitmark = 31
+
+func init() {
+	// charge -> x
+	chargeFrames = frames.InitAbilSlice(59)
+	chargeFrames[action.ActionAttack] = 56
+	chargeFrames[action.ActionSkill] = chargeHitmark
+	chargeFrames[action.ActionBurst] = chargeHitmark
+	chargeFrames[action.ActionDash] = chargeHitmark
+	chargeFrames[action.ActionJump] = chargeHitmark
+	chargeFrames[action.ActionSwap] = chargeHitmark
+}
+
+func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
+	ai := info.AttackInfo{
+		ActorIndex:         c.Index(),
+		Abil:               "Charge Attack",
+		AttackTag:          attacks.AttackTagExtra,
+		ICDTag:             attacks.ICDTagExtraAttack,
+		ICDGroup:           attacks.ICDGroupDefault,
+		StrikeType:         attacks.StrikeTypeSlash,
+		Element:            attributes.Physical,
+		Durability:         25,
+		HitlagHaltFrames:   0.02 * 60,
+		HitlagFactor:       0.01,
+		CanBeDefenseHalted: true,
+		Mult:               charge[c.TalentLvlAttack()],
+	}
+
+	var cb info.AttackCBFunc
+	if c.StatusIsActive(skillKey) {
+		ai.Element = attributes.Anemo
+		ai.IgnoreInfusion = true
+		cb = c.skillStacksCB(2)
+	}
+
+	ap := combat.NewBoxHitOnTarget(c.Core.Combat.Player(), info.Point{Y: -0.1}, 2.8, 4.8)
+
+	c.Core.QueueAttack(ai, ap, chargeHitmark, chargeHitmark, cb)
+	c.pinionAttack(30)
+	return action.Info{
+		Frames:          frames.NewAbilFunc(chargeFrames),
+		AnimationLength: chargeFrames[action.InvalidAction],
+		CanQueueAfter:   chargeHitmark,
+		State:           action.ChargeAttackState,
+	}, nil
+}

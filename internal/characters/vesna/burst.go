@@ -1,0 +1,69 @@
+package vesna
+
+import (
+	"github.com/genshinsim/gcsim/internal/frames"
+	"github.com/genshinsim/gcsim/pkg/core/action"
+	"github.com/genshinsim/gcsim/pkg/core/attacks"
+	"github.com/genshinsim/gcsim/pkg/core/attributes"
+	"github.com/genshinsim/gcsim/pkg/core/combat"
+	"github.com/genshinsim/gcsim/pkg/core/info"
+)
+
+var burstFrames []int
+
+const burstHitmarks = 132
+
+func init() {
+	burstFrames = frames.InitAbilSlice(128)
+	burstFrames[action.ActionAttack] = 125
+	burstFrames[action.ActionSkill] = 125
+	burstFrames[action.ActionDash] = 126
+	burstFrames[action.ActionWalk] = 112
+	burstFrames[action.ActionSwap] = 126
+}
+
+func (c *char) Burst(p map[string]int) (action.Info, error) {
+	c.SetCD(action.ActionBurst, 15*60)
+	c.ConsumeEnergy(7)
+
+	c.a1OnSpecialSkillOrBurst()
+
+	c.QueueCharTask(func() {
+		c.addSkillStacks(1)
+	}, 98)
+
+	c.QueueCharTask(func() {
+		ai := info.AttackInfo{
+			ActorIndex: c.Index(),
+			Abil:       "Burst",
+			AttackTag:  attacks.AttackTagElementalBurst,
+			ICDTag:     attacks.ICDTagNone,
+			ICDGroup:   attacks.ICDGroupDefault,
+			StrikeType: attacks.StrikeTypeDefault,
+			Element:    attributes.Anemo,
+			Durability: 25,
+			Mult:       burst[c.TalentLvlBurst()] * c.a1Mult(),
+		}
+
+		if c.isRadianceSSw() {
+			ai.Abil += stellarSwirlText
+			ai.AttackTag = attacks.AttackTagDirectStellarSwirl
+			ai.IgnoreDefPercent = 1
+			ai.Durability = 0
+		}
+
+		c.Core.QueueAttack(
+			ai,
+			combat.NewCircleHitOnTarget(c.Core.Combat.Player(), info.Point{Y: 5}, 7),
+			burstHitmarks,
+			burstHitmarks,
+		)
+	}, burstHitmarks)
+
+	return action.Info{
+		Frames:          frames.NewAbilFunc(burstFrames),
+		AnimationLength: burstFrames[action.InvalidAction],
+		CanQueueAfter:   burstFrames[action.ActionWalk], // earliest cancel
+		State:           action.BurstState,
+	}, nil
+}
