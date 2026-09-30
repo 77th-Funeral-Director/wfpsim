@@ -30,9 +30,43 @@ jobs:
       - name: Build KQM sites
         working-directory: ui
         run: pnpm build:kqmsim && pnpm build:kqmdb
+      - name: Upload versioned simulator to R2
+        working-directory: ui/packages/kqmworkers
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: c102bcadcefa0897a01701fd28bed543
+        # Bucket-scoped R2 tokens require the S3 API, not Wrangler's REST upload.
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import subprocess
+          import urllib.request
+
+          account_id = os.environ["CLOUDFLARE_ACCOUNT_ID"]
+          token = os.environ["CLOUDFLARE_API_TOKEN"]
+          request = urllib.request.Request(
+              f"https://api.cloudflare.com/client/v4/accounts/{account_id}/tokens/verify",
+              headers={"Authorization": f"Bearer {token}"},
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              token_id = json.load(response)["result"]["id"]
+          aws_env = os.environ.copy()
+          aws_env["AWS_ACCESS_KEY_ID"] = token_id
+          aws_env["AWS_SECRET_ACCESS_KEY"] = hashlib.sha256(token.encode()).hexdigest()
+          subprocess.run([
+              "aws", "s3api", "put-object",
+              "--endpoint-url", f"https://{account_id}.r2.cloudflarestorage.com",
+              "--region", "auto", "--bucket", "kqmsim",
+              "--key", f"{os.environ['GITHUB_SHA']}.wasm",
+              "--body", "../kqmsim/public/main.wasm",
+              "--content-type", "application/wasm",
+          ], env=aws_env, check=True)
+          PY
       - name: Deploy KQM sites
         working-directory: ui
-        run: pnpm deploy:kqmsim && pnpm deploy:kqmdb
+        run: pnpm --filter @gcsim/kqmworkers exec wrangler deploy && pnpm deploy:kqmdb
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: c102bcadcefa0897a01701fd28bed543
