@@ -61,7 +61,7 @@ func (p *StellarVortex) explode() {
 		if willHit, _ := e.AttackWillLand(ap); !willHit {
 			continue
 		}
-		ai, snap := p.r.calcStellarSwirlDmg(e, ai, ap, contribMap, sswStackMult[stacks])
+		ai, snap := p.r.calcStellarSwirlDmg(e, ai, ap, contribMap, sswStackMult[stacks], owner)
 		ai.ActorIndex = owner
 		p.r.core.QueueAttackWithSnap(ai, snap, combat.NewSingleTargetHit(e.Key()), 0)
 	}

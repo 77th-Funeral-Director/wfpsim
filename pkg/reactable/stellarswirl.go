@@ -79,7 +79,7 @@ func (r *Reactable) queueStellarSwirl(charIndex int) {
 		if willHit, _ := e.AttackWillLand(ap); !willHit {
 			continue
 		}
-		ai, snap := r.calcStellarSwirlDmg(e, ai, ap, contribMap, 0.75)
+		ai, snap := r.calcStellarSwirlDmg(e, ai, ap, contribMap, 0.75, charIndex)
 		ai.ActorIndex = charIndex
 		r.core.QueueAttackWithSnap(ai, snap, combat.NewSingleTargetHit(e.Key()), 3)
 	}
@@ -108,7 +108,7 @@ func (r *Reactable) nearbySSwVortex() info.Gadget {
 	return nil
 }
 
-func (r *Reactable) calcStellarSwirlDmg(target info.Target, ai info.AttackInfo, ap info.AttackPattern, contribMap [info.MaxChars]bool, mult float64) (info.AttackInfo, info.Snapshot) {
+func (r *Reactable) calcStellarSwirlDmg(target info.Target, ai info.AttackInfo, ap info.AttackPattern, contribMap [info.MaxChars]bool, mult float64, owner int) (info.AttackInfo, info.Snapshot) {
 	contributions := []sswContribution{}
 	for charInd, char := range r.core.Player.Chars() {
 		if !contribMap[charInd] {
@@ -126,7 +126,7 @@ func (r *Reactable) calcStellarSwirlDmg(target info.Target, ai info.AttackInfo, 
 		}
 
 		// Emit event so PreDamageMods can be applied to the individual contributions
-		r.core.Events.Emit(event.OnSpecialReactionAttack, target, &ae)
+		r.core.Events.Emit(event.OnSpecialReactionAttack, target, &ae, owner)
 
 		em := ae.Snapshot.Stats[attributes.EM]
 		cr := ae.Snapshot.Stats[attributes.CR]

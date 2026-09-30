@@ -135,7 +135,7 @@ func (r *Reactable) doSingleLCAttack(contribMap [info.MaxChars]bool, consumeAura
 		}
 
 		// Emit event so PreDamageMods can be applied to the individual LC contributions
-		r.core.Events.Emit(event.OnSpecialReactionAttack, r.self, &ae)
+		r.core.Events.Emit(event.OnSpecialReactionAttack, r.self, &ae, r.lcAtkOwner)
 
 		em := ae.Snapshot.Stats[attributes.EM]
 		cr := ae.Snapshot.Stats[attributes.CR]
