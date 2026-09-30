@@ -159,10 +159,10 @@ func (c *char) skillInit() {
 					return 0
 				}
 
-				mult := 1.0
+				mult := 0.01
 				switch ai.AttackTag {
 				case attacks.AttackTagDirectStellarSwirl, attacks.AttackTagReactionStellarSwirl:
-					mult = 0.1
+					return stellarSwirlDMG[c.TalentLvlSkill()] * c.Stat(attributes.EM) * mult
 				}
 
 				return swirlDMG[c.TalentLvlSkill()] * c.Stat(attributes.EM) * mult
