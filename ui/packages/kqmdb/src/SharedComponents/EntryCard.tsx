@@ -2,7 +2,6 @@ import { TeamTile } from "@gcsim/components";
 import { Badge, Button, toast } from "@gcsim/primitives";
 import type { db } from "@gcsim/types";
 import { FaArrowRight, FaCopy } from "react-icons/fa";
-import { Link } from "wouter";
 import {
 	author,
 	created,
@@ -54,9 +53,9 @@ export function CardActions({ entry }: { entry: db.Entry }) {
 				<FaCopy size={12} /> Copy config
 			</Button>
 			<Button size="sm" asChild>
-				<Link href={viewerLink(entry)}>
+				<a href={viewerLink(entry)} target="_blank" rel="noopener noreferrer">
 					<FaArrowRight size={11} /> Open in viewer
-				</Link>
+				</a>
 			</Button>
 		</div>
 	);
