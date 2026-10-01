@@ -15,7 +15,7 @@ export const Commit = memo(({ commit, className }: Props) => {
 	}
 
 	const shortCommit = commit?.substring(0, 7);
-	const url = "https://github.com/genshinsim/gcsim/commits/" + commit;
+	const url = "https://github.com/KQM-git/kqmsim/commits/" + commit;
 
 	const cc = cn("text-g-sm font-g-mono", className);
 
