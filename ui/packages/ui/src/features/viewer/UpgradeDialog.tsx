@@ -157,11 +157,11 @@ const DialogBody = ({ mismatch, data, latestCommit }: BodyProps) => {
 	const shortResultCommit = simCommit?.substring(0, 7);
 	const shortLatestCommit = latestCommit?.substring(0, 7);
 	const resultCommitUrl =
-		"https://github.com/genshinsim/gcsim/commits/" + simCommit;
+		"https://github.com/KQM-git/kqmsim/commits/" + simCommit;
 	const latestCommitUrl =
-		"https://github.com/genshinsim/gcsim/commits/" + latestCommit;
+		"https://github.com/KQM-git/kqmsim/commits/" + latestCommit;
 	const diffUrl =
-		"https://github.com/genshinsim/gcsim/compare/" +
+		"https://github.com/KQM-git/kqmsim/compare/" +
 		simCommit +
 		"..." +
 		latestCommit;
