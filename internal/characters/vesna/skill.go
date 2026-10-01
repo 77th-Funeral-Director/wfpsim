@@ -177,26 +177,28 @@ func (c *char) skillSpecial() (action.Info, error) {
 	case 2:
 		c.Core.QueueAttack(ai, ap, skillWindborneHitmarks[lvl], skillWindborneHitmarks[lvl], c.particleCB)
 		// level 2
-		ai := info.AttackInfo{
-			ActorIndex: c.Index(),
-			Abil:       fmt.Sprintf("Windborne Blade Lv. %d Spirit Blade", lvl),
-			AttackTag:  attacks.AttackTagElementalArt,
-			ICDTag:     attacks.ICDTagElementalArt,
-			ICDGroup:   attacks.ICDGroupVesnaSkill,
-			StrikeType: attacks.StrikeTypeDefault,
-			Element:    attributes.Anemo,
-			Durability: 25,
-			Mult:       skillSpirit2[c.TalentLvlSkill()] * c.a1Mult(),
-		}
-		if c.isRadianceSSw() {
-			ai.Abil += stellarSwirlText
-			ai.AttackTag = attacks.AttackTagDirectStellarSwirl
-			ai.IgnoreDefPercent = 1
-			ai.Durability = 0
-		}
+		c.QueueCharTask(func() {
+			ai := info.AttackInfo{
+				ActorIndex: c.Index(),
+				Abil:       fmt.Sprintf("Windborne Blade Lv. %d Spirit Blade", lvl),
+				AttackTag:  attacks.AttackTagElementalArt,
+				ICDTag:     attacks.ICDTagElementalArt,
+				ICDGroup:   attacks.ICDGroupVesnaSkill,
+				StrikeType: attacks.StrikeTypeDefault,
+				Element:    attributes.Anemo,
+				Durability: 25,
+				Mult:       skillSpirit2[c.TalentLvlSkill()] * c.a1Mult(),
+			}
+			if c.isRadianceSSw() {
+				ai.Abil += stellarSwirlText
+				ai.AttackTag = attacks.AttackTagDirectStellarSwirl
+				ai.IgnoreDefPercent = 1
+				ai.Durability = 0
+			}
 
-		ap := combat.NewCircleHitOnTargetFanAngle(c.Core.Combat.Player(), nil, 5, 60)
-		c.Core.QueueAttack(ai, ap, skillSpirit2Hitmark, skillSpirit2Hitmark, c.particleCB)
+			ap := combat.NewCircleHitOnTargetFanAngle(c.Core.Combat.Player(), nil, 5, 60)
+			c.Core.QueueAttack(ai, ap, 0, 0, c.particleCB)
+		}, skillSpirit2Hitmark)
 
 		return action.Info{
 			Frames:          func(next action.Action) int { return skillSkillFrames[lvl][next] },
@@ -205,48 +207,52 @@ func (c *char) skillSpecial() (action.Info, error) {
 			State:           action.SkillState,
 		}, nil
 	default:
-		// level 3
-		aiDoT := info.AttackInfo{
-			ActorIndex: c.Index(),
-			Abil:       fmt.Sprintf("Windborne Blade Lv. %d Spirit Blade", lvl),
-			AttackTag:  attacks.AttackTagElementalArt,
-			ICDTag:     attacks.ICDTagElementalArt,
-			ICDGroup:   attacks.ICDGroupVesnaSkill,
-			StrikeType: attacks.StrikeTypeDefault,
-			Element:    attributes.Anemo,
-			Durability: 25,
-			Mult:       skillSpirit3DoT[c.TalentLvlSkill()] * c.a1Mult(),
-		}
-
-		aiFinale := info.AttackInfo{
-			ActorIndex: c.Index(),
-			Abil:       fmt.Sprintf("Windborne Blade Lv. %d Spirit Blade Final", lvl),
-			AttackTag:  attacks.AttackTagElementalArt,
-			ICDTag:     attacks.ICDTagElementalArt,
-			ICDGroup:   attacks.ICDGroupVesnaSkill,
-			StrikeType: attacks.StrikeTypeDefault,
-			Element:    attributes.Anemo,
-			Durability: 25,
-			Mult:       skillSpirit3Final[c.TalentLvlSkill()] * c.a1Mult(),
-		}
-
-		if c.isRadianceSSw() {
-			aiDoT.Abil += stellarSwirlText
-			aiDoT.AttackTag = attacks.AttackTagDirectStellarSwirl
-			aiDoT.IgnoreDefPercent = 1
-			aiDoT.Durability = 0
-
-			aiFinale.Abil += stellarSwirlText
-			aiFinale.AttackTag = attacks.AttackTagDirectStellarSwirl
-			aiFinale.IgnoreDefPercent = 1
-			aiFinale.Durability = 0
-		}
 
 		apDoT := combat.NewCircleHitOnTargetFanAngle(c.Core.Combat.Player(), nil, 5, 60)
 		for _, hitmark := range skillSpirit3DotHitmarks {
-			c.Core.QueueAttack(aiDoT, apDoT, hitmark, hitmark, c.particleCB)
+			c.QueueCharTask(func() {
+				// level 3
+				aiDoT := info.AttackInfo{
+					ActorIndex: c.Index(),
+					Abil:       fmt.Sprintf("Windborne Blade Lv. %d Spirit Blade", lvl),
+					AttackTag:  attacks.AttackTagElementalArt,
+					ICDTag:     attacks.ICDTagElementalArt,
+					ICDGroup:   attacks.ICDGroupVesnaSkill,
+					StrikeType: attacks.StrikeTypeDefault,
+					Element:    attributes.Anemo,
+					Durability: 25,
+					Mult:       skillSpirit3DoT[c.TalentLvlSkill()] * c.a1Mult(),
+				}
+				if c.isRadianceSSw() {
+					aiDoT.Abil += stellarSwirlText
+					aiDoT.AttackTag = attacks.AttackTagDirectStellarSwirl
+					aiDoT.IgnoreDefPercent = 1
+					aiDoT.Durability = 0
+				}
+				c.Core.QueueAttack(aiDoT, apDoT, hitmark, hitmark, c.particleCB)
+			}, hitmark)
 		}
-		c.Core.QueueAttack(aiFinale, apDoT, skillSpirit3FinalHitmark, skillSpirit3FinalHitmark, c.particleCB)
+
+		c.QueueCharTask(func() {
+			aiFinale := info.AttackInfo{
+				ActorIndex: c.Index(),
+				Abil:       fmt.Sprintf("Windborne Blade Lv. %d Spirit Blade Final", lvl),
+				AttackTag:  attacks.AttackTagElementalArt,
+				ICDTag:     attacks.ICDTagElementalArt,
+				ICDGroup:   attacks.ICDGroupVesnaSkill,
+				StrikeType: attacks.StrikeTypeDefault,
+				Element:    attributes.Anemo,
+				Durability: 25,
+				Mult:       skillSpirit3Final[c.TalentLvlSkill()] * c.a1Mult(),
+			}
+			if c.isRadianceSSw() {
+				aiFinale.Abil += stellarSwirlText
+				aiFinale.AttackTag = attacks.AttackTagDirectStellarSwirl
+				aiFinale.IgnoreDefPercent = 1
+				aiFinale.Durability = 0
+			}
+			c.Core.QueueAttack(aiFinale, apDoT, 0, 0, c.particleCB)
+		}, skillSpirit3FinalHitmark)
 
 		c.c6OnMaxLvlSkill()
 

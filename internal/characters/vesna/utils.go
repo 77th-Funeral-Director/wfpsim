@@ -79,10 +79,7 @@ func (r *RingQueue[T]) IsFull() bool {
 }
 
 func (r *RingQueue[T]) Len() int {
-	if r.isFull {
-		return len(r.data)
-	}
-	return (r.end - r.start + len(r.data)) % len(r.data)
+	return len(r.data)
 }
 
 func (r *RingQueue[T]) Index(ind int) (T, error) {
