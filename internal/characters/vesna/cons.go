@@ -16,7 +16,6 @@ import (
 const (
 	c1Key = "vesna-c1"
 	c2Key = "vesna-c2"
-	c4Key = "vesna-c4"
 	c6Key = "vesna-c6"
 
 	c6TransposeHitmark   = 30
@@ -182,12 +181,14 @@ func (c *char) c6Attack() (action.Info, error) {
 		ai.IgnoreDefPercent = 1
 		ai.Durability = 0
 	}
-	c.Core.QueueAttack(ai, ap, c6SpiritBladeHitmark, c6SpiritBladeHitmark, c.particleCB)
+	c.Core.QueueAttack(ai, ap, c6SpiritBladeHitmark, c6SpiritBladeHitmark, c.particleCB, c.skillStacksCB(3))
 
 	if c.StatusIsActive(skillKey) {
 		c.pinionAttack(c6PinionHitmark)
 	}
-	c.addSkillStacks(1)
+
+	c.DeleteStatus(c6Key)
+
 	return action.Info{
 		Frames:          func(next action.Action) int { return c6Frames[next] },
 		AnimationLength: c6Frames[action.InvalidAction],
