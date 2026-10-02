@@ -66,11 +66,11 @@ func init() {
 	skillSkillFrames[3] = frames.InitAbilSlice(76)
 	skillSkillFrames[3][action.ActionAttack] = 70
 	skillSkillFrames[3][action.ActionSkill] = 69
-	skillSkillFrames[3][action.ActionBurst] = skillSpirit3DotHitmarks[3]
-	skillSkillFrames[3][action.ActionDash] = skillSpirit3DotHitmarks[3]
-	skillSkillFrames[3][action.ActionJump] = skillSpirit3DotHitmarks[3]
-	skillSkillFrames[3][action.ActionWalk] = skillSpirit3DotHitmarks[3]
-	skillSkillFrames[3][action.ActionSwap] = skillSpirit3DotHitmarks[3]
+	skillSkillFrames[3][action.ActionBurst] = skillSpirit3FinalHitmark
+	skillSkillFrames[3][action.ActionDash] = skillSpirit3FinalHitmark
+	skillSkillFrames[3][action.ActionJump] = skillSpirit3FinalHitmark
+	skillSkillFrames[3][action.ActionWalk] = skillSpirit3FinalHitmark
+	skillSkillFrames[3][action.ActionSwap] = skillSpirit3FinalHitmark
 }
 
 func (c *char) skillInit() {
@@ -229,7 +229,7 @@ func (c *char) skillSpecial() (action.Info, error) {
 					aiDoT.IgnoreDefPercent = 1
 					aiDoT.Durability = 0
 				}
-				c.Core.QueueAttack(aiDoT, apDoT, hitmark, hitmark, c.particleCB)
+				c.Core.QueueAttack(aiDoT, apDoT, 0, 0, c.particleCB)
 			}, hitmark)
 		}
 
