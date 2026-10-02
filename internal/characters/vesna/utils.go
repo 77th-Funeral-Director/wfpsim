@@ -82,9 +82,16 @@ func (r *RingQueue[T]) Len() int {
 	return len(r.data)
 }
 
+func (r *RingQueue[T]) elems() int {
+	if r.isFull {
+		return len(r.data)
+	}
+	return (r.end - r.start + len(r.data)) % len(r.data)
+}
+
 func (r *RingQueue[T]) Index(ind int) (T, error) {
 	var res T // "zero" element (respective of the type)
-	if ind >= r.Len() {
+	if ind >= r.elems() {
 		return res, fmt.Errorf("Index out of bound")
 	}
 	return r.data[(r.start+ind)%len(r.data)], nil
@@ -97,7 +104,7 @@ func (r *RingQueue[T]) Clear() {
 
 func (r *RingQueue[T]) Count(filter func(x T) bool) int {
 	count := 0
-	for i := range r.Len() {
+	for i := 0; i < r.elems(); i++ {
 		val, _ := r.Index(i)
 		if filter(val) {
 			count++

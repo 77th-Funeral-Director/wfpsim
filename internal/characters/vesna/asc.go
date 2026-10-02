@@ -39,6 +39,7 @@ func (c *char) a1OnSkill() {
 	}
 
 	c.a1Stacks.Clear()
+	c.Core.Log.NewEvent("vesna a1 stacks cleared", glog.LogCharacterEvent, c.Index()).Write("stack count", c.a1StackCount())
 }
 
 func (c *char) a1OnSpecialSkillOrBurst() {
@@ -55,6 +56,7 @@ func (c *char) a1AddStacks() {
 	}
 
 	c.a1Stacks.PushOverwrite(c.TimePassed)
+	c.Core.Log.NewEvent("vesna a1 stack added", glog.LogCharacterEvent, c.Index()).Write("stack count", c.a1StackCount())
 }
 
 func (c *char) a1StackCount() int {
