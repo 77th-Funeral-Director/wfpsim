@@ -187,7 +187,7 @@ func (c *char) c6Attack() (action.Info, error) {
 	if c.StatusIsActive(skillKey) {
 		c.pinionAttack(c6PinionHitmark)
 	}
-
+	c.addSkillStacks(1)
 	return action.Info{
 		Frames:          func(next action.Action) int { return c6Frames[next] },
 		AnimationLength: c6Frames[action.InvalidAction],
