@@ -34,7 +34,7 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 		StrikeType:         attacks.StrikeTypeSlash,
 		Element:            attributes.Physical,
 		Durability:         25,
-		HitlagHaltFrames:   0.02 * 60,
+		HitlagHaltFrames:   0.03 * 60,
 		HitlagFactor:       0.01,
 		CanBeDefenseHalted: true,
 		Mult:               charge[c.TalentLvlAttack()],
