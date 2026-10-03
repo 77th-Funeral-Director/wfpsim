@@ -55,6 +55,10 @@ func (c *char) AnimationStartDelay(k info.AnimationDelayKey) int {
 }
 
 func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
+	if a == action.ActionSkill && c.StatusIsActive(c6Key) {
+		return true, action.NoFailure
+	}
+
 	// check if it is possible to use next skill
 	if c.StatusIsActive(skillKey) && a == action.ActionSkill {
 		if c.skillStacks <= 0 {
