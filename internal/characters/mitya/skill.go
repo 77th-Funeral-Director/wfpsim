@@ -61,7 +61,7 @@ func (c *char) skillPress() action.Info {
 		c.addSkillState(skillStatePress)
 	}, skillHitmark)
 
-	c.SetCDWithDelay(action.ActionSkill, 15*60, skillHitmark)
+	c.SetCDWithDelay(action.ActionSkill, 18*60, skillHitmark)
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
@@ -96,7 +96,7 @@ func (c *char) skillHold() action.Info {
 		c.addPrism()
 	}, skillHoldHitmark)
 
-	c.SetCDWithDelay(action.ActionSkill, 15*60, skillHoldHitmark)
+	c.SetCDWithDelay(action.ActionSkill, 18*60, skillHoldHitmark)
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillHoldFrames),
@@ -123,7 +123,7 @@ func (c *char) addSkillState(newState skillState) {
 	}
 
 	c.skillState = newState
-	c.AddStatus(skillKey, 20*60, false)
+	c.AddStatus(skillKey, 25*60, false)
 	c.c1OnSkill()
 	c.c2OnSkill()
 
@@ -136,7 +136,7 @@ func (c *char) addSkillState(newState skillState) {
 				return
 			}
 			c.skillDetonate()
-		}, 20*60)
+		}, 25*60)
 	} else {
 		c.skillSrc = -1
 	}

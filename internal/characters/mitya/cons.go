@@ -44,13 +44,13 @@ func (c *char) c1OnPrismConsume() {
 	c.AddEnergy(c1Key, 10)
 }
 
-// While the Energy Device is present, the active character's CRIT DMG is increased by 50%;
+// While the Energy Device is present, the active character's CRIT DMG is increased by 40%;
 func (c *char) c1Init() {
 	if c.Base.Cons < 1 {
 		return
 	}
 	m := make([]float64, attributes.EndStatType)
-	m[attributes.CD] = 0.5
+	m[attributes.CD] = 0.4
 	for _, char := range c.Core.Player.Chars() {
 		char.AddStatMod(character.StatMod{
 			Base:         modifier.NewBase(c1Key, -1),
@@ -83,12 +83,12 @@ func (c *char) c2Init() {
 			Amount: func() []float64 {
 				switch c.getSkillState() {
 				case skillStatePress:
-					m[attributes.EM] = 100
+					m[attributes.EM] = 123
 				case skillStateHold:
 					if c.Core.Player.Active() != char.Index() {
 						return nil
 					}
-					m[attributes.EM] = 200
+					m[attributes.EM] = 234
 				default:
 					return nil
 				}
@@ -155,7 +155,7 @@ func (c *char) c4OnPrismGain() {
 		Abil:             "Mitya C4",
 		AttackTag:        attacks.AttackTagDirectStellarConduct,
 		Element:          attributes.Electro,
-		Mult:             4,
+		Mult:             3,
 		UseEM:            true,
 		IgnoreDefPercent: 1,
 	}
@@ -201,7 +201,7 @@ func (c *char) c6OnPrismConsume() {
 		return
 	}
 
-	if c.Core.Combat.Rand.Float64() < 0.3 {
+	if c.Core.Combat.Rand.Float64() < 0.34 {
 		c.addPrism()
 	}
 }
