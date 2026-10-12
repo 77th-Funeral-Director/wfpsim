@@ -5,6 +5,7 @@ import {
 	ExecutorProvider,
 	namedSeeds,
 	ResultsView,
+	ResultWarnings,
 	SampleLog,
 	SeedPicker,
 	useExecutor,
@@ -246,6 +247,7 @@ function Workspace({ settings }: { settings: ReactNode }) {
 					)}
 					{data && (
 						<>
+							{!busy && <ResultWarnings data={data} />}
 							<div className="kqm-actions">
 								<Button
 									disabled={busy || sharing || Boolean(share)}

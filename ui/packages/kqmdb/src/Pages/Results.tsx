@@ -1,4 +1,4 @@
-import { ResultsView } from "@gcsim/components";
+import { ResultsView, ResultWarnings } from "@gcsim/components";
 import { dynamicKey } from "@gcsim/localization";
 import { Button, Spinner } from "@gcsim/primitives";
 import type { model } from "@gcsim/types";
@@ -79,6 +79,7 @@ export default function Results({
 				</div>
 			) : (
 				<>
+					<ResultWarnings data={data} />
 					<ResultsView model={data} names={names} />
 					<section className="mt-8 rounded-g-lg border border-g-line-soft bg-g-surface p-5">
 						<div className="mb-4 flex flex-wrap items-center justify-between gap-3">
