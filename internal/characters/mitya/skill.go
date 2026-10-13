@@ -1,6 +1,8 @@
 package mitya
 
 import (
+	"fmt"
+
 	"github.com/genshinsim/gcsim/internal/frames"
 	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
@@ -10,8 +12,9 @@ import (
 )
 
 var (
-	skillFrames     []int
-	skillHoldFrames []int
+	skillFrames       []int
+	skillHoldFrames   []int
+	skillRecastFrames []int
 )
 
 const (
@@ -22,14 +25,21 @@ const (
 	maxPrismStacks      = 4
 	skillKey            = "mitya-skill"
 	particleICDKey      = "mitya-particle-icd"
+	skillRecastKey      = "mitya-skill-recast"
+	skillRecastCDKey    = "mitya-skill-recast-cd"
 )
 
 func init() {
 	skillFrames = frames.InitAbilSlice(45)
 	skillHoldFrames = frames.InitAbilSlice(64)
+	skillRecastFrames = frames.InitAbilSlice(8)
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
+	if p["recast"] != 0 {
+		return c.skillRecast()
+	}
+
 	if p["hold"] != 0 {
 		return c.skillHold(), nil
 	}
@@ -106,6 +116,36 @@ func (c *char) skillHold() action.Info {
 	}
 }
 
+func (c *char) skillRecast() (action.Info, error) {
+	if !c.StatusIsActive(skillRecastKey) {
+		return action.Info{}, fmt.Errorf("cannot recast skill, not in recast period")
+	}
+	c.AddStatus(skillRecastCDKey, 1.5*60, false)
+	if c.getSkillState() == skillStatePress {
+		c.skillDetonate()
+		c.skillState = skillStateHold
+		c.skillSrc = -1
+	} else {
+		c.skillState = skillStatePress
+		src := c.Core.F
+		c.skillSrc = src
+		c.Core.Tasks.Add(func() { c.skillTicker(src) }, skillFirstTickDelay)
+		c.Core.Tasks.Add(func() {
+			if c.skillSrc != src {
+				return
+			}
+			c.skillDetonate()
+		}, c.StatusDuration(skillKey))
+	}
+
+	return action.Info{
+		Frames:          frames.NewAbilFunc(skillRecastFrames),
+		AnimationLength: skillRecastFrames[action.InvalidAction],
+		CanQueueAfter:   skillRecastFrames[action.ActionDash], // earliest cancel
+		State:           action.SkillState,
+	}, nil
+}
+
 func (c *char) particleCB(a info.AttackCB) {
 	if a.Target.Type() != info.TargettableEnemy {
 		return
@@ -123,6 +163,8 @@ func (c *char) addSkillState(newState skillState) {
 	}
 
 	c.skillState = newState
+	c.AddStatus(skillRecastKey, 6*60, false)
+	c.AddStatus(skillRecastCDKey, 1.5*60, false)
 	c.AddStatus(skillKey, 25*60, false)
 	c.c1OnSkill()
 	c.c2OnSkill()

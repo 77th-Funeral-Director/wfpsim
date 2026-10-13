@@ -34,5 +34,6 @@ abilities:
   - name: skill
     params:
       hold: 0 for Tap (default), 1 for Hold.
+      recast: 1 for recast
 
   - name: burst

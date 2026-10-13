@@ -3,6 +3,7 @@ package mitya
 import (
 	tmpl "github.com/genshinsim/gcsim/internal/template/character"
 	"github.com/genshinsim/gcsim/pkg/core"
+	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 )
@@ -52,4 +53,15 @@ func (c *char) AnimationStartDelay(k info.AnimationDelayKey) int {
 		return 10
 	}
 	return c.Character.AnimationStartDelay(k)
+}
+
+func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
+	if a == action.ActionSkill && p["recast"] != 0 {
+		if c.StatusIsActive(skillRecastCDKey) {
+			return false, action.SkillCD
+		}
+		return true, action.NoFailure
+	}
+
+	return c.Character.ActionReady(a, p)
 }

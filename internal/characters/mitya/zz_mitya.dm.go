@@ -15,7 +15,7 @@ import (
 func init() {
 	core.RegisterCharFunc(keys.Mitya, NewChar)
 	paramsFor := map[action.Action][]string{
-		action.ActionSkill: {"hold"},
+		action.ActionSkill: {"hold", "recast"},
 	}
 	validation.RegisterCharParamValidationFunc(keys.Mitya, func(a action.Action, keys []string) error {
 		valid, ok := paramsFor[a]
