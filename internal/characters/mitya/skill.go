@@ -18,8 +18,10 @@ var (
 )
 
 const (
-	skillHitmark        = 27
+	skillHitmark        = 28
+	skillCDStart        = 22
 	skillHoldHitmark    = 44
+	skillHoldCDStart    = 36
 	skillFirstTickDelay = 72 + 45 - 27
 	skillInterval       = 92
 	maxPrismStacks      = 4
@@ -30,8 +32,8 @@ const (
 )
 
 func init() {
-	skillFrames = frames.InitAbilSlice(45)
-	skillHoldFrames = frames.InitAbilSlice(64)
+	skillFrames = frames.InitAbilSlice(24)
+	skillHoldFrames = frames.InitAbilSlice(46)
 	skillRecastFrames = frames.InitAbilSlice(8)
 }
 
@@ -63,15 +65,15 @@ func (c *char) skillPress() action.Info {
 		c.Core.QueueAttack(
 			ai,
 			combat.NewBoxHitOnTarget(c.Core.Combat.Player(), info.Point{Y: -0.4}, 2.5, 10),
-			skillHitmark,
-			skillHitmark,
+			skillHitmark-skillCDStart,
+			skillHitmark-skillCDStart,
 			c.particleCB,
 		)
 
 		c.addSkillState(skillStatePress)
-	}, skillHitmark)
+	}, skillCDStart)
 
-	c.SetCDWithDelay(action.ActionSkill, 18*60, skillHitmark)
+	c.SetCDWithDelay(action.ActionSkill, 18*60, skillCDStart)
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
@@ -98,15 +100,15 @@ func (c *char) skillHold() action.Info {
 		c.Core.QueueAttack(
 			ai,
 			combat.NewSingleTargetHit(c.Core.Combat.PrimaryTarget().Key()),
-			0,
-			0,
+			skillHoldHitmark-skillHoldCDStart,
+			skillHoldHitmark-skillHoldCDStart,
 			c.particleCB,
 		)
 		c.addSkillState(skillStateHold)
 		c.addPrism()
-	}, skillHoldHitmark)
+	}, skillHoldCDStart)
 
-	c.SetCDWithDelay(action.ActionSkill, 18*60, skillHoldHitmark)
+	c.SetCDWithDelay(action.ActionSkill, 18*60, skillHoldCDStart)
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillHoldFrames),

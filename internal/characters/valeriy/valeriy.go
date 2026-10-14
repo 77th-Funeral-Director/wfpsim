@@ -3,7 +3,9 @@ package valeriy
 import (
 	tmpl "github.com/genshinsim/gcsim/internal/template/character"
 	"github.com/genshinsim/gcsim/pkg/core"
+	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/info"
+	"github.com/genshinsim/gcsim/pkg/core/keys"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 )
 
@@ -43,6 +45,13 @@ func (c *char) Init() error {
 	c.c2Init()
 	c.c6Init()
 	return nil
+}
+
+func (c *char) NextQueueItemIsValid(k keys.Char, a action.Action, p map[string]int) error {
+	if a == action.ActionCharge && c.momentum >= reqMomentum {
+		return nil
+	}
+	return c.Character.NextQueueItemIsValid(k, a, p)
 }
 
 func (c *char) AnimationStartDelay(k info.AnimationDelayKey) int {

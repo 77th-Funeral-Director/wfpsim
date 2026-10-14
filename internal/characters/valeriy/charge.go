@@ -23,14 +23,14 @@ const (
 	reqMomentum = 40
 
 	chargeHitmark        = 39
-	specialChargeHitmark = 47
+	specialChargeHitmark = 43
 
 	caBuffKey = "valeriy-ca-buff"
 )
 
 func init() {
 	chargeFrames = frames.InitAbilSlice(58)
-	specialChargeFrames = frames.InitAbilSlice(70)
+	specialChargeFrames = frames.InitAbilSlice(67)
 }
 
 func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {

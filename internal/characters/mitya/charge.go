@@ -19,23 +19,23 @@ var (
 
 // hitmark frame, includes CA windup
 const (
-	chargeHitmark     = 57
-	specialCAFinisher = 45
+	chargeHitmark     = 60
+	specialCAFinisher = 43
 	specialCAStart    = 62
 	specialCATick     = 15
 )
 
 func init() {
-	chargeFrames = frames.InitAbilSlice(76)
-	chargeFrames[action.ActionAttack] = 70
-	chargeFrames[action.ActionCharge] = 70
-	chargeFrames[action.ActionSkill] = 70
-	chargeFrames[action.ActionBurst] = 70
+	chargeFrames = frames.InitAbilSlice(70)
+	chargeFrames[action.ActionAttack] = 64
+	chargeFrames[action.ActionCharge] = 64
+	chargeFrames[action.ActionSkill] = 64
+	chargeFrames[action.ActionBurst] = 64
 	chargeFrames[action.ActionDash] = chargeHitmark
 	chargeFrames[action.ActionJump] = chargeHitmark
-	chargeFrames[action.ActionSwap] = 70
+	chargeFrames[action.ActionSwap] = 64
 
-	specialChargeEndlag = frames.InitAbilSlice(32)
+	specialChargeEndlag = frames.InitAbilSlice(3)
 }
 
 // Standard charge attack
