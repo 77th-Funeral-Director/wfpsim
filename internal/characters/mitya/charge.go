@@ -156,7 +156,7 @@ func (c *char) specialChargeSSC() {
 		Abil:             "Special Charge" + stellarConductText,
 		AttackTag:        attacks.AttackTagDirectStellarConduct,
 		Element:          attributes.Electro,
-		Mult:             chargeSSC[c.TalentLvlSkill()],
+		Mult:             chargeSSC[c.TalentLvlAttack()],
 		UseEM:            true,
 		IgnoreDefPercent: 1,
 	}
