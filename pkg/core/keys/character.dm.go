@@ -75,6 +75,7 @@ const (
 	Columbina                     // columbina
 	Cyno                          // cyno
 	Dahlia                        // dahlia
+	Danica                        // danica
 	Dehya                         // dehya
 	Diluc                         // diluc
 	Diona                         // diona
@@ -215,6 +216,7 @@ var _CharNames = [...]string{
 	"columbina",
 	"cyno",
 	"dahlia",
+	"danica",
 	"dehya",
 	"diluc",
 	"diona",
@@ -355,6 +357,7 @@ var _CharValues = [...]Char{
 	Columbina,
 	Cyno,
 	Dahlia,
+	Danica,
 	Dehya,
 	Diluc,
 	Diona,

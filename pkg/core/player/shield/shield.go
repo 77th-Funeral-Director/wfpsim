@@ -34,6 +34,7 @@ const (
 	ColumbinaC1
 	NicoleSkill
 	ValeriySkill
+	DanicaSkill
 	EndType
 )
 
