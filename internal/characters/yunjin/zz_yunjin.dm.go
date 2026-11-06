@@ -173,7 +173,7 @@ var (
 		2.82887,
 		3.05767,
 		3.28648,
-		3.53608,
+		3.53609,
 	}
 	// skill: OpeningFlourish - Shield DMG Absorption: {0} Max HP+{1}
 	skillShieldPct = []float64{

@@ -2147,6 +2147,65 @@ var MonsterMap = map[int]*model.MonsterData{
 			},
 		},
 	},
+	26311001: {
+		Id:  26311001,
+		Key: "chimericshellspinner",
+		BaseStats: &model.MonsterStatsData{
+			BaseHp:  312.432,
+			HpCurve: model.GrowCurveType_GROW_CURVE_HP_2,
+			Resist: &model.MonsterResistData{
+				FireResist:     0.1,
+				GrassResist:    0.1,
+				WaterResist:    0.1,
+				ElectricResist: 0.1,
+				WindResist:     0.1,
+				IceResist:      0.1,
+				RockResist:     0.1,
+				PhysicalResist: 0.1,
+			},
+			FreezeResist: 1.0,
+			HpDrop: []*model.MonsterHPDrop{
+				{
+					DropId:    22010030,
+					HpPercent: 0.66,
+				},
+				{
+					DropId:    22010030,
+					HpPercent: 0.33,
+				},
+				{
+					DropId: 22010030,
+				},
+			},
+		},
+	},
+	26310801: {
+		Id:  26310801,
+		Key: "chimericskorp",
+		BaseStats: &model.MonsterStatsData{
+			BaseHp:  114.1056,
+			HpCurve: model.GrowCurveType_GROW_CURVE_HP_2,
+			Resist: &model.MonsterResistData{
+				FireResist:     0.1,
+				GrassResist:    0.3,
+				WaterResist:    0.1,
+				ElectricResist: 0.1,
+				WindResist:     0.1,
+				IceResist:      0.1,
+				RockResist:     0.1,
+				PhysicalResist: 0.1,
+			},
+			HpDrop: []*model.MonsterHPDrop{
+				{
+					DropId:    22010013,
+					HpPercent: 0.6,
+				},
+				{
+					DropId: 22010013,
+				},
+			},
+		},
+	},
 	26310301: {
 		Id:  26310301,
 		Key: "chimericwingedelephant",
@@ -2198,33 +2257,6 @@ var MonsterMap = map[int]*model.MonsterData{
 				},
 				{
 					DropId: 22010024,
-				},
-			},
-		},
-	},
-	26310801: {
-		Id:  26310801,
-		Key: "chimericwyrmtail",
-		BaseStats: &model.MonsterStatsData{
-			BaseHp:  114.1056,
-			HpCurve: model.GrowCurveType_GROW_CURVE_HP_2,
-			Resist: &model.MonsterResistData{
-				FireResist:     0.1,
-				GrassResist:    0.3,
-				WaterResist:    0.1,
-				ElectricResist: 0.1,
-				WindResist:     0.1,
-				IceResist:      0.1,
-				RockResist:     0.1,
-				PhysicalResist: 0.1,
-			},
-			HpDrop: []*model.MonsterHPDrop{
-				{
-					DropId:    22010013,
-					HpPercent: 0.6,
-				},
-				{
-					DropId: 22010013,
 				},
 			},
 		},
@@ -3811,6 +3843,24 @@ var MonsterMap = map[int]*model.MonsterData{
 				{
 					DropId: 22010010,
 				},
+			},
+		},
+	},
+	25137201: {
+		Id:  25137201,
+		Key: "everburgeoningillusion",
+		BaseStats: &model.MonsterStatsData{
+			BaseHp:  100.5816,
+			HpCurve: model.GrowCurveType_GROW_CURVE_HP_2,
+			Resist: &model.MonsterResistData{
+				FireResist:     0.1,
+				GrassResist:    0.1,
+				WaterResist:    0.1,
+				ElectricResist: 0.1,
+				WindResist:     0.1,
+				IceResist:      0.1,
+				RockResist:     0.1,
+				PhysicalResist: 0.1,
 			},
 		},
 	},
@@ -6607,11 +6657,11 @@ var MonsterMap = map[int]*model.MonsterData{
 			},
 		},
 	},
-	25100201: {
-		Id:  25100201,
+	25100202: {
+		Id:  25100202,
 		Key: "kairagifierymight",
 		BaseStats: &model.MonsterStatsData{
-			BaseHp:  65.2032,
+			BaseHp:  137.248,
 			HpCurve: model.GrowCurveType_GROW_CURVE_HP_2,
 			Resist: &model.MonsterResistData{
 				FireResist:     0.1,
@@ -6622,23 +6672,6 @@ var MonsterMap = map[int]*model.MonsterData{
 				IceResist:      0.1,
 				RockResist:     0.1,
 				PhysicalResist: -0.2,
-			},
-			HpDrop: []*model.MonsterHPDrop{
-				{
-					DropId:    22010010,
-					HpPercent: 0.75,
-				},
-				{
-					DropId:    22010010,
-					HpPercent: 0.5,
-				},
-				{
-					DropId:    22010010,
-					HpPercent: 0.25,
-				},
-				{
-					DropId: 22010020,
-				},
 			},
 		},
 	},

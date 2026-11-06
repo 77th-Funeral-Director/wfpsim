@@ -81,9 +81,9 @@ var (
 				0.8585,
 				0.92794,
 				1.0096,
-				1.09125,
+				1.09126,
 				1.17291,
-				1.26199,
+				1.262,
 			},
 			{ // attack: ShuumatsubanNinjaBlade - 3-Hit DMG: {2}+{3}
 				0.4343,
@@ -98,9 +98,9 @@ var (
 				0.8585,
 				0.92794,
 				1.0096,
-				1.09125,
+				1.09126,
 				1.17291,
-				1.26199,
+				1.262,
 			},
 		},
 		{{ // attack: ShuumatsubanNinjaBlade - 4-Hit DMG: {4}
@@ -298,7 +298,7 @@ var (
 		1188.451,
 		1280.197,
 		1376.113,
-		1476.198,
+		1476.199,
 		1580.455,
 	}
 	// burst: YoohooArtMujinaFlurry - Muji-Muji Daruma Healing: {5} ATK+{4}

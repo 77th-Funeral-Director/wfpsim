@@ -879,6 +879,28 @@
     "physical": 0.1,
     "freeze": 0
   },
+  "chimericshellspinner": {
+    "pyro": 0.1,
+    "dendro": 0.1,
+    "hydro": 0.1,
+    "electro": 0.1,
+    "anemo": 0.1,
+    "cryo": 0.1,
+    "geo": 0.1,
+    "physical": 0.1,
+    "freeze": 1
+  },
+  "chimericskorp": {
+    "pyro": 0.1,
+    "dendro": 0.3,
+    "hydro": 0.1,
+    "electro": 0.1,
+    "anemo": 0.1,
+    "cryo": 0.1,
+    "geo": 0.1,
+    "physical": 0.1,
+    "freeze": 0
+  },
   "chimericwingedelephant": {
     "pyro": 0.1,
     "dendro": 0.1,
@@ -900,17 +922,6 @@
     "geo": 0.1,
     "physical": 0.1,
     "freeze": 1
-  },
-  "chimericwyrmtail": {
-    "pyro": 0.1,
-    "dendro": 0.3,
-    "hydro": 0.1,
-    "electro": 0.1,
-    "anemo": 0.1,
-    "cryo": 0.1,
-    "geo": 0.1,
-    "physical": 0.1,
-    "freeze": 0
   },
   "closecombatscoutlandcruiser": {
     "pyro": 0.1,
@@ -1496,6 +1507,17 @@
     "freeze": 0
   },
   "erodingavataroflava": {
+    "pyro": 0.1,
+    "dendro": 0.1,
+    "hydro": 0.1,
+    "electro": 0.1,
+    "anemo": 0.1,
+    "cryo": 0.1,
+    "geo": 0.1,
+    "physical": 0.1,
+    "freeze": 0
+  },
+  "everburgeoningillusion": {
     "pyro": 0.1,
     "dendro": 0.1,
     "hydro": 0.1,

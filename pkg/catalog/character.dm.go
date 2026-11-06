@@ -19,7 +19,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -171,7 +171,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -323,7 +323,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -475,7 +475,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -627,7 +627,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -779,7 +779,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -931,7 +931,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerBoy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -1083,7 +1083,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Aino",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   939.14471,
+			BaseHp:   939.1447,
 			BaseAtk:  20.30112,
 			BaseDef:  50.93025,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -1235,7 +1235,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Albedo",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1029.58557,
+			BaseHp:   1029.5856,
 			BaseAtk:  19.551,
 			BaseDef:  68.2062,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -1387,7 +1387,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Alhatham",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.11877,
+			BaseHp:   1039.1188,
 			BaseAtk:  24.3922,
 			BaseDef:  60.84711,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -1427,7 +1427,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    35.77151,
+							Value:    35.77152,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_GRASS_ADD_HURT,
@@ -1440,7 +1440,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.052,
+							Value:    2368.053,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -1539,7 +1539,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Aloy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   848.45477,
+			BaseHp:   848.4548,
 			BaseAtk:  18.21036,
 			BaseDef:  52.6504,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -1691,7 +1691,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Alyosha",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.97009,
+			BaseHp:   1002.9701,
 			BaseAtk:  22.26,
 			BaseDef:  58.94175,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -1843,7 +1843,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Ambor",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   793.25818,
+			BaseHp:   793.2582,
 			BaseAtk:  18.6984,
 			BaseDef:  50.358,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -1995,7 +1995,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Itto",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1000.98602,
+			BaseHp:   1000.986,
 			BaseAtk:  17.689,
 			BaseDef:  74.66784,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -2147,7 +2147,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Arlecchino",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1020.05243,
+			BaseHp:   1020.0524,
 			BaseAtk:  26.6266,
 			BaseDef:  59.53085,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -2299,7 +2299,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Baizhuer",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.11877,
+			BaseHp:   1039.1188,
 			BaseAtk:  14.9891,
 			BaseDef:  38.8895,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -2352,7 +2352,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.052,
+							Value:    2368.053,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -2451,7 +2451,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Barbara",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.61188,
+			BaseHp:   820.6119,
 			BaseAtk:  13.356,
 			BaseDef:  56.0805,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2491,7 +2491,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    17.06738,
+							Value:    17.06737,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2512,7 +2512,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.52007,
+							Value:    26.52008,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -2603,7 +2603,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Beidou",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1094.14917,
+			BaseHp:   1094.1492,
 			BaseAtk:  18.87648,
 			BaseDef:  54.36375,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2664,7 +2664,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.4817,
+							Value:    37.48171,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEC_ADD_HURT,
@@ -2755,7 +2755,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Bennett",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.44177,
+			BaseHp:   1039.4418,
 			BaseAtk:  16.0272,
 			BaseDef:  64.66425,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -2907,7 +2907,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Candace",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -3211,7 +3211,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Chasca",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   762.65601,
+			BaseHp:   762.656,
 			BaseAtk:  26.999,
 			BaseDef:  47.864,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -3363,7 +3363,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Chevreuse",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.97009,
+			BaseHp:   1002.9701,
 			BaseAtk:  16.20528,
 			BaseDef:  50.70135,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -3515,7 +3515,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Chiori",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   890.40088,
+			BaseHp:   890.4009,
 			BaseAtk:  25.137,
 			BaseDef:  74.1892,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -3762,7 +3762,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2806.177,
+							Value:    2806.178,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -3819,7 +3819,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Citlali",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   905.65399,
+			BaseHp:   905.654,
 			BaseAtk:  9.8686,
 			BaseDef:  59.41119,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -3859,7 +3859,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    14.47244,
+							Value:    14.47245,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -4024,7 +4024,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2298.531,
+							Value:    2298.532,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4045,7 +4045,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2912.99,
+							Value:    2912.991,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4066,7 +4066,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3527.449,
+							Value:    3527.45,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -4123,7 +4123,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Collei",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.61188,
+			BaseHp:   820.6119,
 			BaseAtk:  16.73952,
 			BaseDef:  50.358,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -4184,7 +4184,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    33.23849,
+							Value:    33.2385,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -4275,7 +4275,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Columbina",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.98401,
+			BaseHp:   1143.984,
 			BaseAtk:  7.448,
 			BaseDef:  40.0861,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -4427,7 +4427,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Cyno",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   972.38641,
+			BaseHp:   972.3864,
 			BaseAtk:  24.7646,
 			BaseDef:  66.88994,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -4530,7 +4530,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    86.60361,
+							Value:    86.60362,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
@@ -4579,7 +4579,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Dahlia",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1048.55969,
+			BaseHp:   1048.5597,
 			BaseAtk:  15.84912,
 			BaseDef:  46.9245,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -4731,7 +4731,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Dehya",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1220.24963,
+			BaseHp:   1220.2496,
 			BaseAtk:  20.6682,
 			BaseDef:  48.88111,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -4771,7 +4771,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    30.31021,
+							Value:    30.31022,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -4883,7 +4883,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Diluc",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1010.51923,
+			BaseHp:   1010.5192,
 			BaseAtk:  26.068,
 			BaseDef:  61.0266,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5187,7 +5187,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Dori",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.44177,
+			BaseHp:   1039.4418,
 			BaseAtk:  18.6984,
 			BaseDef:  60.6585,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -5339,7 +5339,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Durin",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   967.61981,
+			BaseHp:   967.6198,
 			BaseAtk:  26.999,
 			BaseDef:  64.0181,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5491,7 +5491,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Emilie",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1056.27856,
+			BaseHp:   1056.2786,
 			BaseAtk:  26.068,
 			BaseDef:  56.8385,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5643,7 +5643,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Escoffier",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.11877,
+			BaseHp:   1039.1188,
 			BaseAtk:  26.999,
 			BaseDef:  56.95816,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -5696,7 +5696,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.052,
+							Value:    2368.053,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -5795,7 +5795,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Eula",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1029.58557,
+			BaseHp:   1029.5856,
 			BaseAtk:  26.6266,
 			BaseDef:  58.45391,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -6071,7 +6071,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    58.93933,
+							Value:    58.93934,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -6099,7 +6099,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Fischl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   770.46338,
+			BaseHp:   770.4634,
 			BaseAtk:  20.4792,
 			BaseDef:  49.78575,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -6251,7 +6251,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Flins",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   972.38641,
+			BaseHp:   972.3864,
 			BaseAtk:  27.3714,
 			BaseDef:  62.94116,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -6403,7 +6403,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Freminet",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1012.08801,
+			BaseHp:   1012.088,
 			BaseAtk:  21.3696,
 			BaseDef:  59.39955,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -6555,7 +6555,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Furina",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1191.65002,
+			BaseHp:   1191.65,
 			BaseAtk:  18.9924,
 			BaseDef:  54.14615,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -6608,7 +6608,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2715.656,
+							Value:    2715.657,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6823,7 +6823,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3425.49,
+							Value:    3425.491,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -6859,7 +6859,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Ganyu",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   762.65601,
+			BaseHp:   762.656,
 			BaseAtk:  26.068,
 			BaseDef:  49.0606,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -7163,7 +7163,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Hutao",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1210.71643,
+			BaseHp:   1210.7164,
 			BaseAtk:  8.2859,
 			BaseDef:  68.2062,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -7315,9 +7315,9 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Iansan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   893.55518,
+			BaseHp:   893.5552,
 			BaseAtk:  21.54768,
-			BaseDef:  53.50537,
+			BaseDef:  53.50538,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
 			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S4,
 			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7418,7 +7418,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    65.66125,
+							Value:    65.66126,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -7467,7 +7467,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Ifa",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   845.23029,
+			BaseHp:   845.2303,
 			BaseAtk:  14.95872,
 			BaseDef:  50.75858,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7619,7 +7619,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Illuga",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.97009,
+			BaseHp:   1002.9701,
 			BaseAtk:  16.0272,
 			BaseDef:  68.2122,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7771,7 +7771,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Ineffa",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   981.91962,
+			BaseHp:   981.9196,
 			BaseAtk:  25.6956,
 			BaseDef:  64.43691,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -7794,7 +7794,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    22.03004,
+							Value:    22.03005,
 						},
 					},
 				},
@@ -7803,7 +7803,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1440.104,
+							Value:    1440.105,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7866,7 +7866,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3434.095,
+							Value:    3434.096,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -7923,7 +7923,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Jahoda",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   808.75861,
+			BaseHp:   808.7586,
 			BaseAtk:  18.6984,
 			BaseDef:  48.64125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -7997,7 +7997,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2035.146,
+							Value:    2035.147,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8075,7 +8075,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Qin",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.98401,
+			BaseHp:   1143.984,
 			BaseAtk:  18.62,
 			BaseDef:  59.83,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8227,7 +8227,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Kazuha",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.11877,
+			BaseHp:   1039.1188,
 			BaseAtk:  23.0888,
 			BaseDef:  62.8215,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8280,7 +8280,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.052,
+							Value:    2368.053,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -8379,7 +8379,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Kaeya",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   975.61639,
+			BaseHp:   975.6164,
 			BaseAtk:  18.6984,
 			BaseDef:  66.381,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -8531,7 +8531,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Ayaka",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1000.98602,
+			BaseHp:   1000.986,
 			BaseAtk:  26.6266,
 			BaseDef:  61.0266,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8683,7 +8683,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Ayato",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1067.71838,
+			BaseHp:   1067.7184,
 			BaseAtk:  23.275,
 			BaseDef:  59.83,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -8835,7 +8835,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Kaveh",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.97009,
+			BaseHp:   1002.9701,
 			BaseAtk:  19.5888,
 			BaseDef:  62.9475,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -8987,7 +8987,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Keqing",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1020.05243,
+			BaseHp:   1020.0524,
 			BaseAtk:  25.137,
 			BaseDef:  62.2232,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -9139,7 +9139,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Kinich",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1000.98602,
+			BaseHp:   1000.986,
 			BaseAtk:  25.8818,
 			BaseDef:  62.40269,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -9443,7 +9443,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Klee",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   800.78882,
+			BaseHp:   800.7888,
 			BaseAtk:  24.206,
 			BaseDef:  47.864,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -9747,7 +9747,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Shinobu",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1030.32385,
+			BaseHp:   1030.3239,
 			BaseAtk:  17.808,
 			BaseDef:  62.9475,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -9821,7 +9821,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2592.689,
+							Value:    2592.69,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -9981,7 +9981,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    52.8791,
+							Value:    52.87911,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -10051,7 +10051,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Lauma",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   829.38843,
+			BaseHp:   829.3884,
 			BaseAtk:  19.84892,
 			BaseDef:  52.0521,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -10204,7 +10204,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Layla",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   930.02679,
+			BaseHp:   930.0268,
 			BaseAtk:  18.16416,
 			BaseDef:  54.936,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10548,7 +10548,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    24.80458,
+							Value:    24.80459,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10611,7 +10611,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    59.14939,
+							Value:    59.1494,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10632,7 +10632,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    69.45284,
+							Value:    69.45283,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -10660,7 +10660,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Lohen",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1000.98602,
+			BaseHp:   1000.986,
 			BaseAtk:  26.8128,
 			BaseDef:  61.0266,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -10812,7 +10812,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -10964,7 +10964,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11116,7 +11116,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11268,7 +11268,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11420,7 +11420,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11572,7 +11572,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11724,7 +11724,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_PlayerGirl",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  17.808,
 			BaseDef:  57.225,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11876,7 +11876,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Linette",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.44177,
+			BaseHp:   1039.4418,
 			BaseAtk:  19.41072,
 			BaseDef:  59.68568,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -11916,7 +11916,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    24.80458,
+							Value:    24.80459,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -11979,7 +11979,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    59.14939,
+							Value:    59.1494,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -12000,7 +12000,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    69.45284,
+							Value:    69.45283,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -12028,7 +12028,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Liney",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   857.98798,
+			BaseHp:   857.988,
 			BaseAtk:  24.7646,
 			BaseDef:  41.881,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12131,7 +12131,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    86.60361,
+							Value:    86.60362,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -12180,7 +12180,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Mavuika",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   977.15302,
+			BaseHp:   977.153,
 			BaseAtk:  27.93,
 			BaseDef:  61.6249,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12331,7 +12331,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Mika",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1048.55969,
+			BaseHp:   1048.5597,
 			BaseAtk:  18.6984,
 			BaseDef:  59.80013,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -12483,7 +12483,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Mitya",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   905.65399,
+			BaseHp:   905.654,
 			BaseAtk:  20.482,
 			BaseDef:  61.6249,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12636,7 +12636,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Mona",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   810.32202,
+			BaseHp:   810.322,
 			BaseAtk:  22.344,
 			BaseDef:  50.8555,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12788,7 +12788,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Mualani",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1182.11682,
+			BaseHp:   1182.1168,
 			BaseAtk:  14.1512,
 			BaseDef:  44.39386,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -12940,7 +12940,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Nahida",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   806.50873,
+			BaseHp:   806.5087,
 			BaseAtk:  23.275,
 			BaseDef:  49.0606,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -13244,7 +13244,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Neuvillette",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.98401,
+			BaseHp:   1143.984,
 			BaseAtk:  16.21802,
 			BaseDef:  44.8725,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -13396,7 +13396,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Nicole",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   810.32202,
+			BaseHp:   810.322,
 			BaseAtk:  26.6266,
 			BaseDef:  43.79556,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -13548,7 +13548,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Nilou",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1182.11682,
+			BaseHp:   1182.1168,
 			BaseAtk:  17.8752,
 			BaseDef:  56.71884,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -13609,7 +13609,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    40.73289,
+							Value:    40.7329,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -13700,7 +13700,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Ningguang",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.61188,
+			BaseHp:   820.6119,
 			BaseAtk:  17.808,
 			BaseDef:  48.069,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -13852,7 +13852,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Noel",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1012.08801,
+			BaseHp:   1012.088,
 			BaseAtk:  16.0272,
 			BaseDef:  66.95325,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14004,7 +14004,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Odette",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1010.51923,
+			BaseHp:   1010.5192,
 			BaseAtk:  26.068,
 			BaseDef:  61.26592,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -14308,7 +14308,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Prune",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   811.49402,
+			BaseHp:   811.494,
 			BaseAtk:  18.52032,
 			BaseDef:  48.64125,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14460,7 +14460,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Qiqi",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   962.85321,
+			BaseHp:   962.8532,
 			BaseAtk:  22.344,
 			BaseDef:  71.796,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -14513,7 +14513,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2194.25,
+							Value:    2194.251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -14764,7 +14764,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Razor",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1002.97009,
+			BaseHp:   1002.9701,
 			BaseAtk:  19.5888,
 			BaseDef:  62.9475,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14916,7 +14916,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Rosaria",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1030.32385,
+			BaseHp:   1030.3239,
 			BaseAtk:  20.12304,
 			BaseDef:  59.514,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -14990,7 +14990,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2592.689,
+							Value:    2592.69,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15019,7 +15019,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.32001,
+							Value:    61.32002,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -15068,7 +15068,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_MarionetteNew",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1029.58557,
+			BaseHp:   1029.5856,
 			BaseAtk:  26.6266,
 			BaseDef:  58.57357,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -15220,7 +15220,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Kokomi",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1048.65198,
+			BaseHp:   1048.652,
 			BaseAtk:  18.2476,
 			BaseDef:  51.15465,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -15315,7 +15315,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3667.48,
+							Value:    3667.481,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15372,7 +15372,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Sayu",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   993.85217,
+			BaseHp:   993.8522,
 			BaseAtk:  20.4792,
 			BaseDef:  62.43248,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -15425,7 +15425,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1973.376,
+							Value:    1973.377,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15524,7 +15524,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Sethos",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   820.61188,
+			BaseHp:   820.6119,
 			BaseAtk:  19.05456,
 			BaseDef:  46.9245,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -15564,7 +15564,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    24.34945,
+							Value:    24.34946,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -15750,7 +15750,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2921.25,
+							Value:    2921.251,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -15828,7 +15828,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Heizo",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   893.55518,
+			BaseHp:   893.5552,
 			BaseAtk:  18.87648,
 			BaseDef:  57.33945,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -15889,7 +15889,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.4817,
+							Value:    37.48171,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_WIND_ADD_HURT,
@@ -15980,7 +15980,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Sigewinne",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1039.11877,
+			BaseHp:   1039.1188,
 			BaseAtk:  14.9891,
 			BaseDef:  38.8895,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -16033,7 +16033,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2368.052,
+							Value:    2368.053,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16206,7 +16206,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2791.845,
+							Value:    2791.846,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -16435,7 +16435,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Tartaglia",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1020.05243,
+			BaseHp:   1020.0524,
 			BaseAtk:  23.4612,
 			BaseDef:  63.4198,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -16587,7 +16587,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Tohma",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   866.20148,
+			BaseHp:   866.2015,
 			BaseAtk:  16.9176,
 			BaseDef:  62.9475,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -16891,7 +16891,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Valeriy",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   838.84772,
+			BaseHp:   838.8477,
 			BaseAtk:  21.3696,
 			BaseDef:  58.94175,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -17146,7 +17146,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    97.02209,
+							Value:    97.0221,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -17195,7 +17195,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Varka",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   981.91962,
+			BaseHp:   981.9196,
 			BaseAtk:  27.4645,
 			BaseDef:  61.92405,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17227,7 +17227,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1440.104,
+							Value:    1440.105,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17290,7 +17290,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    3434.095,
+							Value:    3434.096,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -17347,7 +17347,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Venti",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   819.85522,
+			BaseHp:   819.8552,
 			BaseAtk:  20.482,
 			BaseDef:  52.0521,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17499,7 +17499,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Vesna",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1032.44556,
+			BaseHp:   1032.4456,
 			BaseAtk:  27.5576,
 			BaseDef:  56.8385,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17522,7 +17522,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    23.62642,
+							Value:    23.62643,
 						},
 					},
 				},
@@ -17651,7 +17651,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Vodyanitsa",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1153.51721,
+			BaseHp:   1153.5172,
 			BaseAtk:  8.379,
 			BaseDef:  37.6929,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17691,7 +17691,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    12.28792,
+							Value:    12.28793,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_HP_PERCENT,
@@ -17803,7 +17803,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Wanderer",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   791.25562,
+			BaseHp:   791.2556,
 			BaseAtk:  25.5094,
 			BaseDef:  47.2657,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -17955,7 +17955,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Wriothesley",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1058.18518,
+			BaseHp:   1058.1852,
 			BaseAtk:  24.206,
 			BaseDef:  59.41119,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -18071,7 +18071,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    4345.48,
+							Value:    4345.481,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18107,7 +18107,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Xiangling",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   911.79102,
+			BaseHp:   911.791,
 			BaseAtk:  18.87648,
 			BaseDef:  56.0805,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -18168,7 +18168,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    37.4817,
+							Value:    37.48171,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
@@ -18259,7 +18259,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Liuyun",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   810.32202,
+			BaseHp:   810.322,
 			BaseAtk:  26.068,
 			BaseDef:  44.57335,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -18411,7 +18411,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Xiao",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   991.45282,
+			BaseHp:   991.4528,
 			BaseAtk:  27.1852,
 			BaseDef:  62.2232,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -18472,7 +18472,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.94794,
+							Value:    61.94795,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
@@ -18789,7 +18789,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2156.75,
+							Value:    2156.751,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -18867,7 +18867,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
 		IconName:    "UI_AvatarIcon_Xinyan",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   939.14471,
+			BaseHp:   939.1447,
 			BaseAtk:  20.83536,
 			BaseDef:  66.95325,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -18907,7 +18907,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    26.6251,
+							Value:    26.62511,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -18970,7 +18970,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    63.49063,
+							Value:    63.49064,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
@@ -19266,7 +19266,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2389.418,
+							Value:    2389.419,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -19274,7 +19274,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
-							Value:    61.32001,
+							Value:    61.32002,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_FIRE_ADD_HURT,
@@ -19323,7 +19323,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Yaoyao",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1030.32385,
+			BaseHp:   1030.3239,
 			BaseAtk:  17.808,
 			BaseDef:  62.9475,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -19397,7 +19397,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    2592.689,
+							Value:    2592.69,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -19507,7 +19507,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1649.828,
+							Value:    1649.829,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
@@ -19627,7 +19627,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_BOW,
 		IconName:    "UI_AvatarIcon_Yoimiya",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   791.25562,
+			BaseHp:   791.2556,
 			BaseAtk:  25.137,
 			BaseDef:  47.864,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -19779,7 +19779,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_CATALYST,
 		IconName:    "UI_AvatarIcon_Mizuki",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   991.45282,
+			BaseHp:   991.4528,
 			BaseAtk:  16.758,
 			BaseDef:  58.93255,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -19931,7 +19931,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Yunjin",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   893.55518,
+			BaseHp:   893.5552,
 			BaseAtk:  16.0272,
 			BaseDef:  61.5741,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S4,
@@ -20083,7 +20083,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_POLE,
 		IconName:    "UI_AvatarIcon_Zhongli",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1143.98401,
+			BaseHp:   1143.984,
 			BaseAtk:  19.551,
 			BaseDef:  57.4368,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -20235,7 +20235,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
 		IconName:    "UI_AvatarIcon_Zibai",
 		Stats: &model.AvatarStatsData{
-			BaseHp:   1005.75262,
+			BaseHp:   1005.7526,
 			BaseAtk:  17.5028,
 			BaseDef:  74.48835,
 			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
@@ -20267,7 +20267,7 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 					AddProps: []*model.PromotionAddProp{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
-							Value:    1475.058,
+							Value:    1475.059,
 						},
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,

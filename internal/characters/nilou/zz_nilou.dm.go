@@ -38,7 +38,7 @@ var (
 			0.54402,
 			0.58497,
 			0.64347,
-			0.68441,
+			0.68442,
 			0.73121,
 			0.79556,
 			0.85991,
@@ -47,12 +47,12 @@ var (
 			1.06465,
 			1.13484,
 			1.20504,
-			1.27524,
+			1.27523,
 			1.34543,
 		},
 		{ // attack: DanceOfSamser - 2-Hit DMG: {1}
 			0.45439,
-			0.49137,
+			0.49138,
 			0.52836,
 			0.5812,
 			0.61818,
@@ -64,7 +64,7 @@ var (
 			0.96162,
 			1.02502,
 			1.08842,
-			1.15182,
+			1.15183,
 			1.21523,
 		},
 		{ // attack: DanceOfSamser - 3-Hit DMG: {2}
@@ -158,7 +158,7 @@ var (
 			0.07747,
 		},
 		{ // skill: DanceOfHaftkarsvar - Sword Dance/Whirling Steps 2-Hit DMG: {6}/{2} Max HP
-			0.0396,
+			0.03961,
 			0.04258,
 			0.04555,
 			0.04951,
@@ -194,7 +194,7 @@ var (
 	}
 	swordDance = [][]float64{
 		{ // skill: DanceOfHaftkarsvar - Sword Dance/Whirling Steps 1-Hit DMG: {5}/{1} Max HP
-			0.04552,
+			0.04553,
 			0.04894,
 			0.05235,
 			0.05691,
@@ -211,7 +211,7 @@ var (
 			0.10812,
 		},
 		{ // skill: DanceOfHaftkarsvar - Sword Dance/Whirling Steps 2-Hit DMG: {6}/{2} Max HP
-			0.05144,
+			0.05145,
 			0.0553,
 			0.05916,
 			0.06431,
