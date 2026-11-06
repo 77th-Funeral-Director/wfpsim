@@ -49,7 +49,7 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		c.c2OnSkill()
 	}, skillHitmark)
 
-	c.SetCD(action.ActionSkill, 16*60)
+	c.SetCD(action.ActionSkill, 10*60)
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
 		AnimationLength: skillFrames[action.InvalidAction],
