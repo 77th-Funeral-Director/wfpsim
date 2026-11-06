@@ -1,0 +1,68 @@
+use: pipeline
+kind: character
+name: anastasya
+
+shortcuts:
+    - tsaritsa
+
+override:
+    id: 10000149
+    icd_group:
+        AnastasyaSkill:
+            name: Anastasya_Crown
+
+combat:
+    icd_groups:
+        - AnastasyaSkill
+
+talents:
+    - attack:
+          - attack(1-Hit DMG)
+          - attack(2-Hit DMG)
+          - attack(3-Hit DMG)
+          - attack(4-Hit DMG)
+          - attack(5-Hit DMG)
+    - aim: attack(Aimed Shot)
+    - fullAim: attack(Fully-Charged Aimed Shot)
+
+    - skillTap: skill(Instantaneous Tap DMG)
+    - skillHold: skill(Instantaneous Hold DMG)
+    - skillCrown: skill(Palestar Crown Cryo DMG)
+    - skillCrownSSC: skill(Palestar Crown Stellar-Conduct/Stellar Swirl DMG)
+    - skillCrownSSw: skill(Palestar Crown Stellar-Conduct/Stellar Swirl DMG|1)
+    - skillAttack:
+          - skill(1-Hit Cryo DMG)
+          - skill(2-Hit Cryo DMG)
+          - skill(3-Hit Cryo DMG)
+          - skill(4-Hit Cryo DMG)
+          - skill(5-Hit Cryo DMG)
+    - skillAttackSSC:
+          - skill(1-Hit Stellar-Conduct/Stellar Swirl DMG)
+          - skill(2-Hit Stellar-Conduct/Stellar Swirl DMG)
+          - skill(3-Hit Stellar-Conduct/Stellar Swirl DMG)
+          - skill(4-Hit Stellar-Conduct/Stellar Swirl DMG)
+          - skill(5-Hit Stellar-Conduct/Stellar Swirl DMG)
+    - skillAttackSSw:
+          - skill(1-Hit Stellar-Conduct/Stellar Swirl DMG|1)
+          - skill(2-Hit Stellar-Conduct/Stellar Swirl DMG|1)
+          - skill(3-Hit Stellar-Conduct/Stellar Swirl DMG|1)
+          - skill(4-Hit Stellar-Conduct/Stellar Swirl DMG|1)
+          - skill(5-Hit Stellar-Conduct/Stellar Swirl DMG|1)
+
+    - burstLove: burst(To the New World Instantaneous DMG)
+    - burstLoveStellar: burst(To the New World Stellar Glimmer Reaction DMG Increase)
+    - burstLoveCrownSSC: burst(Palestar Crown Stellar-Conduct/Stellar Swirl DMG)
+    - burstLoveCrownSSw: burst(Palestar Crown Stellar-Conduct/Stellar Swirl DMG|1)
+    - burstLoveTriumphSSC: burst(Triumph Stellar-Conduct/Stellar Swirl DMG)
+    - burstLoveTriumphSSw: burst(Triumph Stellar-Conduct/Stellar Swirl DMG|1)
+    - burstHonorSSC: burst(The Evernight Yields to Dawn Stellar-Conduct/Stellar Swirl DMG)
+    - burstHonorSSw: burst(The Evernight Yields to Dawn Stellar-Conduct/Stellar Swirl DMG|1)
+    - burstHonorSkill1: burst(Doom 1-Hit Cryo DMG)
+    - burstHonorSkillSSC:
+          - burst(Doom 1-Hit Stellar-Conduct/Stellar Swirl DMG)
+          - burst(Doom 2-Hit Stellar-Conduct/Stellar Swirl DMG)
+          - burst(Doom 3-Hit Stellar-Conduct/Stellar Swirl DMG)
+    - burstHonorSkillSSw:
+          - burst(Doom 1-Hit Stellar-Conduct/Stellar Swirl DMG|1)
+          - burst(Doom 2-Hit Stellar-Conduct/Stellar Swirl DMG|1)
+          - burst(Doom 3-Hit Stellar-Conduct/Stellar Swirl DMG|1)

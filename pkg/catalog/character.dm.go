@@ -1984,6 +1984,158 @@ var CharacterMap = map[keys.Char]*model.AvatarData{
 			BurstEnergyCost: 40.0,
 		},
 	},
+	keys.Anastasya: {
+		Id:          10000149,
+		SubId:       14901,
+		Key:         "anastasya",
+		Rarity:      model.QualityType_QUALITY_ORANGE,
+		Body:        model.BodyType_BODY_LADY,
+		Region:      model.AssocType_ASSOC_TYPE_SNEZHNAYA_STAR,
+		Element:     model.ElementType_Ice,
+		WeaponClass: model.WeaponType_WEAPON_BOW,
+		IconName:    "UI_AvatarIcon_Anastasya",
+		Stats: &model.AvatarStatsData{
+			BaseHp:   991.4528,
+			BaseAtk:  27.7438,
+			BaseDef:  60.60779,
+			HpCurve:  model.GrowCurveType_GROW_CURVE_HP_S5,
+			AtkCurve: model.GrowCurveType_GROW_CURVE_ATTACK_S5,
+			DefCruve: model.GrowCurveType_GROW_CURVE_HP_S5,
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    850.0811,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    51.9669,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    23.78606,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    1454.086,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    88.89075,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    40.68668,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
+							Value:    0.048,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    2259.426,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    138.1225,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    63.22085,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
+							Value:    0.096,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    2863.431,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    175.0464,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    80.12148,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
+							Value:    0.096,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    3467.436,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    211.9703,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    97.0221,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
+							Value:    0.144,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_HP,
+							Value:    4071.441,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_DEFENSE,
+							Value:    248.8941,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    113.9227,
+						},
+						{
+							PropType: model.FightPropType_FIGHT_PROP_CRITICAL,
+							Value:    0.192,
+						},
+					},
+				},
+			},
+		},
+		SkillDetails: &model.AvatarSkillsData{
+			Skill:           11492,
+			Burst:           11495,
+			Attack:          11491,
+			BurstEnergyCost: 50.0,
+		},
+	},
 	keys.AratakiItto: {
 		Id:          10000057,
 		SubId:       5701,

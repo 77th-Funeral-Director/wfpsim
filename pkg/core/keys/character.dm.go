@@ -56,6 +56,7 @@ const (
 	Aloy                          // aloy
 	Alyosha                       // alyosha
 	Amber                         // amber
+	Anastasya                     // anastasya
 	AratakiItto                   // aratakiitto
 	Arlecchino                    // arlecchino
 	Baizhu                        // baizhu
@@ -195,6 +196,7 @@ var _CharNames = [...]string{
 	"aloy",
 	"alyosha",
 	"amber",
+	"anastasya",
 	"aratakiitto",
 	"arlecchino",
 	"baizhu",
@@ -334,6 +336,7 @@ var _CharValues = [...]Char{
 	Aloy,
 	Alyosha,
 	Amber,
+	Anastasya,
 	AratakiItto,
 	Arlecchino,
 	Baizhu,

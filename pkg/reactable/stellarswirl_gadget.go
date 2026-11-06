@@ -56,12 +56,12 @@ func (p *StellarVortex) explode() {
 
 	stacks := p.r.sswStacks()
 	ap := combat.NewCircleHitOnTarget(p, nil, sswStackRadius[stacks])
-
+	bonusMult := p.r.core.Flags.Custom[StellarSwirlBonusMultKey]
 	for _, e := range p.r.core.Combat.Enemies() {
 		if willHit, _ := e.AttackWillLand(ap); !willHit {
 			continue
 		}
-		ai, snap := p.r.calcStellarSwirlDmg(e, ai, ap, contribMap, sswStackMult[stacks], owner)
+		ai, snap := p.r.calcStellarSwirlDmg(e, ai, ap, contribMap, sswStackMult[stacks]*(1+bonusMult), owner)
 		ai.ActorIndex = owner
 		p.r.core.QueueAttackWithSnap(ai, snap, combat.NewSingleTargetHit(e.Key()), 0)
 	}
