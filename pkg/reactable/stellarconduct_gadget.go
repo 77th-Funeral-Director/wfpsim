@@ -113,6 +113,10 @@ func (p *PolestarField) unsub() {
 func (p *PolestarField) refreshBuffs() {
 	oldStacks := int(p.Core.Flags.Custom[PolestarFieldStacksKey])
 	newStacks := int(p.Core.Flags.Custom[sscRecordKey])
+	newStacks += int(p.Core.Flags.Custom[PolestarFieldBonusStacksKey])
+	if newStacks > sscMaxStacks {
+		newStacks = sscMaxStacks
+	}
 	p.Core.Flags.Custom[PolestarFieldStacksKey] = float64(newStacks)
 	p.Core.Flags.Custom[sscRecordKey] = 0
 	p.Core.Log.NewEvent("Updating polestar field buff stacks", glog.LogElementEvent, -1).Write("old_stacks", oldStacks).Write("new_stacks", newStacks)

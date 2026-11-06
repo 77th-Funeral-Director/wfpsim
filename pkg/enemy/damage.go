@@ -213,6 +213,8 @@ func (e *Enemy) calcDirectReaction(atk *info.AttackEvent, evt glog.Event, grpMul
 		char := e.Core.Player.Chars()[atk.Info.ActorIndex]
 		stacks := char.Tags[reactable.PolestarFieldStacksKey]
 		mult = reactable.StellarconductMult[stacks]
+	case attacks.AttackTagDirectStellarSwirl:
+		mult = 1 + e.Core.Flags.Custom[reactable.StellarSwirlBonusMultKey]
 	}
 	damage *= mult
 

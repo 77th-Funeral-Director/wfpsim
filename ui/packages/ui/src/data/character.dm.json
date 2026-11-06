@@ -221,6 +221,23 @@
         "burst_energy_cost": 40
       }
     },
+    "anastasya": {
+      "id": 10000149,
+      "sub_id": 14901,
+      "key": "anastasya",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_LADY",
+      "region": "ASSOC_TYPE_SNEZHNAYA_STAR",
+      "element": "Ice",
+      "weapon_class": "WEAPON_BOW",
+      "icon_name": "UI_AvatarIcon_Anastasya",
+      "skill_details": {
+        "skill": 11492,
+        "burst": 11495,
+        "attack": 11491,
+        "burst_energy_cost": 50
+      }
+    },
     "aratakiitto": {
       "id": 10000057,
       "sub_id": 5701,

@@ -148,6 +148,9 @@ type CharWrapper struct {
 	RemainingDashCD int
 	DashLockout     bool
 
+	// sealed characters cannot be swapped into
+	Sealed bool
+
 	// hitlag stuff
 	TimePassed   int // how many frames have passed since start of sim
 	frozenFrames int // how many frames are we still frozen for

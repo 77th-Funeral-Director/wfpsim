@@ -83,7 +83,7 @@ func (h *Handler) ReadyCheck(t action.Action, k keys.Char, param map[string]int)
 			// even though noop this action is still ready
 			return nil
 		}
-		if h.SwapCD > 0 {
+		if h.SwapCD > 0 || char.Sealed {
 			h.Events.Emit(event.OnActionFailed, h.active, t, param, action.SwapCD)
 			return ErrActionNotReady
 		}

@@ -15,12 +15,13 @@ import (
 var sswContributorMult = []float64{0.6, 0.3, 0.05, 0.05}
 
 const (
-	SswKey                  = "stellar-swirl"
-	sswStackKey             = SswKey + "-stacks"
-	sswMaxStacks            = 6
-	sswContributionKey      = SswKey + "-contribution"
-	sswOwnerKey             = SswKey + "-owner"
-	StellarSwirlBonusDurKey = SswKey + "-bonus-dur"
+	SswKey                   = "stellar-swirl"
+	sswStackKey              = SswKey + "-stacks"
+	sswMaxStacks             = 6
+	sswContributionKey       = SswKey + "-contribution"
+	sswOwnerKey              = SswKey + "-owner"
+	StellarSwirlBonusDurKey  = SswKey + "-bonus-dur"
+	StellarSwirlBonusMultKey = SswKey + "-bonus-mult"
 )
 
 type sswContribution = struct {
@@ -75,11 +76,12 @@ func (r *Reactable) queueStellarSwirl(charIndex int) {
 		contribMap[charInd] = true
 	}
 
+	bonusMult := r.core.Flags.Custom[StellarSwirlBonusMultKey]
 	for _, e := range r.core.Combat.Enemies() {
 		if willHit, _ := e.AttackWillLand(ap); !willHit {
 			continue
 		}
-		ai, snap := r.calcStellarSwirlDmg(e, ai, ap, contribMap, 0.75, charIndex)
+		ai, snap := r.calcStellarSwirlDmg(e, ai, ap, contribMap, 0.75*(1+bonusMult), charIndex)
 		ai.ActorIndex = charIndex
 		r.core.QueueAttackWithSnap(ai, snap, combat.NewSingleTargetHit(e.Key()), 3)
 	}
