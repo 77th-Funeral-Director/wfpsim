@@ -53,7 +53,7 @@ var (
 		{ // attack: PeregrinationOfLinnunrata - 2-Hit DMG: {1}
 			0.31805,
 			0.3419,
-			0.36575,
+			0.36576,
 			0.39756,
 			0.42141,
 			0.44527,

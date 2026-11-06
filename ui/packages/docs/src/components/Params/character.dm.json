@@ -1530,6 +1530,11 @@
       "ability": "skill",
       "param": "hold",
       "desc": "0 for Tap (default), 1 for Hold."
+    },
+    {
+      "ability": "skill",
+      "param": "recast",
+      "desc": "1 for recast"
     }
   ],
   "mona": [

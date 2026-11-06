@@ -132,12 +132,12 @@ var (
 		2.35856,
 		2.54932,
 		2.74009,
-		2.94819,
+		2.9482,
 		3.1563,
 		3.36441,
 		3.57252,
 		3.78063,
-		3.98873,
+		3.98874,
 	}
 	// attack: Demonbane - Low/High Plunge DMG: {9}/{10}
 	highPlunge = []float64{
@@ -155,7 +155,7 @@ var (
 		4.20233,
 		4.46227,
 		4.72221,
-		4.98214,
+		4.98215,
 	}
 	// skill: SpiritBladeChonghuasLayeredFrost - Skill DMG: {0}
 	skill = []float64{

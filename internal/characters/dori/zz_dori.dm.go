@@ -136,12 +136,12 @@ var (
 		2.35856,
 		2.54932,
 		2.74009,
-		2.94819,
+		2.9482,
 		3.1563,
 		3.36441,
 		3.57252,
 		3.78063,
-		3.98873,
+		3.98874,
 	}
 	// attack: MarvelousSwordDanceModified - Low/High Plunge DMG: {9}/{10}
 	highPlunge = []float64{
@@ -159,7 +159,7 @@ var (
 		4.20233,
 		4.46227,
 		4.72221,
-		4.98214,
+		4.98215,
 	}
 	// skill: SpiritWardingLampTroubleshooterCannon - Troubleshooter Shot DMG: {0}
 	skill = []float64{
@@ -219,8 +219,8 @@ var (
 	bursthealpp = []float64{
 		0.0667,
 		0.0717,
-		0.07671,
-		0.08337,
+		0.0767,
+		0.08338,
 		0.08838,
 		0.09338,
 		0.10005,
@@ -230,7 +230,7 @@ var (
 		0.12673,
 		0.1334,
 		0.14174,
-		0.15008,
+		0.15007,
 		0.15841,
 	}
 	// burst: AlcazarzaraysExactitude - Continuous Healing: {1} Max HP+{2}
@@ -241,7 +241,7 @@ var (
 		850.6519,
 		930.9105,
 		1016.52,
-		1107.479,
+		1107.48,
 		1203.79,
 		1305.451,
 		1412.462,
