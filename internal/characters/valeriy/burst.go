@@ -56,7 +56,7 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 		c.a1OnBurst()
 	}, burstHitmark)
 
-	c.SetCD(action.ActionBurst, 18*60)
+	c.SetCD(action.ActionBurst, 15*60)
 	c.ConsumeEnergy(7)
 
 	return action.Info{
