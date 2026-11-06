@@ -94,7 +94,6 @@ ace.define(
         'alyosha',
         'amber',
         'anastasya',
-        'tsar',
         'tsaritsa',
         'aratakiitto',
         'aratakitheoneandoniitto',
