@@ -21,6 +21,8 @@ var (
 	burstHitmark    = 90
 	burstLoveKey    = "anastasya-burst-love"
 	burstTriumphKey = "anastasya-burst-triumph"
+
+	skillTriumphFrames []int
 )
 
 func init() {
@@ -31,6 +33,14 @@ func init() {
 	burstFrames[action.ActionJump] = 103    // Q -> J
 	burstFrames[action.ActionWalk] = 105    // Q -> Swap
 	burstFrames[action.ActionSwap] = 102    // Q -> Swap
+
+	skillTriumphFrames = frames.InitAbilSlice(12) // E -> J
+	skillTriumphFrames[action.ActionAttack] = 11
+	skillTriumphFrames[action.ActionSkill] = 11
+	skillTriumphFrames[action.ActionBurst] = 11
+	skillTriumphFrames[action.ActionDash] = 10
+	skillTriumphFrames[action.ActionWalk] = 11
+	skillTriumphFrames[action.ActionSwap] = 10
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
@@ -132,22 +142,7 @@ func (c *char) burstInit() {
 		if !c.StatusIsActive(burstTriumphKey) {
 			return
 		}
-
-		ai := info.AttackInfo{
-			ActorIndex:       c.Index(),
-			Abil:             "Triumph",
-			AttackTag:        attacks.AttackTagDirectStellarConduct,
-			IgnoreDefPercent: 1,
-			Element:          attributes.Cryo,
-			Mult:             burstLoveTriumphSSC[c.TalentLvlBurst()],
-		}
-		c.toStellarWithDefault(&ai, burstLoveTriumphSSC[c.TalentLvlBurst()], burstLoveTriumphSSw[c.TalentLvlBurst()])
-		c.Core.QueueAttack(
-			ai,
-			combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 5),
-			20,
-			20,
-		)
+		c.Core.Player.Exec(action.ActionSkill, c.Base.Key, map[string]int{})
 	}, "anastasya-burst-triumph")
 
 	c.Core.Events.Subscribe(event.OnEnemyHit, func(args ...interface{}) {
@@ -199,7 +194,7 @@ func (c *char) burstUnsealPoints(amt float64) {
 			if !char.Sealed {
 				continue
 			}
-			c.Core.Log.NewEvent("unsealed", glog.LogCharacterEvent, char.Index())
+			c.Core.Log.NewEvent("swap unsealed", glog.LogCooldownEvent, char.Index())
 			if c.Index() == char.Index() {
 				c.AddStatus(burstTriumphKey, 20*60, false)
 			}
@@ -207,4 +202,29 @@ func (c *char) burstUnsealPoints(amt float64) {
 			c.a1OnUnseal(char)
 		}
 	}
+}
+
+func (c *char) skillTriumph() (action.Info, error) {
+	ai := info.AttackInfo{
+		ActorIndex:       c.Index(),
+		Abil:             "Triumph",
+		AttackTag:        attacks.AttackTagDirectStellarConduct,
+		IgnoreDefPercent: 1,
+		Element:          attributes.Cryo,
+		Mult:             burstLoveTriumphSSC[c.TalentLvlBurst()],
+	}
+	c.toStellarWithDefault(&ai, burstLoveTriumphSSC[c.TalentLvlBurst()], burstLoveTriumphSSw[c.TalentLvlBurst()])
+	c.Core.QueueAttack(
+		ai,
+		combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 5),
+		20,
+		20,
+	)
+	c.DeleteStatus(burstTriumphKey)
+	return action.Info{
+		Frames:          frames.NewAbilFunc(skillTriumphFrames),
+		AnimationLength: skillTriumphFrames[action.InvalidAction],
+		CanQueueAfter:   skillTriumphFrames[action.ActionDash], // earliest cancel
+		State:           action.SkillState,
+	}, nil
 }
