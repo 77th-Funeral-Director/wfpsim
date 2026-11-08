@@ -43,6 +43,10 @@ func init() {
 }
 
 func (c *char) Attack(p map[string]int) (action.Info, error) {
+	if c.StatusIsActive(skillKey) {
+		return action.Info{}, fmt.Errorf("danica attack during skill not implemented")
+	}
+
 	ai := info.AttackInfo{
 		ActorIndex:         c.Index(),
 		Abil:               fmt.Sprintf("Normal %v", c.NormalCounter),
