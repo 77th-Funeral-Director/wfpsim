@@ -32,6 +32,10 @@ func init() {
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
+	if c.StatusIsActive(burstTriumphKey) {
+		return c.skillTriumph()
+	}
+
 	if p["hold"] > 0 {
 		return action.Info{}, fmt.Errorf("hold skill not implemented")
 	}
