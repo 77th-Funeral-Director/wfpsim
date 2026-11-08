@@ -30,6 +30,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.stellarInit()
 	c.skillInit()
 	c.burstInit()
 	c.a4Init()

@@ -99,23 +99,20 @@ func (c *char) entrySKill() (action.Info, error) {
 	c.doEntrySkill = false
 	c.AddStatus(entrySkillCDKey, 14*60, false)
 	c.a4OnSkillEntry()
+	c.c1OnSkillEntry()
 	c.QueueCharTask(func() {
 		ai := info.AttackInfo{
-			ActorIndex:         c.Index(),
-			Abil:               "Skill Entry",
-			AttackTag:          attacks.AttackTagElementalArt,
-			ICDTag:             attacks.ICDTagElementalArt,
-			ICDGroup:           attacks.ICDGroupDefault,
-			StrikeType:         attacks.StrikeTypeBlunt,
-			PoiseDMG:           100,
-			Element:            attributes.Electro,
-			Durability:         25,
-			Mult:               skill[c.TalentLvlSkill()],
-			CanBeDefenseHalted: true,
+			ActorIndex:       c.Index(),
+			Abil:             "Skill Entry",
+			AttackTag:        attacks.AttackTagDirectStellarConduct,
+			StrikeType:       attacks.StrikeTypeDefault,
+			Element:          attributes.Electro,
+			Mult:             skillEntrySSC[c.TalentLvlSkill()],
+			IgnoreDefPercent: 1,
 		}
 
 		ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 2)
-		c.Core.QueueAttack(ai, ap, 0, 0)
+		c.Core.QueueAttack(ai, ap, 0, 0, c.particleCB)
 	}, skillEntryHitmark)
 
 	return action.Info{
@@ -222,7 +219,7 @@ func (c *char) particleCB(a info.AttackCB) {
 		return
 	}
 	c.AddStatus(particleICDKey, 14*60, false)
-	c.Core.QueueParticle(c.Base.Key.String(), 14, attributes.Geo, c.ParticleDelay)
+	c.Core.QueueParticle(c.Base.Key.String(), 5, attributes.Electro, c.ParticleDelay)
 }
 
 type maidState int

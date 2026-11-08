@@ -43,17 +43,19 @@ func (c *char) a1Ticker(src int) {
 		if c.getRadiance() == radianceStellarConduct {
 			val = 0.3
 			e.AddResistMod(info.ResistMod{
-				Base:  modifier.NewBaseWithHitlag(a1Key+"-"+attributes.Cryo.String(), 2*60),
+				Base:  modifier.NewBaseWithHitlag(a1Key+"-"+attributes.Cryo.String(), 1.5*60),
 				Ele:   attributes.Cryo,
 				Value: -val,
 			})
 		}
 		e.AddResistMod(info.ResistMod{
-			Base:  modifier.NewBaseWithHitlag(a1Key+"-"+attributes.Electro.String(), 2*60),
+			Base:  modifier.NewBaseWithHitlag(a1Key+"-"+attributes.Electro.String(), 1.5*60),
 			Ele:   attributes.Electro,
 			Value: -val,
 		})
 	}
+
+	c.QueueCharTask(func() { c.a1Ticker(src) }, 1*60)
 }
 
 func (c *char) a4Init() {
