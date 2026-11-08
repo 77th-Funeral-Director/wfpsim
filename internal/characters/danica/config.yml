@@ -1,0 +1,34 @@
+use: pipeline
+kind: character
+name: danica
+override:
+  id: 10000147
+talents:
+  - attack:
+      - attack(1-Hit DMG)
+      - attack(2-Hit DMG)
+      - attack(3-Hit DMG)
+      - attack(4-Hit DMG)
+
+  - skill: skill(Skill DMG)
+  - skillEntrySSC: skill(Entry Skill E2 Stellar-Conduct DMG)
+  - skillBattle: skill(On-Field E2 Stellar-Conduct DMG)
+  - skillCoord: skill(Anchor Coordinated Attack DMG)
+  - skillShieldAtk: skill(Shield DMG Absorption) # {} ATK+{}
+  - skillShieldFlat: skill(Shield DMG Absorption|1) # {} ATK+{}
+  - skillAttack:
+      - skill(Anchor Normal Attack 1-Hit Electro DMG)
+      - skill(Anchor Normal Attack 2-Hit Electro DMG)
+      - skill(Anchor Normal Attack 3-Hit Electro DMG)
+      - skill(Anchor Normal Attack 4-Hit Electro DMG)
+  - burst:
+      - burst(1-Hit Electro DMG/Stellar-Conduct DMG) # {}/{}
+      - burst(2/3/4-Hit Electro DMG)
+      - burst(2/3/4-Hit Electro DMG)
+      - burst(2/3/4-Hit Electro DMG)
+      - burst(5-Hit Electro DMG/Stellar-Conduct DMG) # {}/{}
+  - burst1SSC: burst(1-Hit Electro DMG/Stellar-Conduct DMG|1) # {}/{}
+  - burst5SSC: burst(5-Hit Electro DMG/Stellar-Conduct DMG|1) # {}/{}
+  - burstATKBonus: burst(ATK Bonus Ratio)
+  - burstMaxATKBonus: burst(Max ATK Bonus)
+  - burstBattle: burst(On-Field E2 DMG Increase)

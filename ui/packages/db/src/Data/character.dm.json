@@ -544,6 +544,23 @@
         "burst_energy_cost": 60
       }
     },
+    "danica": {
+      "id": 10000147,
+      "sub_id": 14701,
+      "key": "danica",
+      "rarity": "QUALITY_ORANGE",
+      "body": "BODY_LADY",
+      "region": "ASSOC_TYPE_SNEZHNAYA_STAR",
+      "element": "Electric",
+      "weapon_class": "WEAPON_CLAYMORE",
+      "icon_name": "UI_AvatarIcon_Danica",
+      "skill_details": {
+        "skill": 11472,
+        "burst": 11475,
+        "attack": 11471,
+        "burst_energy_cost": 60
+      }
+    },
     "dehya": {
       "id": 10000079,
       "sub_id": 7901,

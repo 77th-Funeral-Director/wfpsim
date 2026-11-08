@@ -35,6 +35,7 @@ var avatarMap = map[string]string{
 	"columbina":         "UI_AvatarIcon_Columbina",
 	"cyno":              "UI_AvatarIcon_Cyno",
 	"dahlia":            "UI_AvatarIcon_Dahlia",
+	"danica":            "UI_AvatarIcon_Danica",
 	"dehya":             "UI_AvatarIcon_Dehya",
 	"diluc":             "UI_AvatarIcon_Diluc",
 	"diona":             "UI_AvatarIcon_Diona",
