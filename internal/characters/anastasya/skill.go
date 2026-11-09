@@ -16,19 +16,13 @@ var skillFrames []int
 const (
 	skillTapKey         = "anastasya-skill-tap"
 	skillHoldKey        = "anastasya-skill-hold"
-	skillTapHitmark     = 23
-	skillFirstTickDelay = 118
+	skillTapHitmark     = 17
+	skillFirstTickDelay = 139 - skillTapHitmark
 	skillParticleICDKey = "anastasya-particle-icd"
 )
 
 func init() {
-	skillFrames = frames.InitAbilSlice(42) // E -> J
-	skillFrames[action.ActionAttack] = 41
-	skillFrames[action.ActionSkill] = 41
-	skillFrames[action.ActionBurst] = 41
-	skillFrames[action.ActionDash] = 40
-	skillFrames[action.ActionWalk] = 41
-	skillFrames[action.ActionSwap] = 40
+	skillFrames = frames.InitAbilSlice(35)
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
@@ -66,7 +60,7 @@ func (c *char) skillTap(_ map[string]int) (action.Info, error) {
 
 	c.AddStatus(skillTapKey, 20*60, true)
 
-	c.SetCD(action.ActionSkill, 15*60)
+	c.SetCDWithDelay(action.ActionSkill, 15*60, 14)
 
 	c.a1OnSkill()
 	c.c2OnSkillLove()
@@ -104,7 +98,7 @@ func (c *char) skillTicker(src int) {
 	c.Core.QueueAttack(ai, ap, 0, 0)
 
 	c.toStellar(&ai, skillCrownSSC[c.TalentLvlSkill()], skillCrownSSw[c.TalentLvlSkill()])
-	c.Core.QueueAttack(ai, ap, 2, 2)
+	c.Core.QueueAttack(ai, ap, 4, 4)
 
 	c.burstLoveOnSkillTick(ap)
 	c.QueueCharTask(func() {

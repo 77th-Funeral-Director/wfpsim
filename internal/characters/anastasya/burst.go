@@ -18,7 +18,7 @@ import (
 
 var (
 	burstFrames     []int
-	burstHitmark    = 90
+	burstHitmark    = 105
 	burstLoveKey    = "anastasya-burst-love"
 	burstTriumphKey = "anastasya-burst-triumph"
 
@@ -26,21 +26,9 @@ var (
 )
 
 func init() {
-	burstFrames = frames.InitAbilSlice(128) // Q -> CA
-	burstFrames[action.ActionAttack] = 101  // Q -> N1
-	burstFrames[action.ActionSkill] = 100   // Q -> E
-	burstFrames[action.ActionDash] = 103    // Q -> D
-	burstFrames[action.ActionJump] = 103    // Q -> J
-	burstFrames[action.ActionWalk] = 105    // Q -> Swap
-	burstFrames[action.ActionSwap] = 102    // Q -> Swap
+	burstFrames = frames.InitAbilSlice(109)
 
-	skillTriumphFrames = frames.InitAbilSlice(12) // E -> J
-	skillTriumphFrames[action.ActionAttack] = 11
-	skillTriumphFrames[action.ActionSkill] = 11
-	skillTriumphFrames[action.ActionBurst] = 11
-	skillTriumphFrames[action.ActionDash] = 10
-	skillTriumphFrames[action.ActionWalk] = 11
-	skillTriumphFrames[action.ActionSwap] = 10
+	skillTriumphFrames = frames.InitAbilSlice(26)
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
@@ -217,8 +205,8 @@ func (c *char) skillTriumph() (action.Info, error) {
 	c.Core.QueueAttack(
 		ai,
 		combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 5),
-		20,
-		20,
+		28,
+		28,
 	)
 	c.DeleteStatus(burstTriumphKey)
 	return action.Info{

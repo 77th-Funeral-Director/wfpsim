@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	burstHitmarks    = []int{85, 85 + 5, 85 + 5 + 5, 85 + 5 + 5 + 5, 85 + 5 + 5 + 5 + 5}
+	burstHitmarks    = []int{102, 102 + 11, 102 + 11 + 14, 102 + 11 + 14 + 15, 102 + 11 + 14 + 15 + 26}
 	burstDura        = []info.Durability{25, 0, 25, 0, 25}
 	burstHitHaltTime = []float64{0.03, 0.02, 0.02, 0.03, 0.06}
 	burstFrames      []int
@@ -27,13 +27,13 @@ const (
 
 func init() {
 	// Mavuika
-	burstFrames = frames.InitAbilSlice(141) // Q -> Walk
-	burstFrames[action.ActionSwap] = 116
-	burstFrames[action.ActionAttack] = 116
-	burstFrames[action.ActionCharge] = 116
-	burstFrames[action.ActionSkill] = 116
-	burstFrames[action.ActionDash] = 116
-	burstFrames[action.ActionJump] = 116
+	burstFrames = frames.InitAbilSlice(100) // Q -> Walk
+	burstFrames[action.ActionSwap] = 100
+	burstFrames[action.ActionAttack] = 100
+	burstFrames[action.ActionCharge] = 100
+	burstFrames[action.ActionSkill] = 100
+	burstFrames[action.ActionDash] = 100
+	burstFrames[action.ActionJump] = 100
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
@@ -51,6 +51,7 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 				Mult:             burst[i][c.TalentLvlBurst()],
 				HitlagFactor:     0.01,
 				HitlagHaltFrames: burstHitHaltTime[i] * 60,
+				IsDeployable:     true,
 			}
 			switch i {
 			case 0:

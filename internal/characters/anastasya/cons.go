@@ -159,8 +159,8 @@ func (c *char) c6Init() {
 		c.Core.QueueAttack(
 			ai,
 			combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 5),
-			20,
-			20,
+			28,
+			28,
 		)
 	}, c6Key)
 

@@ -17,8 +17,8 @@ var (
 )
 
 const (
-	skillHitmark      = 14
-	skillEntryHitmark = 14
+	skillHitmark      = 22
+	skillEntryHitmark = 42
 	skillKey          = "danica-skill"
 	skillICDKey       = "danica-skill-icd"
 	skillExciteICDKey = "danica-skill-excite-icd"
@@ -33,22 +33,12 @@ const (
 )
 
 func init() {
-	// beidou
-	skillFrames = frames.InitAbilSlice(45)
-	skillFrames[action.ActionAttack] = 44
-	skillFrames[action.ActionDash] = 24
-	skillFrames[action.ActionJump] = 24
-	skillFrames[action.ActionSwap] = 44
+	skillFrames = frames.InitAbilSlice(44)
+	skillFrames[action.ActionBurst] = 34
+	skillFrames[action.ActionDash] = 34
+	skillFrames[action.ActionJump] = 34
 
-	// noelle
 	skillEntryFrames = frames.InitAbilSlice(60)
-	skillEntryFrames[action.ActionAttack] = 12
-	skillEntryFrames[action.ActionCharge] = 13
-	skillEntryFrames[action.ActionSkill] = 14
-	skillEntryFrames[action.ActionBurst] = 14
-	skillEntryFrames[action.ActionDash] = 11
-	skillEntryFrames[action.ActionJump] = 11
-	skillEntryFrames[action.ActionWalk] = 43
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
@@ -81,7 +71,7 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		c.a1OnSkill()
 	}, skillHitmark)
 
-	c.SetCDWithDelay(action.ActionSkill, 18*60, 6)
+	c.SetCDWithDelay(action.ActionSkill, 18*60, 20)
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
