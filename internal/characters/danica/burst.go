@@ -45,26 +45,33 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 				AttackTag:        attacks.AttackTagElementalBurst,
 				ICDTag:           attacks.ICDTagNone,
 				ICDGroup:         attacks.ICDGroupDefault,
-				StrikeType:       attacks.StrikeTypeBlunt,
+				StrikeType:       attacks.StrikeTypeDefault,
 				Element:          attributes.Electro,
 				Durability:       burstDura[i],
 				Mult:             burst[i][c.TalentLvlBurst()],
 				HitlagFactor:     0.01,
 				HitlagHaltFrames: burstHitHaltTime[i] * 60,
 			}
-
 			switch i {
 			case 0:
 				ai.StrikeType = attacks.StrikeTypeBlunt
 				ai.PoiseDMG = 60
-				c.toStellar(&ai, burst1SSC[c.TalentLvlBurst()])
 			case 4:
 				ai.StrikeType = attacks.StrikeTypeBlunt
 				ai.PoiseDMG = 90
-				c.toStellar(&ai, burst5SSC[c.TalentLvlBurst()])
 			}
 
 			c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 2), 0, 0)
+
+			if c.getRadiance() == radianceNone {
+				return
+			}
+
+			switch i {
+			case 0, 4:
+				c.toStellar(&ai, burst1SSC[c.TalentLvlBurst()])
+				c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 2), 1, 1)
+			}
 		}, delay)
 	}
 

@@ -9,7 +9,7 @@ type danicaShield struct{ *shield.Tmpl }
 
 const shieldDur = 25 * 60
 
-func (c *char) newShield() *danicaShield {
+func (c *char) newShield() {
 	n := &danicaShield{}
 	n.Tmpl = &shield.Tmpl{
 		ActorIndex: c.Index(),
@@ -21,6 +21,5 @@ func (c *char) newShield() *danicaShield {
 		HP:         c.TotalAtk()*skillShieldAtk[c.TalentLvlSkill()] + skillShieldFlat[c.TalentLvlSkill()],
 		Expires:    c.Core.F + shieldDur,
 	}
-
-	return n
+	c.Core.Player.Shields.Add(n)
 }
