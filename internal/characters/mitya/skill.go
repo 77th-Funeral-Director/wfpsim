@@ -124,7 +124,6 @@ func (c *char) skillRecast() (action.Info, error) {
 	}
 	c.AddStatus(skillRecastCDKey, 1.5*60, false)
 	if c.getSkillState() == skillStatePress {
-		c.skillDetonate()
 		c.skillState = skillStateHold
 		c.skillSrc = -1
 	} else {
@@ -136,7 +135,6 @@ func (c *char) skillRecast() (action.Info, error) {
 			if c.skillSrc != src {
 				return
 			}
-			c.skillDetonate()
 		}, c.StatusDuration(skillKey))
 	}
 
