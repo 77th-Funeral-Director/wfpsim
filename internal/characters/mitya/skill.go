@@ -135,6 +135,7 @@ func (c *char) skillRecast() (action.Info, error) {
 			if c.skillSrc != src {
 				return
 			}
+			c.skillDetonate()
 		}, c.StatusDuration(skillKey))
 	}
 
