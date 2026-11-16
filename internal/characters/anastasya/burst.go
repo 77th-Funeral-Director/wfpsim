@@ -67,7 +67,7 @@ func (c *char) burstLove(_ map[string]int) (action.Info, error) {
 
 	c.burstSrc = c.Core.F
 	c.ConsumeEnergy(7)
-	c.SetCD(action.ActionBurst, 15*60)
+	c.SetCD(action.ActionBurst, 18*60)
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(burstFrames),

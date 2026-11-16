@@ -29,7 +29,7 @@ const (
 
 	entrySkillCDKey = "danica-entry-skill-cd"
 
-	exciteMax = 100
+	willMax = 100
 )
 
 func init() {
@@ -82,12 +82,12 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 }
 
 func (c *char) entrySKill() (action.Info, error) {
-	c.excite = 0
+	c.will = 0
 	c.AddStatus(maidDefendKey, 25*60, true)
 	c.AddStatus(skillKey, 25*60, true)
 	c.newShield()
 	c.doEntrySkill = false
-	c.AddStatus(entrySkillCDKey, 14*60, false)
+	c.AddStatus(entrySkillCDKey, 16*60, false)
 	c.a4OnSkillEntry()
 	c.c1OnSkillEntry()
 	c.QueueCharTask(func() {
@@ -97,7 +97,7 @@ func (c *char) entrySKill() (action.Info, error) {
 			AttackTag:        attacks.AttackTagDirectStellarConduct,
 			StrikeType:       attacks.StrikeTypeDefault,
 			Element:          attributes.Electro,
-			Mult:             skillEntrySSC[c.TalentLvlSkill()],
+			Mult:             skillProtect[c.TalentLvlSkill()],
 			IgnoreDefPercent: 1,
 		}
 
@@ -176,7 +176,7 @@ func (c *char) skillInit() {
 			return
 		}
 
-		if c.excite < exciteMax {
+		if c.will < willMax {
 			return
 		}
 
@@ -198,7 +198,7 @@ func (c *char) skillInit() {
 }
 
 func (c *char) addExcite(amt float64) {
-	c.excite = min(c.excite+amt, exciteMax)
+	c.will = min(c.will+amt, willMax)
 }
 
 func (c *char) particleCB(a info.AttackCB) {
