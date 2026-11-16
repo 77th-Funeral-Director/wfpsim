@@ -20,5 +20,5 @@ func (c *char) c1BonusAtkBuff() float64 {
 		return 0
 	}
 
-	return 0.8
+	return 1
 }

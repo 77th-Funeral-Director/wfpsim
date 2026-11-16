@@ -9,7 +9,7 @@ import (
 
 type char struct {
 	*tmpl.Character
-	excite       float64
+	will         float64
 	skillSrc     int
 	doEntrySkill bool
 	a4Buff       []float64

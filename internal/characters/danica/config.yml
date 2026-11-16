@@ -11,16 +11,16 @@ talents:
       - attack(4-Hit DMG)
 
   - skill: skill(Skill DMG)
-  - skillEntrySSC: skill(Entry Skill E2 Stellar-Conduct DMG)
-  - skillBattle: skill(On-Field E2 Stellar-Conduct DMG)
-  - skillCoord: skill(Anchor Coordinated Attack DMG)
+  - skillProtect: skill(Will to Protect DMG)
+  - skillPurge: skill(Will to Purge DMG)
+  - skillCoord: skill(Storm Anchor Coordinated Attack DMG)
   - skillShieldAtk: skill(Shield DMG Absorption) # {} ATK+{}
   - skillShieldFlat: skill(Shield DMG Absorption|1) # {} ATK+{}
   - skillAttack:
-      - skill(Anchor Normal Attack 1-Hit Electro DMG)
-      - skill(Anchor Normal Attack 2-Hit Electro DMG)
-      - skill(Anchor Normal Attack 3-Hit Electro DMG)
-      - skill(Anchor Normal Attack 4-Hit Electro DMG)
+      - skill(Storm Anchor Normal Attack 1-Hit Electro DMG)
+      - skill(Storm Anchor Normal Attack 2-Hit Electro DMG)
+      - skill(Storm Anchor Normal Attack 3-Hit Electro DMG)
+      - skill(Storm Anchor Normal Attack 4-Hit Electro DMG)
   - burst:
       - burst(1-Hit Electro DMG/Stellar-Conduct DMG) # {}/{}
       - burst(2/3/4-Hit Electro DMG)
@@ -31,4 +31,4 @@ talents:
   - burst5SSC: burst(5-Hit Electro DMG/Stellar-Conduct DMG|1) # {}/{}
   - burstATKBonus: burst(ATK Bonus Ratio)
   - burstMaxATKBonus: burst(Max ATK Bonus)
-  - burstBattle: burst(On-Field E2 DMG Increase)
+  - burstPurge: burst(Will to Purge DMG Increase)

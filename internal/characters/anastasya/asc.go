@@ -75,6 +75,6 @@ func (c *char) a4Init() {
 		return
 	}
 
-	c.Core.Flags.Custom[reactable.StellarSwirlBonusMultKey] = 0.15
+	c.Core.Flags.Custom[reactable.StellarSwirlBonusMultKey] = 0.1
 	c.Core.Flags.Custom[reactable.PolestarFieldBonusStacksKey] = 2
 }

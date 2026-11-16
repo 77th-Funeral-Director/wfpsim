@@ -86,7 +86,7 @@ func (c *char) c2Init() {
 	}
 
 	m := make([]float64, attributes.EndStatType)
-	m[attributes.CD] = 0.6
+	m[attributes.CD] = 0.5
 	for _, char := range c.Core.Player.Chars() {
 		char.AddAttackMod(character.AttackMod{
 			Base: modifier.NewBase(c2LoveKey+"-buff", -1),
@@ -153,9 +153,9 @@ func (c *char) c6Init() {
 			AttackTag:        attacks.AttackTagDirectStellarConduct,
 			IgnoreDefPercent: 1,
 			Element:          attributes.Cryo,
-			Mult:             burstLoveTriumphSSC[c.TalentLvlBurst()] * 2.5,
+			Mult:             burstLoveTriumphSSC[c.TalentLvlBurst()] * 2,
 		}
-		c.toStellarWithDefault(&ai, burstLoveTriumphSSC[c.TalentLvlBurst()]*2.5, burstLoveTriumphSSw[c.TalentLvlBurst()]*2.5)
+		c.toStellarWithDefault(&ai, burstLoveTriumphSSC[c.TalentLvlBurst()]*2, burstLoveTriumphSSw[c.TalentLvlBurst()]*2)
 		c.Core.QueueAttack(
 			ai,
 			combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 5),

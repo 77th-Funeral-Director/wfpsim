@@ -31,7 +31,7 @@ func init() {
 
 var (
 	attack = [][]float64{
-		{ // attack: TestDanicaNormalAttack - 1-Hit DMG: {0}
+		{ // attack: CanonOfCleanliness - 1-Hit DMG: {0}
 			0.63501,
 			0.68669,
 			0.73838,
@@ -48,7 +48,7 @@ var (
 			1.60967,
 			1.69827,
 		},
-		{ // attack: TestDanicaNormalAttack - 2-Hit DMG: {1}
+		{ // attack: CanonOfCleanliness - 2-Hit DMG: {1}
 			0.5809,
 			0.62818,
 			0.67546,
@@ -65,7 +65,7 @@ var (
 			1.4725,
 			1.55356,
 		},
-		{ // attack: TestDanicaNormalAttack - 3-Hit DMG: {2}×2
+		{ // attack: CanonOfCleanliness - 3-Hit DMG: {2}×2
 			0.37882,
 			0.40965,
 			0.44049,
@@ -82,7 +82,7 @@ var (
 			0.96026,
 			1.01312,
 		},
-		{ // attack: TestDanicaNormalAttack - 4-Hit DMG: {3}
+		{ // attack: CanonOfCleanliness - 4-Hit DMG: {3}
 			0.92829,
 			1.00385,
 			1.07941,
@@ -100,7 +100,7 @@ var (
 			2.48264,
 		},
 	}
-	// skill: TestDanicaElementalSkill - Skill DMG: {0}
+	// skill: ScouringAnchor - Skill DMG: {0}
 	skill = []float64{
 		0.42752,
 		0.45958,
@@ -118,8 +118,8 @@ var (
 		0.96192,
 		1.01536,
 	}
-	// skill: TestDanicaElementalSkill - Entry Skill E2 Stellar-Conduct DMG: {1}
-	skillEntrySSC = []float64{
+	// skill: ScouringAnchor - Will to Protect DMG: {1}
+	skillProtect = []float64{
 		0.6784,
 		0.72928,
 		0.78016,
@@ -136,8 +136,8 @@ var (
 		1.5264,
 		1.6112,
 	}
-	// skill: TestDanicaElementalSkill - On-Field E2 Stellar-Conduct DMG: {2}
-	skillBattle = []float64{
+	// skill: ScouringAnchor - Will to Purge DMG: {2}
+	skillPurge = []float64{
 		0.79808,
 		0.85794,
 		0.91779,
@@ -154,7 +154,7 @@ var (
 		1.79568,
 		1.89544,
 	}
-	// skill: TestDanicaElementalSkill - Anchor Coordinated Attack DMG: {3}
+	// skill: ScouringAnchor - Storm Anchor Coordinated Attack DMG: {3}
 	skillCoord = []float64{
 		0.3808,
 		0.40936,
@@ -172,7 +172,7 @@ var (
 		0.8568,
 		0.9044,
 	}
-	// skill: TestDanicaElementalSkill - Shield DMG Absorption: {4} ATK+{5}
+	// skill: ScouringAnchor - Shield DMG Absorption: {4} ATK+{5}
 	skillShieldAtk = []float64{
 		2.33472,
 		2.50982,
@@ -190,7 +190,7 @@ var (
 		5.25312,
 		5.54496,
 	}
-	// skill: TestDanicaElementalSkill - Shield DMG Absorption: {4} ATK+{5}
+	// skill: ScouringAnchor - Shield DMG Absorption: {4} ATK+{5}
 	skillShieldFlat = []float64{
 		1463.714,
 		1610.105,
@@ -209,7 +209,7 @@ var (
 		4623.334,
 	}
 	skillAttack = [][]float64{
-		{ // skill: TestDanicaElementalSkill - Anchor Normal Attack 1-Hit Electro DMG: {6}
+		{ // skill: ScouringAnchor - Storm Anchor Normal Attack 1-Hit Electro DMG: {6}
 			0.73672,
 			0.79197,
 			0.84723,
@@ -226,7 +226,7 @@ var (
 			1.65762,
 			1.74971,
 		},
-		{ // skill: TestDanicaElementalSkill - Anchor Normal Attack 2-Hit Electro DMG: {7}
+		{ // skill: ScouringAnchor - Storm Anchor Normal Attack 2-Hit Electro DMG: {7}
 			0.67394,
 			0.72449,
 			0.77504,
@@ -243,7 +243,7 @@ var (
 			1.51637,
 			1.60062,
 		},
-		{ // skill: TestDanicaElementalSkill - Anchor Normal Attack 3-Hit Electro DMG: {8}×2
+		{ // skill: ScouringAnchor - Storm Anchor Normal Attack 3-Hit Electro DMG: {8}×2
 			0.43949,
 			0.47245,
 			0.50542,
@@ -260,7 +260,7 @@ var (
 			0.98886,
 			1.04379,
 		},
-		{ // skill: TestDanicaElementalSkill - Anchor Normal Attack 4-Hit Electro DMG: {9}
+		{ // skill: ScouringAnchor - Storm Anchor Normal Attack 4-Hit Electro DMG: {9}
 			1.07698,
 			1.15776,
 			1.23853,
@@ -279,7 +279,7 @@ var (
 		},
 	}
 	burst = [][]float64{
-		{ // burst: DanicasElementalBurst - 1-Hit Electro DMG/Stellar-Conduct DMG: {0}/{1}
+		{ // burst: RiteToCleanseTheWorld - 1-Hit Electro DMG/Stellar-Conduct DMG: {0}/{1}
 			0.74784,
 			0.80393,
 			0.86002,
@@ -296,7 +296,7 @@ var (
 			1.68264,
 			1.77612,
 		},
-		{ // burst: DanicasElementalBurst - 2/3/4-Hit Electro DMG: {2}
+		{ // burst: RiteToCleanseTheWorld - 2/3/4-Hit Electro DMG: {2}
 			0.11808,
 			0.12694,
 			0.13579,
@@ -313,7 +313,7 @@ var (
 			0.26568,
 			0.28044,
 		},
-		{ // burst: DanicasElementalBurst - 2/3/4-Hit Electro DMG: {2}
+		{ // burst: RiteToCleanseTheWorld - 2/3/4-Hit Electro DMG: {2}
 			0.11808,
 			0.12694,
 			0.13579,
@@ -330,7 +330,7 @@ var (
 			0.26568,
 			0.28044,
 		},
-		{ // burst: DanicasElementalBurst - 2/3/4-Hit Electro DMG: {2}
+		{ // burst: RiteToCleanseTheWorld - 2/3/4-Hit Electro DMG: {2}
 			0.11808,
 			0.12694,
 			0.13579,
@@ -347,7 +347,7 @@ var (
 			0.26568,
 			0.28044,
 		},
-		{ // burst: DanicasElementalBurst - 5-Hit Electro DMG/Stellar-Conduct DMG: {3}/{4}
+		{ // burst: RiteToCleanseTheWorld - 5-Hit Electro DMG/Stellar-Conduct DMG: {3}/{4}
 			0.86592,
 			0.93086,
 			0.99581,
@@ -365,7 +365,7 @@ var (
 			2.05656,
 		},
 	}
-	// burst: DanicasElementalBurst - 1-Hit Electro DMG/Stellar-Conduct DMG: {0}/{1}
+	// burst: RiteToCleanseTheWorld - 1-Hit Electro DMG/Stellar-Conduct DMG: {0}/{1}
 	burst1SSC = []float64{
 		0.44216,
 		0.47532,
@@ -383,7 +383,7 @@ var (
 		0.99486,
 		1.05013,
 	}
-	// burst: DanicasElementalBurst - 5-Hit Electro DMG/Stellar-Conduct DMG: {3}/{4}
+	// burst: RiteToCleanseTheWorld - 5-Hit Electro DMG/Stellar-Conduct DMG: {3}/{4}
 	burst5SSC = []float64{
 		0.66296,
 		0.71268,
@@ -401,44 +401,44 @@ var (
 		1.49166,
 		1.57453,
 	}
-	// burst: DanicasElementalBurst - ATK Bonus Ratio: {5}
+	// burst: RiteToCleanseTheWorld - ATK Bonus Ratio: {5}
 	burstATKBonus = []float64{
-		0.06875,
+		0.055,
+		0.06,
+		0.065,
+		0.07,
 		0.075,
-		0.08125,
-		0.0875,
-		0.09375,
+		0.08,
+		0.085,
+		0.09,
+		0.095,
 		0.1,
-		0.10625,
-		0.1125,
-		0.11875,
-		0.125,
-		0.1325,
-		0.14,
-		0.1475,
-		0.155,
-		0.1625,
+		0.106,
+		0.112,
+		0.118,
+		0.124,
+		0.13,
 	}
-	// burst: DanicasElementalBurst - Max ATK Bonus: {6}
+	// burst: RiteToCleanseTheWorld - Max ATK Bonus: {6}
 	burstMaxATKBonus = []float64{
-		275.0,
+		220.0,
+		240.0,
+		260.0,
+		280.0,
 		300.0,
-		325.0,
-		350.0,
-		375.0,
+		320.0,
+		340.0,
+		360.0,
+		380.0,
 		400.0,
-		425.0,
-		450.0,
-		475.0,
-		500.0,
-		530.0,
-		560.0,
-		590.0,
-		620.0,
-		650.0,
+		424.0,
+		448.0,
+		472.0,
+		496.0,
+		520.0,
 	}
-	// burst: DanicasElementalBurst - On-Field E2 DMG Increase: {7}
-	burstBattle = []float64{
+	// burst: RiteToCleanseTheWorld - Will to Purge DMG Increase: {7}
+	burstPurge = []float64{
 		0.3904,
 		0.41968,
 		0.44896,
