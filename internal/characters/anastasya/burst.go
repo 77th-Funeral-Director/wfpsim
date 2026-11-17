@@ -342,7 +342,7 @@ func (c *char) skillDoom(unseal int) (action.Info, error) {
 			Durability:       25,
 			IgnoreDefPercent: 1,
 			Element:          attributes.Cryo,
-			Mult:             burstHonorSkill1[c.TalentLvlSkill()],
+			Mult:             burstHonorSkill1[c.TalentLvlBurst()],
 		}
 		for i := range 5 {
 			c.Core.QueueAttack(ai, ap, skillDoomHitmarks[counter][i], skillDoomHitmarks[counter][i])
@@ -354,7 +354,7 @@ func (c *char) skillDoom(unseal int) (action.Info, error) {
 		Abil:       fmt.Sprintf("Doom %v", counter+1),
 		Element:    attributes.Cryo,
 	}
-	c.toStellarWithDefault(&ai, burstHonorSkillSSC[counter][c.TalentLvlSkill()], burstHonorSkillSSw[counter][c.TalentLvlSkill()])
+	c.toStellarWithDefault(&ai, burstHonorSkillSSC[counter][c.TalentLvlBurst()], burstHonorSkillSSw[counter][c.TalentLvlBurst()])
 	c.Core.QueueAttack(
 		ai,
 		ap,
