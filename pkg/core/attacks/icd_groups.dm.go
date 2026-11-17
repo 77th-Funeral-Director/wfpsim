@@ -15,6 +15,7 @@ const (
 	ICDGroupAlhaithamProjectionAttack
 	ICDGroupAlyoshaBurst
 	ICDGroupAmber
+	ICDGroupAnastasyaHonorNA
 	ICDGroupAnastasyaSkill
 	ICDGroupArlecchinoElementalArt
 	ICDGroupAyakaExtraAttack
@@ -87,6 +88,7 @@ var ICDGroupResetTimer = []int{
 	ICDGroupAlhaithamProjectionAttack: 720,  // 12s
 	ICDGroupAlyoshaBurst:              96,   // 1.6s
 	ICDGroupAmber:                     60,   // 1s
+	ICDGroupAnastasyaHonorNA:          150,  // 2.5s
 	ICDGroupAnastasyaSkill:            96,   // 1.6s
 	ICDGroupArlecchinoElementalArt:    600,  // 10s
 	ICDGroupAyakaExtraAttack:          30,   // 0.5s
@@ -159,6 +161,7 @@ var ICDGroupEleApplicationSequence = [][]float64{
 	ICDGroupAlhaithamProjectionAttack: {1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0},
 	ICDGroupAlyoshaBurst:              {1.0, 0.0},
 	ICDGroupAmber:                     {1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0},
+	ICDGroupAnastasyaHonorNA:          {1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0},
 	ICDGroupAnastasyaSkill:            {1.0, 0.0},
 	ICDGroupArlecchinoElementalArt:    {1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
 	ICDGroupAyakaExtraAttack:          {1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
@@ -231,6 +234,7 @@ var ICDGroupDamageSequence = [][]float64{
 	ICDGroupAlhaithamProjectionAttack: {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
 	ICDGroupAlyoshaBurst:              {1.0, 1.0, 1.0, 1.0},
 	ICDGroupAmber:                     {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
+	ICDGroupAnastasyaHonorNA:          {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0},
 	ICDGroupAnastasyaSkill:            {1.0, 1.0},
 	ICDGroupArlecchinoElementalArt:    {1.0, 1.0, 1.0, 1.0, 1.0},
 	ICDGroupAyakaExtraAttack:          {1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},

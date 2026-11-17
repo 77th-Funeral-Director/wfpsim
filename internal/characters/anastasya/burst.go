@@ -17,32 +17,50 @@ import (
 )
 
 var (
-	burstFrames     []int
-	burstHitmark    = 105
-	burstLoveKey    = "anastasya-burst-love"
+	burstFrames  []int
+	burstHitmark = 105
+	burstLoveKey = "anastasya-burst-love"
+
 	burstTriumphKey = "anastasya-burst-triumph"
 
+	burstHonorFrames  []int
+	burstHonorSeal    = 100
+	burstHonorHitmark = 116
+	burstHonorKey     = "anastasya-burst-honor"
+
 	skillTriumphFrames []int
+
+	skillDoomFrames   [3][]int
+	skillDoomHitmarks = [3][]int{{10, 15, 20, 25, 30, 35}, {26}, {80}}
 )
 
 func init() {
 	burstFrames = frames.InitAbilSlice(109)
+	burstHonorFrames = frames.InitAbilSlice(106)
 
 	skillTriumphFrames = frames.InitAbilSlice(26)
+
+	skillDoomFrames[0] = frames.InitAbilSlice(40)
+	skillDoomFrames[1] = frames.InitAbilSlice(50)
+	skillDoomFrames[2] = frames.InitAbilSlice(102)
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
-	if c.getBlessing() == love {
+	switch c.getBlessing() {
+	case love:
 		return c.burstLove(p)
+	case honor:
+		return c.burstHonor(p)
+	default:
+		return action.Info{}, fmt.Errorf("unknown blessing type: %v", c.getBlessing())
 	}
-	return action.Info{}, fmt.Errorf("burst not implemented for honor blessing")
 }
 
 func (c *char) burstLove(_ map[string]int) (action.Info, error) {
 	c.QueueCharTask(func() {
 		ai := info.AttackInfo{
 			ActorIndex: c.Index(),
-			Abil:       "Burst",
+			Abil:       "To the New World",
 			AttackTag:  attacks.AttackTagElementalBurst,
 			ICDTag:     attacks.ICDTagElementalBurst,
 			ICDGroup:   attacks.ICDGroupDefault,
@@ -61,7 +79,12 @@ func (c *char) burstLove(_ map[string]int) (action.Info, error) {
 
 		c.Core.QueueAttack(ai, ap, 0, 0)
 		c.AddStatus(burstLoveKey, 20*60, true)
+		// TODO: the timer freeze mechanic so it's just extending the existing duration
+		c.ExtendStatus(skillTapKey, 20*60)
 
+		for _, char := range c.Core.Player.Chars() {
+			char.Sealed = false
+		}
 		c.burstLoveToSeal = true
 	}, burstHitmark)
 
@@ -110,6 +133,9 @@ func (c *char) burstInit() {
 	}
 
 	c.Core.Events.Subscribe(event.OnCharacterSwap, func(args ...interface{}) {
+		if !c.burstLoveToSeal {
+			return
+		}
 		prev := args[0].(int)
 		if prev != c.Index() {
 			return
@@ -176,18 +202,23 @@ func (c *char) burstUnsealPoints(amt float64) {
 		return
 	}
 	c.unsealPoints -= amt
+	c.Core.Log.NewEvent(fmt.Sprintf("unseal points (%v)", c.unsealPoints), glog.LogCharacterEvent, c.Index()).Write("amt", amt)
 	if c.unsealPoints <= 0 {
 		c.unsealPoints = 0
 		for _, char := range c.Core.Player.Chars() {
 			if !char.Sealed {
 				continue
 			}
-			c.Core.Log.NewEvent("swap unsealed", glog.LogCooldownEvent, char.Index())
+
 			if c.Index() == char.Index() {
+				c.Core.Log.NewEvent("swap unsealed", glog.LogCooldownEvent, char.Index())
 				c.AddStatus(burstTriumphKey, 20*60, false)
+				char.Sealed = false
+				c.a1OnUnseal(char)
+			} else {
+				// this char is ready to be unsealed using the burst skill
+				c.unsealReady[char.Index()] = true
 			}
-			char.Sealed = false
-			c.a1OnUnseal(char)
 		}
 	}
 }
@@ -213,6 +244,143 @@ func (c *char) skillTriumph() (action.Info, error) {
 		Frames:          frames.NewAbilFunc(skillTriumphFrames),
 		AnimationLength: skillTriumphFrames[action.InvalidAction],
 		CanQueueAfter:   skillTriumphFrames[action.ActionDash], // earliest cancel
+		State:           action.SkillState,
+	}, nil
+}
+
+func (c *char) burstHonor(_ map[string]int) (action.Info, error) {
+	c.QueueCharTask(func() {
+		c.AddStatus(burstHonorKey, 14*60, true)
+
+		// TODO: the timer freeze mechanic so it's just extending the existing duration
+		c.ExtendStatus(skillHoldKey, 14*60)
+
+		// up to 3 chars, but we max at 3 non anastasya chars, so we can just do all of them
+		for _, char := range c.Core.Player.Chars() {
+			if char.Index() == c.Index() {
+				continue
+			}
+			char.Sealed = true
+		}
+		c.unsealPoints = 120
+		c.Core.Tasks.Add(func() {
+			c.burstUnsealTicker(c.burstSrc)
+		}, 12)
+	}, burstHonorSeal)
+
+	c.QueueCharTask(func() {
+		ai := info.AttackInfo{
+			ActorIndex: c.Index(),
+			Abil:       "The Evernight Yields to Dawn",
+			Element:    attributes.Cryo,
+		}
+		ssc := burstHonorSSC[c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+		ssw := burstHonorSSw[c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+		c.toStellarWithDefault(&ai, ssc, ssw)
+
+		ap := combat.NewBoxHitOnTarget(
+			c.Core.Combat.Player(),
+			info.Point{Y: -5},
+			14,
+			12,
+		)
+		c.Core.QueueAttack(ai, ap, 0, 0)
+	}, burstHonorHitmark)
+
+	c.burstSrc = c.Core.F
+	c.ConsumeEnergy(7)
+	c.SetCD(action.ActionBurst, 18*60)
+
+	return action.Info{
+		Frames:          frames.NewAbilFunc(burstHonorFrames),
+		AnimationLength: burstHonorFrames[action.InvalidAction],
+		CanQueueAfter:   burstHonorFrames[action.ActionSkill], // earliest cancel
+		State:           action.BurstState,
+	}, nil
+}
+
+func (c *char) burstHonorOnAttack(counter int) {
+	switch counter {
+	case 0:
+		c.burstUnsealPoints(10)
+	case 1, 2:
+		c.burstUnsealPoints(20)
+	case 3, 4:
+		c.burstUnsealPoints(30)
+	default:
+		panic("invalid attack counter")
+	}
+}
+
+func (c *char) skillDoom(unseal int) (action.Info, error) {
+	if unseal > len(c.Core.Player.Chars()) {
+		return action.Info{}, fmt.Errorf("invalid unseal index: %v", unseal)
+	}
+
+	unseal -= 1 // convert to 0-indexed
+
+	char := c.Core.Player.ByIndex(unseal)
+	if !char.Sealed {
+		return action.Info{}, fmt.Errorf("character %v is not sealed", char.Base.Key.String())
+	}
+
+	if c.getBlessing() != honor {
+		return action.Info{}, fmt.Errorf("cannot use unsealing skill in love blessing")
+	}
+
+	counter := 3
+	for _, char := range c.Core.Player.Chars() {
+		if char.Index() == c.Index() {
+			continue
+		}
+		if char.Sealed {
+			counter--
+		}
+	}
+	if counter < 0 {
+		return action.Info{}, fmt.Errorf("invalid unseal counter: %v", counter)
+	}
+
+	ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 7)
+
+	if counter == 0 {
+		ai := info.AttackInfo{
+			ActorIndex:       c.Index(),
+			Abil:             "Doom 1",
+			AttackTag:        attacks.AttackTagElementalArt,
+			Durability:       25,
+			IgnoreDefPercent: 1,
+			Element:          attributes.Cryo,
+			Mult:             burstHonorSkill1[c.TalentLvlBurst()] * (1 + c.c2MultBonus()),
+		}
+		for i := range 5 {
+			c.Core.QueueAttack(ai, ap, skillDoomHitmarks[counter][i], skillDoomHitmarks[counter][i])
+		}
+	}
+
+	ai := info.AttackInfo{
+		ActorIndex: c.Index(),
+		Abil:       fmt.Sprintf("Doom %v", counter+1),
+		Element:    attributes.Cryo,
+	}
+	ssc := burstHonorSkillSSC[counter][c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+	ssw := burstHonorSkillSSw[counter][c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+	c.toStellarWithDefault(&ai, ssc, ssw)
+	c.Core.QueueAttack(
+		ai,
+		ap,
+		skillDoomHitmarks[counter][len(skillDoomHitmarks[counter])-1],
+		skillDoomHitmarks[counter][len(skillDoomHitmarks[counter])-1],
+	)
+	c.unsealReady[unseal] = false
+	char.Sealed = false
+	c.Core.Log.NewEvent("swap unsealed", glog.LogCooldownEvent, unseal)
+	c.a1OnUnseal(char)
+	c.c6OnUnseal()
+	return action.Info{
+		Frames:          frames.NewAbilFunc(skillDoomFrames[counter]),
+		AnimationLength: skillDoomFrames[counter][action.InvalidAction],
+		CanQueueAfter:   skillDoomFrames[counter][action.ActionDash], // earliest cancel
 		State:           action.SkillState,
 	}, nil
 }

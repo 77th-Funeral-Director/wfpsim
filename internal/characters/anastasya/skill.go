@@ -1,8 +1,6 @@
 package anastasya
 
 import (
-	"fmt"
-
 	"github.com/genshinsim/gcsim/internal/frames"
 	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
@@ -11,18 +9,23 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
-var skillFrames []int
+var (
+	skillFrames     []int
+	skillHoldFrames []int
+)
 
 const (
 	skillTapKey         = "anastasya-skill-tap"
 	skillHoldKey        = "anastasya-skill-hold"
 	skillTapHitmark     = 17
+	skillHoldHitmark    = 10
 	skillFirstTickDelay = 139 - skillTapHitmark
 	skillParticleICDKey = "anastasya-particle-icd"
 )
 
 func init() {
 	skillFrames = frames.InitAbilSlice(35)
+	skillHoldFrames = frames.InitAbilSlice(55)
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
@@ -30,13 +33,25 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		return c.skillTriumph()
 	}
 
+	unseal, ok := p["unseal"]
+	if ok && 0 < unseal {
+		return c.skillDoom(unseal)
+	}
+
+	if c.c6HonorReady {
+		return c.c6Skill()
+	}
+
 	if p["hold"] > 0 {
-		return action.Info{}, fmt.Errorf("hold skill not implemented")
+		return c.skillHold(p)
 	}
 	return c.skillTap(p)
 }
 
 func (c *char) skillTap(_ map[string]int) (action.Info, error) {
+	src := c.Core.F
+	c.skillSrc = src
+
 	c.QueueCharTask(func() {
 		ai := info.AttackInfo{
 			ActorIndex: c.Index(),
@@ -53,8 +68,6 @@ func (c *char) skillTap(_ map[string]int) (action.Info, error) {
 		ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 6)
 		c.Core.QueueAttack(ai, ap, 0, 0, c.particleCB)
 
-		src := c.Core.F
-		c.skillSrc = src
 		c.QueueCharTask(func() { c.skillTicker(src) }, skillFirstTickDelay)
 	}, skillTapHitmark)
 
@@ -64,6 +77,7 @@ func (c *char) skillTap(_ map[string]int) (action.Info, error) {
 
 	c.a1OnSkill()
 	c.c2OnSkillLove()
+	c.c6OnSkillLove()
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
@@ -104,6 +118,43 @@ func (c *char) skillTicker(src int) {
 	c.QueueCharTask(func() {
 		c.skillTicker(src)
 	}, 118)
+}
+
+func (c *char) skillHold(_ map[string]int) (action.Info, error) {
+	src := c.Core.F
+	c.skillSrc = src
+
+	c.QueueCharTask(func() {
+		c.a1OnSkill()
+		c.AddStatus(skillHoldKey, 15*60, true)
+		c.SetCD(action.ActionSkill, 15*60)
+		c.c2OnSkillHonor()
+		c.c6OnSkillHonor()
+	}, 15)
+
+	c.QueueCharTask(func() {
+		ai := info.AttackInfo{
+			ActorIndex: c.Index(),
+			Abil:       "Skill (Hold)",
+			AttackTag:  attacks.AttackTagElementalArt,
+			ICDTag:     attacks.ICDTagNone,
+			ICDGroup:   attacks.ICDGroupDefault,
+			StrikeType: attacks.StrikeTypeDefault,
+			Element:    attributes.Cryo,
+			Durability: 25,
+			Mult:       skillHold[c.TalentLvlSkill()],
+		}
+
+		ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 6)
+		c.Core.QueueAttack(ai, ap, 0, 0, c.particleCB)
+	}, skillHoldHitmark)
+
+	return action.Info{
+		Frames:          frames.NewAbilFunc(skillHoldFrames),
+		AnimationLength: skillHoldFrames[action.InvalidAction],
+		CanQueueAfter:   skillHoldFrames[action.ActionDash], // earliest cancel
+		State:           action.SkillState,
+	}, nil
 }
 
 func (c *char) particleCB(a info.AttackCB) {

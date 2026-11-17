@@ -14,6 +14,10 @@ import (
 var (
 	attackFrames   [][]int
 	attackHitmarks = [][]int{{17}, {25}, {11, 26}, {15, 24, 35}, {17}}
+
+	attackHonorFrames      [][]int
+	attackHonorHitmarks    = [][]int{{8}, {6, 6 + 14}, {14}, {14, 14 + 11, 14 + 11 + 10}, {28, 29, 30}}
+	attackHonorHitHaltTime = []float64{0.02, 0.03, 0.03, 0.03, 0.03}
 )
 
 const normalHitNum = 5
@@ -26,9 +30,21 @@ func init() {
 	attackFrames[2] = frames.InitNormalCancelSlice(attackHitmarks[2][1], 39)
 	attackFrames[3] = frames.InitNormalCancelSlice(attackHitmarks[3][2], 44)
 	attackFrames[4] = frames.InitNormalCancelSlice(attackHitmarks[4][0], 52)
+
+	attackHonorFrames = make([][]int, normalHitNum)
+
+	attackHonorFrames[0] = frames.InitNormalCancelSlice(attackHonorHitmarks[0][0], 19)
+	attackHonorFrames[1] = frames.InitNormalCancelSlice(attackHonorHitmarks[1][1], 27)
+	attackHonorFrames[2] = frames.InitNormalCancelSlice(attackHonorHitmarks[2][0], 31)
+	attackHonorFrames[3] = frames.InitNormalCancelSlice(attackHonorHitmarks[3][2], 43)
+	attackHonorFrames[4] = frames.InitNormalCancelSlice(attackHonorHitmarks[4][0], 51)
 }
 
 func (c *char) Attack(p map[string]int) (action.Info, error) {
+	if c.getBlessing() == honor {
+		return c.attackHonor(p)
+	}
+	counter := c.NormalCounter
 	travel, ok := p["travel"]
 	if !ok {
 		travel = 10
@@ -36,17 +52,17 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 
 	ai := info.AttackInfo{
 		ActorIndex: c.Index(),
-		Abil:       fmt.Sprintf("Normal %v", c.NormalCounter),
+		Abil:       fmt.Sprintf("Normal %v", counter),
 		AttackTag:  attacks.AttackTagNormal,
-		ICDTag:     attacks.ICDTagNone,
+		ICDTag:     attacks.ICDTagNormalAttack,
 		ICDGroup:   attacks.ICDGroupDefault,
 		StrikeType: attacks.StrikeTypePierce,
 		Element:    attributes.Physical,
-		Mult:       attack[c.NormalCounter][c.TalentLvlAttack()],
+		Mult:       attack[counter][c.TalentLvlAttack()],
 		Durability: 25,
 	}
 
-	for _, delay := range attackHitmarks[c.NormalCounter] {
+	for _, delay := range attackHitmarks[counter] {
 		c.Core.QueueAttack(
 			ai,
 			combat.NewBoxHit(
@@ -65,8 +81,56 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 
 	return action.Info{
 		Frames:          frames.NewAttackFunc(c.Character, attackFrames),
-		AnimationLength: attackFrames[c.NormalCounter][action.InvalidAction],
-		CanQueueAfter:   attackHitmarks[c.NormalCounter][len(attackHitmarks[c.NormalCounter])-1],
+		AnimationLength: attackFrames[counter][action.InvalidAction],
+		CanQueueAfter:   attackHitmarks[counter][len(attackHitmarks[counter])-1],
+		State:           action.NormalAttackState,
+	}, nil
+}
+
+func (c *char) attackHonor(_ map[string]int) (action.Info, error) {
+	counter := c.NormalCounter
+	ai := info.AttackInfo{
+		ActorIndex:       c.Index(),
+		Abil:             fmt.Sprintf("Normal %v", counter),
+		AttackTag:        attacks.AttackTagNormal,
+		ICDTag:           attacks.ICDTagAnastasyaHonorNA,
+		ICDGroup:         attacks.ICDGroupAnastasyaHonorNA,
+		StrikeType:       attacks.StrikeTypePierce,
+		Element:          attributes.Cryo,
+		Mult:             skillAttack[counter][c.TalentLvlSkill()] * (1 + c.c2MultBonus()),
+		HitlagFactor:     0.01,
+		HitlagHaltFrames: attackHonorHitHaltTime[counter] * 60,
+		Durability:       25,
+	}
+
+	for i, delay := range attackHonorHitmarks[counter] {
+		if i == len(attackHonorHitmarks[counter])-1 {
+			sscMult := skillAttackSSC[counter][c.TalentLvlSkill()] * (1 + c.c2MultBonus())
+			sswMult := skillAttackSSw[counter][c.TalentLvlSkill()] * (1 + c.c2MultBonus())
+			c.toStellar(&ai, sscMult, sswMult)
+		}
+		ap := combat.NewCircleHitOnTargetFanAngle(
+			c.Core.Combat.Player(),
+			info.Point{Y: -0.5},
+			5,
+			180,
+		)
+		c.Core.QueueAttack(
+			ai,
+			ap,
+			delay,
+			delay,
+		)
+	}
+
+	c.burstHonorOnAttack(counter)
+
+	defer c.AdvanceNormalIndex()
+
+	return action.Info{
+		Frames:          frames.NewAttackFunc(c.Character, attackHonorFrames),
+		AnimationLength: attackHonorFrames[counter][action.InvalidAction],
+		CanQueueAfter:   attackHonorHitmarks[counter][len(attackHonorHitmarks[counter])-1],
 		State:           action.NormalAttackState,
 	}, nil
 }
