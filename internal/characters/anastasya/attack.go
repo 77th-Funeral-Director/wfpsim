@@ -33,11 +33,11 @@ func init() {
 
 	attackHonorFrames = make([][]int, normalHitNum)
 
-	attackHonorFrames[0] = frames.InitNormalCancelSlice(attackHonorHitmarks[0][0], 21)
-	attackHonorFrames[1] = frames.InitNormalCancelSlice(attackHonorHitmarks[1][1], 31)
-	attackHonorFrames[2] = frames.InitNormalCancelSlice(attackHonorHitmarks[2][0], 33)
-	attackHonorFrames[3] = frames.InitNormalCancelSlice(attackHonorHitmarks[3][2], 49)
-	attackHonorFrames[4] = frames.InitNormalCancelSlice(attackHonorHitmarks[4][0], 57)
+	attackHonorFrames[0] = frames.InitNormalCancelSlice(attackHonorHitmarks[0][0], 19)
+	attackHonorFrames[1] = frames.InitNormalCancelSlice(attackHonorHitmarks[1][1], 27)
+	attackHonorFrames[2] = frames.InitNormalCancelSlice(attackHonorHitmarks[2][0], 31)
+	attackHonorFrames[3] = frames.InitNormalCancelSlice(attackHonorHitmarks[3][2], 43)
+	attackHonorFrames[4] = frames.InitNormalCancelSlice(attackHonorHitmarks[4][0], 51)
 }
 
 func (c *char) Attack(p map[string]int) (action.Info, error) {
