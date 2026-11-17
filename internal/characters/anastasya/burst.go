@@ -274,7 +274,9 @@ func (c *char) burstHonor(_ map[string]int) (action.Info, error) {
 			Abil:       "The Evernight Yields to Dawn",
 			Element:    attributes.Cryo,
 		}
-		c.toStellarWithDefault(&ai, burstHonorSSC[c.TalentLvlBurst()], burstHonorSSw[c.TalentLvlBurst()])
+		ssc := burstHonorSSC[c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+		ssw := burstHonorSSw[c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+		c.toStellarWithDefault(&ai, ssc, ssw)
 
 		ap := combat.NewBoxHitOnTarget(
 			c.Core.Combat.Player(),
@@ -349,7 +351,7 @@ func (c *char) skillDoom(unseal int) (action.Info, error) {
 			Durability:       25,
 			IgnoreDefPercent: 1,
 			Element:          attributes.Cryo,
-			Mult:             burstHonorSkill1[c.TalentLvlBurst()],
+			Mult:             burstHonorSkill1[c.TalentLvlBurst()] * (1 + c.c2MultBonus()),
 		}
 		for i := range 5 {
 			c.Core.QueueAttack(ai, ap, skillDoomHitmarks[counter][i], skillDoomHitmarks[counter][i])
@@ -361,7 +363,9 @@ func (c *char) skillDoom(unseal int) (action.Info, error) {
 		Abil:       fmt.Sprintf("Doom %v", counter+1),
 		Element:    attributes.Cryo,
 	}
-	c.toStellarWithDefault(&ai, burstHonorSkillSSC[counter][c.TalentLvlBurst()], burstHonorSkillSSw[counter][c.TalentLvlBurst()])
+	ssc := burstHonorSkillSSC[counter][c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+	ssw := burstHonorSkillSSw[counter][c.TalentLvlBurst()] * (1 + c.c2MultBonus())
+	c.toStellarWithDefault(&ai, ssc, ssw)
 	c.Core.QueueAttack(
 		ai,
 		ap,
@@ -372,6 +376,7 @@ func (c *char) skillDoom(unseal int) (action.Info, error) {
 	char.Sealed = false
 	c.Core.Log.NewEvent("swap unsealed", glog.LogCooldownEvent, unseal)
 	c.a1OnUnseal(char)
+	c.c6OnUnseal()
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillDoomFrames[counter]),
 		AnimationLength: skillDoomFrames[counter][action.InvalidAction],

@@ -44,7 +44,7 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 	if c.getBlessing() == honor {
 		return c.attackHonor(p)
 	}
-
+	counter := c.NormalCounter
 	travel, ok := p["travel"]
 	if !ok {
 		travel = 10
@@ -52,17 +52,17 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 
 	ai := info.AttackInfo{
 		ActorIndex: c.Index(),
-		Abil:       fmt.Sprintf("Normal %v", c.NormalCounter),
+		Abil:       fmt.Sprintf("Normal %v", counter),
 		AttackTag:  attacks.AttackTagNormal,
 		ICDTag:     attacks.ICDTagNormalAttack,
 		ICDGroup:   attacks.ICDGroupDefault,
 		StrikeType: attacks.StrikeTypePierce,
 		Element:    attributes.Physical,
-		Mult:       attack[c.NormalCounter][c.TalentLvlAttack()],
+		Mult:       attack[counter][c.TalentLvlAttack()],
 		Durability: 25,
 	}
 
-	for _, delay := range attackHitmarks[c.NormalCounter] {
+	for _, delay := range attackHitmarks[counter] {
 		c.Core.QueueAttack(
 			ai,
 			combat.NewBoxHit(
@@ -81,31 +81,32 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 
 	return action.Info{
 		Frames:          frames.NewAttackFunc(c.Character, attackFrames),
-		AnimationLength: attackFrames[c.NormalCounter][action.InvalidAction],
-		CanQueueAfter:   attackHitmarks[c.NormalCounter][len(attackHitmarks[c.NormalCounter])-1],
+		AnimationLength: attackFrames[counter][action.InvalidAction],
+		CanQueueAfter:   attackHitmarks[counter][len(attackHitmarks[counter])-1],
 		State:           action.NormalAttackState,
 	}, nil
 }
 
 func (c *char) attackHonor(_ map[string]int) (action.Info, error) {
+	counter := c.NormalCounter
 	ai := info.AttackInfo{
 		ActorIndex:       c.Index(),
-		Abil:             fmt.Sprintf("Normal %v", c.NormalCounter),
+		Abil:             fmt.Sprintf("Normal %v", counter),
 		AttackTag:        attacks.AttackTagNormal,
 		ICDTag:           attacks.ICDTagAnastasyaHonorNA,
 		ICDGroup:         attacks.ICDGroupAnastasyaHonorNA,
 		StrikeType:       attacks.StrikeTypePierce,
 		Element:          attributes.Cryo,
-		Mult:             skillAttack[c.NormalCounter][c.TalentLvlSkill()],
+		Mult:             skillAttack[counter][c.TalentLvlSkill()] * (1 + c.c2MultBonus()),
 		HitlagFactor:     0.01,
-		HitlagHaltFrames: attackHonorHitHaltTime[c.NormalCounter] * 60,
+		HitlagHaltFrames: attackHonorHitHaltTime[counter] * 60,
 		Durability:       25,
 	}
 
-	for i, delay := range attackHonorHitmarks[c.NormalCounter] {
-		if i == len(attackHonorHitmarks[c.NormalCounter])-1 {
-			sscMult := skillAttackSSC[c.NormalCounter][c.TalentLvlSkill()]
-			sswMult := skillAttackSSw[c.NormalCounter][c.TalentLvlSkill()]
+	for i, delay := range attackHonorHitmarks[counter] {
+		if i == len(attackHonorHitmarks[counter])-1 {
+			sscMult := skillAttackSSC[counter][c.TalentLvlSkill()] * (1 + c.c2MultBonus())
+			sswMult := skillAttackSSw[counter][c.TalentLvlSkill()] * (1 + c.c2MultBonus())
 			c.toStellar(&ai, sscMult, sswMult)
 		}
 		ap := combat.NewCircleHitOnTargetFanAngle(
@@ -122,14 +123,14 @@ func (c *char) attackHonor(_ map[string]int) (action.Info, error) {
 		)
 	}
 
-	c.burstHonorOnAttack(c.NormalCounter)
+	c.burstHonorOnAttack(counter)
 
 	defer c.AdvanceNormalIndex()
 
 	return action.Info{
 		Frames:          frames.NewAttackFunc(c.Character, attackHonorFrames),
-		AnimationLength: attackHonorFrames[c.NormalCounter][action.InvalidAction],
-		CanQueueAfter:   attackHonorHitmarks[c.NormalCounter][len(attackHonorHitmarks[c.NormalCounter])-1],
+		AnimationLength: attackHonorFrames[counter][action.InvalidAction],
+		CanQueueAfter:   attackHonorHitmarks[counter][len(attackHonorHitmarks[counter])-1],
 		State:           action.NormalAttackState,
 	}, nil
 }

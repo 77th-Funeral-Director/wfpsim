@@ -38,6 +38,10 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		return c.skillDoom(unseal)
 	}
 
+	if c.c6HonorReady {
+		return c.c6Skill()
+	}
+
 	if p["hold"] > 0 {
 		return c.skillHold(p)
 	}
@@ -52,6 +56,8 @@ func (c *char) skillHold(_ map[string]int) (action.Info, error) {
 		c.a1OnSkill()
 		c.AddStatus(skillHoldKey, 15*60, true)
 		c.SetCD(action.ActionSkill, 15*60)
+		c.c2OnSkillHonor()
+		c.c6OnSkillHonor()
 	}, 15)
 
 	c.QueueCharTask(func() {
@@ -108,6 +114,7 @@ func (c *char) skillTap(_ map[string]int) (action.Info, error) {
 
 	c.a1OnSkill()
 	c.c2OnSkillLove()
+	c.c6OnSkillLove()
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
