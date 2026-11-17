@@ -34,8 +34,8 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 	}
 
 	unseal, ok := p["unseal"]
-	if ok && unseal > 0 {
-		return c.skillDoom(unseal - 1)
+	if ok && 0 < unseal {
+		return c.skillDoom(unseal)
 	}
 
 	if p["hold"] > 0 {

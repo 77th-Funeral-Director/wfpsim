@@ -311,8 +311,15 @@ func (c *char) burstHonorOnAttack(counter int) {
 }
 
 func (c *char) skillDoom(unseal int) (action.Info, error) {
-	if !c.Core.Player.ByIndex(unseal).Sealed {
-		return action.Info{}, fmt.Errorf("character %v is not sealed", c.Core.Player.ByIndex(unseal).Base.Key.String())
+	if unseal > len(c.Core.Player.Chars()) {
+		return action.Info{}, fmt.Errorf("invalid unseal index: %v", unseal)
+	}
+
+	unseal -= 1 // convert to 0-indexed
+
+	char := c.Core.Player.ByIndex(unseal)
+	if !char.Sealed {
+		return action.Info{}, fmt.Errorf("character %v is not sealed", char.Base.Key.String())
 	}
 
 	if c.getBlessing() != honor {
@@ -362,9 +369,9 @@ func (c *char) skillDoom(unseal int) (action.Info, error) {
 		skillDoomHitmarks[counter][len(skillDoomHitmarks[counter])-1],
 	)
 	c.unsealReady[unseal] = false
-	c.Core.Player.ByIndex(unseal).Sealed = false
+	char.Sealed = false
 	c.Core.Log.NewEvent("swap unsealed", glog.LogCooldownEvent, unseal)
-
+	c.a1OnUnseal(char)
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillDoomFrames[counter]),
 		AnimationLength: skillDoomFrames[counter][action.InvalidAction],

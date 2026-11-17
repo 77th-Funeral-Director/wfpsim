@@ -51,7 +51,11 @@ func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Fail
 		if !ok {
 			return c.Character.ActionReady(a, p)
 		}
-		if c.getBlessing() == honor && unseal > 0 {
+		if c.getBlessing() == honor && 0 < unseal {
+			if unseal > len(c.Core.Player.Chars()) {
+				// let this pass through to the skillDoom function to return an error
+				return true, action.NoFailure
+			}
 			return c.unsealReady[unseal-1], action.NoFailure
 		}
 	}

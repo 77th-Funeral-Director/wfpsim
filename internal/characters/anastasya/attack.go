@@ -16,7 +16,7 @@ var (
 	attackHitmarks = [][]int{{17}, {25}, {11, 26}, {15, 24, 35}, {17}}
 
 	attackHonorFrames      [][]int
-	attackHonorHitmarks    = [][]int{{8}, {6, 6 + 14}, {14}, {14, 14 + 11, 14 + 11 + 10}, {30, 31, 32}}
+	attackHonorHitmarks    = [][]int{{8}, {6, 6 + 14}, {14}, {14, 14 + 11, 14 + 11 + 10}, {28, 29, 30}}
 	attackHonorHitHaltTime = []float64{0.02, 0.03, 0.03, 0.03, 0.03}
 )
 
