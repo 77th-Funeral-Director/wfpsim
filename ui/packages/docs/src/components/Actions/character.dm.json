@@ -624,11 +624,11 @@
   "anastasya": [
     {
       "ability": "attack",
-      "invalid": true
+      "invalid": false
     },
     {
       "ability": "aim",
-      "invalid": true
+      "invalid": false
     },
     {
       "ability": "charge",
@@ -644,7 +644,7 @@
     },
     {
       "ability": "skill",
-      "invalid": true
+      "invalid": false
     },
     {
       "ability": "burst",

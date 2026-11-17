@@ -10,10 +10,29 @@ override:
   icd_group:
     AnastasyaSkill:
       name: Anastasya_Crown
+    AnastasyaHonorNA:
+      name: Anastasya_Descender_NormalAttack
 
 combat:
   icd_groups:
     - AnastasyaSkill
+    - AnastasyaHonorNA
+  icd_tags:
+    - AnastasyaHonorNA
+
+abilities:
+  - name: attack
+    params:
+      travel: Projectile travel time. Default 10 frames.
+  - name: aim
+    params:
+      hold: 0 for Physical Aimed Shot, 1 for Fully-Charged Aimed Shot (default).
+      travel: Projectile travel time. Default 10 frames.
+      weakspot: Hit weakspot with aimed shot. Default 0 (false), 1 for true.
+  - name: skill
+    params:
+      hold: 0 for Tap (default), 1 for Hold.
+      unseal: Index of character to unseal. Starts at 1.
 
 talents:
   - attack:

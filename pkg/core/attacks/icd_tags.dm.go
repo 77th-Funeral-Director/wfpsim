@@ -7,6 +7,7 @@ type ICDTag int
 const (
 	ICDTagNone ICDTag = iota
 	ICDTagAinoBurstMoonHit
+	ICDTagAnastasyaHonorNA
 	ICDTagBloomDamage
 	ICDTagBountifulCoreDamage
 	ICDTagBurgeonDamage

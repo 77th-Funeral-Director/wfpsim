@@ -318,6 +318,38 @@
       "desc": "Frames to hold bunny for (for throwing). Default 0 frames."
     }
   ],
+  "anastasya": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
+    },
+    {
+      "ability": "aim",
+      "param": "hold",
+      "desc": "0 for Physical Aimed Shot, 1 for Fully-Charged Aimed Shot (default)."
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "Projectile travel time. Default 10 frames."
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. Default 0 (false), 1 for true."
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for Tap (default), 1 for Hold."
+    },
+    {
+      "ability": "skill",
+      "param": "unseal",
+      "desc": "Index of character to unseal. Starts at 1."
+    }
+  ],
   "aratakiitto": [
     {
       "ability": "low_plunge",

@@ -35,20 +35,19 @@ func (c *char) getRadiance() radianceState {
 	return radianceNone
 }
 
+// Always defaults to SSC
 func (c *char) toStellarWithDefault(ai *info.AttackInfo, sscMult, sswMult float64) {
+	ai.IgnoreDefPercent = 1
+	ai.Durability = 0
 	switch c.getRadiance() {
 	case radianceStellarConduct, radianceNone:
 		ai.Abil += stellarConductText
 		ai.AttackTag = attacks.AttackTagDirectStellarConduct
-		ai.Durability = 0
 		ai.Mult = sscMult
-		ai.IgnoreDefPercent = 1
 	case radianceStellarSwirl:
 		ai.Abil += stellarSwirlText
 		ai.AttackTag = attacks.AttackTagDirectStellarSwirl
-		ai.Durability = 0
 		ai.Mult = sswMult
-		ai.IgnoreDefPercent = 1
 	}
 }
 
@@ -57,12 +56,16 @@ func (c *char) toStellar(ai *info.AttackInfo, sscMult, sswMult float64) {
 	case radianceStellarConduct:
 		ai.Abil += stellarConductText
 		ai.AttackTag = attacks.AttackTagDirectStellarConduct
+		ai.ICDGroup = attacks.ICDGroupDefault
+		ai.ICDTag = attacks.ICDTagNone
 		ai.Durability = 0
 		ai.Mult = sscMult
 		ai.IgnoreDefPercent = 1
 	case radianceStellarSwirl:
 		ai.Abil += stellarSwirlText
 		ai.AttackTag = attacks.AttackTagDirectStellarSwirl
+		ai.ICDGroup = attacks.ICDGroupDefault
+		ai.ICDTag = attacks.ICDTagNone
 		ai.Durability = 0
 		ai.Mult = sswMult
 		ai.IgnoreDefPercent = 1

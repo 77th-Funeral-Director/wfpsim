@@ -3,6 +3,7 @@ package anastasya
 import (
 	tmpl "github.com/genshinsim/gcsim/internal/template/character"
 	"github.com/genshinsim/gcsim/pkg/core"
+	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 )
@@ -14,6 +15,7 @@ type char struct {
 	burstSrc        int
 	burstLoveToSeal bool
 	unsealPoints    float64
+	unsealReady     [4]bool
 	c6LoveReady     bool
 }
 
@@ -41,6 +43,19 @@ func (c *char) Init() error {
 	c.c2Init()
 	c.c6Init()
 	return nil
+}
+
+func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
+	if a == action.ActionSkill {
+		unseal, ok := p["unseal"]
+		if !ok {
+			return c.Character.ActionReady(a, p)
+		}
+		if c.getBlessing() == honor && unseal > 0 {
+			return c.unsealReady[unseal-1], action.NoFailure
+		}
+	}
+	return c.Character.ActionReady(a, p)
 }
 
 func (c *char) AnimationStartDelay(k info.AnimationDelayKey) int {
