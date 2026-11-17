@@ -48,43 +48,6 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 	return c.skillTap(p)
 }
 
-func (c *char) skillHold(_ map[string]int) (action.Info, error) {
-	src := c.Core.F
-	c.skillSrc = src
-
-	c.QueueCharTask(func() {
-		c.a1OnSkill()
-		c.AddStatus(skillHoldKey, 15*60, true)
-		c.SetCD(action.ActionSkill, 15*60)
-		c.c2OnSkillHonor()
-		c.c6OnSkillHonor()
-	}, 15)
-
-	c.QueueCharTask(func() {
-		ai := info.AttackInfo{
-			ActorIndex: c.Index(),
-			Abil:       "Skill (Hold)",
-			AttackTag:  attacks.AttackTagElementalArt,
-			ICDTag:     attacks.ICDTagNone,
-			ICDGroup:   attacks.ICDGroupDefault,
-			StrikeType: attacks.StrikeTypeDefault,
-			Element:    attributes.Cryo,
-			Durability: 25,
-			Mult:       skillHold[c.TalentLvlSkill()],
-		}
-
-		ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 6)
-		c.Core.QueueAttack(ai, ap, 0, 0, c.particleCB)
-	}, skillHoldHitmark)
-
-	return action.Info{
-		Frames:          frames.NewAbilFunc(skillFrames),
-		AnimationLength: skillFrames[action.InvalidAction],
-		CanQueueAfter:   skillFrames[action.ActionDash], // earliest cancel
-		State:           action.SkillState,
-	}, nil
-}
-
 func (c *char) skillTap(_ map[string]int) (action.Info, error) {
 	src := c.Core.F
 	c.skillSrc = src
@@ -155,6 +118,43 @@ func (c *char) skillTicker(src int) {
 	c.QueueCharTask(func() {
 		c.skillTicker(src)
 	}, 118)
+}
+
+func (c *char) skillHold(_ map[string]int) (action.Info, error) {
+	src := c.Core.F
+	c.skillSrc = src
+
+	c.QueueCharTask(func() {
+		c.a1OnSkill()
+		c.AddStatus(skillHoldKey, 15*60, true)
+		c.SetCD(action.ActionSkill, 15*60)
+		c.c2OnSkillHonor()
+		c.c6OnSkillHonor()
+	}, 15)
+
+	c.QueueCharTask(func() {
+		ai := info.AttackInfo{
+			ActorIndex: c.Index(),
+			Abil:       "Skill (Hold)",
+			AttackTag:  attacks.AttackTagElementalArt,
+			ICDTag:     attacks.ICDTagNone,
+			ICDGroup:   attacks.ICDGroupDefault,
+			StrikeType: attacks.StrikeTypeDefault,
+			Element:    attributes.Cryo,
+			Durability: 25,
+			Mult:       skillHold[c.TalentLvlSkill()],
+		}
+
+		ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 6)
+		c.Core.QueueAttack(ai, ap, 0, 0, c.particleCB)
+	}, skillHoldHitmark)
+
+	return action.Info{
+		Frames:          frames.NewAbilFunc(skillHoldFrames),
+		AnimationLength: skillHoldFrames[action.InvalidAction],
+		CanQueueAfter:   skillHoldFrames[action.ActionDash], // earliest cancel
+		State:           action.SkillState,
+	}, nil
 }
 
 func (c *char) particleCB(a info.AttackCB) {

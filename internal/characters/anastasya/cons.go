@@ -262,7 +262,7 @@ func (c *char) c6OnUnseal() {
 	c.c6HonorReady = false
 }
 
-func (c *char) c6a1OverrideBuffs(m []float64, m2 []float64) []float64 {
+func (c *char) c6a1OverrideBuffs(m, m2 []float64) []float64 {
 	c.c1BaseBuff(c.CharWrapper, m)
 	for _, ch := range c.Core.Player.Chars() {
 		if c.Index() == ch.Index() {

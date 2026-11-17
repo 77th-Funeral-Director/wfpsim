@@ -292,9 +292,9 @@ func (c *char) burstHonor(_ map[string]int) (action.Info, error) {
 	c.SetCD(action.ActionBurst, 18*60)
 
 	return action.Info{
-		Frames:          frames.NewAbilFunc(burstFrames),
-		AnimationLength: burstFrames[action.InvalidAction],
-		CanQueueAfter:   burstFrames[action.ActionSkill], // earliest cancel
+		Frames:          frames.NewAbilFunc(burstHonorFrames),
+		AnimationLength: burstHonorFrames[action.InvalidAction],
+		CanQueueAfter:   burstHonorFrames[action.ActionSkill], // earliest cancel
 		State:           action.BurstState,
 	}, nil
 }
