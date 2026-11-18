@@ -14,13 +14,18 @@ import (
 var skillFrames []int
 
 const (
-	skillHitmark   = 26
-	particleICDKey = "valeriy-particle-icd"
-	skillDur       = 18 * 60
+	skillGainShield = 29
+	skillHitmark    = 27
+	particleICDKey  = "valeriy-particle-icd"
+	skillDur        = 18 * 60
 )
 
 func init() {
-	skillFrames = frames.InitAbilSlice(34)
+	skillFrames = frames.InitAbilSlice(33)
+	skillFrames[action.ActionBurst] = 32
+	skillFrames[action.ActionDash] = 32
+	skillFrames[action.ActionWalk] = 32
+	skillFrames[action.ActionSwap] = 31
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
@@ -28,7 +33,7 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 	c.QueueCharTask(func() {
 		c.addMomentum(40 * (1 + c.c1SkillMomentumBonus()))
 		c.addShield()
-	}, skillHitmark-1)
+	}, skillGainShield)
 
 	c.QueueCharTask(func() {
 		ai := info.AttackInfo{
@@ -49,7 +54,7 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		c.c2OnSkill()
 	}, skillHitmark)
 
-	c.SetCD(action.ActionSkill, 10*60)
+	c.SetCDWithDelay(action.ActionSkill, 10*60, 25)
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
 		AnimationLength: skillFrames[action.InvalidAction],

@@ -25,11 +25,14 @@ var (
 const (
 	burstKey     = "valeriy-burst"
 	burstDur     = 12 * 60
-	burstHitmark = 43
+	burstHitmark = 47
 )
 
 func init() {
-	burstFrames = frames.InitAbilSlice(60)
+	burstFrames = frames.InitAbilSlice(58)
+	burstFrames[action.ActionAttack] = 56
+	burstFrames[action.ActionWalk] = 57
+	burstFrames[action.ActionSwap] = 56
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
