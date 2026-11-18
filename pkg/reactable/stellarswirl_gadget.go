@@ -66,8 +66,6 @@ func (p *StellarVortex) explode() {
 		p.r.core.QueueAttackWithSnap(ai, snap, combat.NewSingleTargetHit(e.Key()), 0)
 	}
 
-	p.r.core.Flags.Custom[sswStackKey] = 0
-
 	p.r.core.Status.Add(player.StellarSwirlAirborneBuff, 5*60)
 
 	p.Core.Events.Emit(event.OnStellarVortexDetonate, owner, &contribMap, &ap)

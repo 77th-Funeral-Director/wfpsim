@@ -15,13 +15,14 @@ import (
 var sswContributorMult = []float64{0.6, 0.3, 0.05, 0.05}
 
 const (
-	SswKey                   = "stellar-swirl"
-	sswStackKey              = SswKey + "-stacks"
-	sswMaxStacks             = 6
-	sswContributionKey       = SswKey + "-contribution"
-	sswOwnerKey              = SswKey + "-owner"
-	StellarSwirlBonusDurKey  = SswKey + "-bonus-dur"
-	StellarSwirlBonusMultKey = SswKey + "-bonus-mult"
+	SswKey                           = "stellar-swirl"
+	sswStackKey                      = SswKey + "-stacks"
+	sswMaxStacks                     = 6
+	sswContributionKey               = SswKey + "-contribution"
+	sswOwnerKey                      = SswKey + "-owner"
+	StellarSwirlVortexBonusStacksKey = SswKey + "-bonus-stacks"
+	StellarSwirlBonusDurKey          = SswKey + "-bonus-dur"
+	StellarSwirlBonusMultKey         = SswKey + "-bonus-mult"
 )
 
 type sswContribution = struct {
@@ -244,6 +245,9 @@ func (r *Reactable) sswContributors() [info.MaxChars]bool {
 }
 
 func (r *Reactable) addSSwStack() {
+	if r.core.Flags.Custom[sswStackKey] == 0 {
+		r.core.Flags.Custom[sswStackKey] = r.core.Flags.Custom[StellarSwirlVortexBonusStacksKey]
+	}
 	r.core.Flags.Custom[sswStackKey] = min(r.core.Flags.Custom[sswStackKey]+1, sswMaxStacks)
 }
 
