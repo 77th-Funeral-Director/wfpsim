@@ -58,6 +58,7 @@ const (
 	DisenchantmentInDeepShadow                    // disenchantmentindeepshadow
 	EchoesOfAnOffering                            // echoesofanoffering
 	EmblemOfSeveredFate                           // emblemofseveredfate
+	EpochalAdvent                                 // epochaladvent
 	FinaleOfTheDeepGalleries                      // finaleofthedeepgalleries
 	FlowerOfParadiseLost                          // flowerofparadiselost
 	FragmentOfHarmonicWhimsy                      // fragmentofharmonicwhimsy
@@ -118,6 +119,7 @@ var _SetNames = [...]string{
 	"disenchantmentindeepshadow",
 	"echoesofanoffering",
 	"emblemofseveredfate",
+	"epochaladvent",
 	"finaleofthedeepgalleries",
 	"flowerofparadiselost",
 	"fragmentofharmonicwhimsy",
@@ -178,6 +180,7 @@ var _SetValues = [...]Set{
 	DisenchantmentInDeepShadow,
 	EchoesOfAnOffering,
 	EmblemOfSeveredFate,
+	EpochalAdvent,
 	FinaleOfTheDeepGalleries,
 	FlowerOfParadiseLost,
 	FragmentOfHarmonicWhimsy,
