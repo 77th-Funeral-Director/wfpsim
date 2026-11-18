@@ -13,7 +13,7 @@ import (
 
 var (
 	attackFrames   [][]int
-	attackHitmarks = []int{15, 21, 22}
+	attackHitmarks = []int{19, 20, 32}
 )
 
 const normalHitNum = 3
@@ -21,21 +21,19 @@ const normalHitNum = 3
 func init() {
 	attackFrames = make([][]int, normalHitNum)
 
-	attackFrames[0] = frames.InitNormalCancelSlice(attackHitmarks[0], 500)
-	attackFrames[0][action.ActionAttack] = 26
-	attackFrames[0][action.ActionCharge] = 26
+	attackFrames[0] = frames.InitNormalCancelSlice(attackHitmarks[0], 42)
+	attackFrames[0][action.ActionAttack] = 28
+	attackFrames[0][action.ActionCharge] = 40
 
-	attackFrames[1] = frames.InitNormalCancelSlice(attackHitmarks[1], 500)
+	attackFrames[1] = frames.InitNormalCancelSlice(attackHitmarks[1], 52)
 	attackFrames[1][action.ActionAttack] = 33
-	attackFrames[1][action.ActionCharge] = 33
+	attackFrames[1][action.ActionCharge] = 45
 
-	attackFrames[2] = frames.InitNormalCancelSlice(attackHitmarks[2], 500)
-	attackFrames[2][action.ActionAttack] = 50
-	attackFrames[2][action.ActionCharge] = 50
+	attackFrames[2] = frames.InitNormalCancelSlice(attackHitmarks[2], 63)
+	attackFrames[2][action.ActionAttack] = 51
+	attackFrames[2][action.ActionWalk] = 59
 }
 
-// Standard attack damage function
-// Has "travel" parameter, used to set the number of frames that the projectile is in the air (default = 10)
 func (c *char) Attack(_ map[string]int) (action.Info, error) {
 	ai := info.AttackInfo{
 		ActorIndex: c.Index(),
@@ -50,7 +48,6 @@ func (c *char) Attack(_ map[string]int) (action.Info, error) {
 	}
 
 	ap := combat.NewCircleHit(c.Core.Combat.Player(), c.Core.Combat.PrimaryTarget(), nil, 1.2)
-	// TODO: Assume that this is not dynamic (snapshot on projectile release)
 	c.Core.QueueAttack(
 		ai,
 		ap,
@@ -59,9 +56,15 @@ func (c *char) Attack(_ map[string]int) (action.Info, error) {
 	)
 
 	defer c.AdvanceNormalIndex()
-
+	n := c.NormalCounter
+	framesFunc := frames.NewAttackFunc(c.Character, attackFrames)
 	return action.Info{
-		Frames:          frames.NewAttackFunc(c.Character, attackFrames),
+		Frames: func(next action.Action) int {
+			if c.getSkillState() == skillStateHold {
+				return attackHitmarks[n]
+			}
+			return framesFunc(next)
+		},
 		AnimationLength: attackFrames[c.NormalCounter][action.InvalidAction],
 		CanQueueAfter:   attackHitmarks[c.NormalCounter],
 		State:           action.NormalAttackState,
