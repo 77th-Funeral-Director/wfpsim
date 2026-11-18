@@ -31,18 +31,19 @@ var (
 	skillTriumphFrames []int
 
 	skillDoomFrames   [3][]int
-	skillDoomHitmarks = [3][]int{{10, 15, 20, 25, 30, 35}, {26}, {80}}
+	skillDoomHitmarks = [3][]int{{5, 10, 15, 25, 30, 35}, {19}, {74}}
 )
 
 func init() {
 	burstFrames = frames.InitAbilSlice(109)
-	burstHonorFrames = frames.InitAbilSlice(106)
+	burstHonorFrames = frames.InitAbilSlice(108)
+	burstHonorFrames[action.ActionSwap] = 106
 
 	skillTriumphFrames = frames.InitAbilSlice(26)
 
-	skillDoomFrames[0] = frames.InitAbilSlice(40)
-	skillDoomFrames[1] = frames.InitAbilSlice(50)
-	skillDoomFrames[2] = frames.InitAbilSlice(102)
+	skillDoomFrames[0] = frames.InitAbilSlice(34)
+	skillDoomFrames[1] = frames.InitAbilSlice(45)
+	skillDoomFrames[2] = frames.InitAbilSlice(100)
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
