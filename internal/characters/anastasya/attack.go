@@ -16,7 +16,7 @@ var (
 	attackHitmarks = [][]int{{17}, {25}, {11, 26}, {15, 24, 35}, {17}}
 
 	attackHonorFrames      [][]int
-	attackHonorHitmarks    = [][]int{{8}, {6, 6 + 14}, {14}, {14, 14 + 11, 14 + 11 + 10}, {28, 29, 30}}
+	attackHonorHitmarks    = [][]int{{8}, {6, 6 + 14}, {14}, {12, 12 + 8, 12 + 8 + 10}, {32, 32, 32}}
 	attackHonorHitHaltTime = []float64{0.02, 0.03, 0.03, 0.03, 0.03}
 )
 
@@ -33,11 +33,11 @@ func init() {
 
 	attackHonorFrames = make([][]int, normalHitNum)
 
-	attackHonorFrames[0] = frames.InitNormalCancelSlice(attackHonorHitmarks[0][0], 19)
-	attackHonorFrames[1] = frames.InitNormalCancelSlice(attackHonorHitmarks[1][1], 27)
-	attackHonorFrames[2] = frames.InitNormalCancelSlice(attackHonorHitmarks[2][0], 31)
-	attackHonorFrames[3] = frames.InitNormalCancelSlice(attackHonorHitmarks[3][2], 43)
-	attackHonorFrames[4] = frames.InitNormalCancelSlice(attackHonorHitmarks[4][0], 51)
+	attackHonorFrames[0] = frames.InitNormalCancelSlice(attackHonorHitmarks[0][0], 14)
+	attackHonorFrames[1] = frames.InitNormalCancelSlice(attackHonorHitmarks[1][1], 28)
+	attackHonorFrames[2] = frames.InitNormalCancelSlice(attackHonorHitmarks[2][0], 26)
+	attackHonorFrames[3] = frames.InitNormalCancelSlice(attackHonorHitmarks[3][2], 40)
+	attackHonorFrames[4] = frames.InitNormalCancelSlice(attackHonorHitmarks[4][0], 72)
 }
 
 func (c *char) Attack(p map[string]int) (action.Info, error) {
@@ -101,6 +101,10 @@ func (c *char) attackHonor(_ map[string]int) (action.Info, error) {
 		HitlagFactor:     0.01,
 		HitlagHaltFrames: attackHonorHitHaltTime[counter] * 60,
 		Durability:       25,
+	}
+
+	if counter == 4 {
+		ai.IsDeployable = true
 	}
 
 	for i, delay := range attackHonorHitmarks[counter] {

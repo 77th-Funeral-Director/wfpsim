@@ -23,14 +23,20 @@ const (
 	reqMomentum = 40
 
 	chargeHitmark        = 39
-	specialChargeHitmark = 43
+	specialChargeHitmark = 46
 
 	caBuffKey = "valeriy-ca-buff"
 )
 
 func init() {
-	chargeFrames = frames.InitAbilSlice(58)
-	specialChargeFrames = frames.InitAbilSlice(67)
+	chargeFrames = frames.InitAbilSlice(50)
+
+	specialChargeFrames = frames.InitAbilSlice(69)
+	specialChargeFrames[action.ActionSkill] = 68
+	specialChargeFrames[action.ActionDash] = 68
+	specialChargeFrames[action.ActionJump] = 68
+	specialChargeFrames[action.ActionWalk] = 68
+	specialChargeFrames[action.ActionSwap] = 67
 }
 
 func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
@@ -60,7 +66,7 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 	return action.Info{
 		Frames:          frames.NewAbilFunc(chargeFrames),
 		AnimationLength: chargeFrames[action.InvalidAction],
-		CanQueueAfter:   chargeFrames[action.ActionJump], // earliest cancel
+		CanQueueAfter:   chargeFrames[action.ActionSwap], // earliest cancel
 		State:           action.ChargeAttackState,
 	}, nil
 }
@@ -103,7 +109,7 @@ func (c *char) specialChargeAttack(_ map[string]int) (action.Info, error) {
 	return action.Info{
 		Frames:          frames.NewAbilFunc(specialChargeFrames),
 		AnimationLength: specialChargeFrames[action.InvalidAction],
-		CanQueueAfter:   specialChargeFrames[action.ActionJump], // earliest cancel
+		CanQueueAfter:   specialChargeFrames[action.ActionSwap], // earliest cancel
 		State:           action.ChargeAttackState,
 	}, nil
 }

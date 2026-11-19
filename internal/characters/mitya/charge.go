@@ -17,25 +17,35 @@ var (
 	specialChargeEndlag []int
 )
 
-// hitmark frame, includes CA windup
+// hitmark frame, excludes CA windup
 const (
-	chargeHitmark     = 60
-	specialCAFinisher = 43
+	chargeHitmark = 42
+
 	specialCAStart    = 62
-	specialCATick     = 15
+	specialCATick     = 18
+	specialCALastTick = 21
+	specialCAFinisher = 30
 )
 
 func init() {
-	chargeFrames = frames.InitAbilSlice(70)
-	chargeFrames[action.ActionAttack] = 64
-	chargeFrames[action.ActionCharge] = 64
-	chargeFrames[action.ActionSkill] = 64
-	chargeFrames[action.ActionBurst] = 64
+	chargeFrames = frames.InitAbilSlice(63)
+	chargeFrames[action.ActionAttack] = 53
+	chargeFrames[action.ActionCharge] = 52
+	chargeFrames[action.ActionSkill] = 53
+	chargeFrames[action.ActionBurst] = 54
 	chargeFrames[action.ActionDash] = chargeHitmark
 	chargeFrames[action.ActionJump] = chargeHitmark
-	chargeFrames[action.ActionSwap] = 64
+	chargeFrames[action.ActionWalk] = 63
+	chargeFrames[action.ActionSwap] = 41
 
-	specialChargeEndlag = frames.InitAbilSlice(3)
+	specialChargeEndlag = frames.InitAbilSlice(14)
+	specialChargeEndlag[action.ActionAttack] = 3
+	specialChargeEndlag[action.ActionSkill] = 1
+	specialChargeEndlag[action.ActionBurst] = 3
+	specialChargeEndlag[action.ActionDash] = 0
+	specialChargeEndlag[action.ActionJump] = 0
+	specialChargeEndlag[action.ActionWalk] = 1
+	specialChargeEndlag[action.ActionSwap] = 0
 }
 
 // Standard charge attack
@@ -59,8 +69,11 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 
 	// skip CA windup if we're in NA animation
 	windup := 0
-	if c.Core.Player.CurrentState() == action.NormalAttackState {
-		windup = 14
+	switch c.Core.Player.CurrentState() {
+	case action.Idle, action.ChargeAttackState, action.SkillState:
+		windup = 13
+	case action.BurstState:
+		windup = 11
 	}
 
 	radius := 3.5
@@ -68,14 +81,14 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 	c.Core.QueueAttack(
 		ai,
 		combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, radius),
-		chargeHitmark-windup,
-		chargeHitmark-windup,
+		chargeHitmark+windup,
+		chargeHitmark+windup,
 	)
 
 	return action.Info{
-		Frames:          func(next action.Action) int { return chargeFrames[next] - windup },
-		AnimationLength: chargeFrames[action.InvalidAction] - windup,
-		CanQueueAfter:   chargeHitmark - windup,
+		Frames:          func(next action.Action) int { return chargeFrames[next] + windup },
+		AnimationLength: chargeFrames[action.InvalidAction] + windup,
+		CanQueueAfter:   chargeFrames[action.ActionSwap] + windup,
 		State:           action.ChargeAttackState,
 	}, nil
 }
@@ -83,7 +96,7 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 func (c *char) specialChargeAttack() (action.Info, error) {
 	// skip CA windup if we're in NA animation
 	windup := 0
-	if c.Core.Player.CurrentState() == action.NormalAttackState {
+	if c.Core.Player.CurrentState() == action.Idle {
 		windup = 14
 	}
 
@@ -109,16 +122,16 @@ func (c *char) specialChargeAttack() (action.Info, error) {
 
 		c.specialChargeTickSrc = c.Core.F
 		c.specialChargeTicker(c.specialChargeTickSrc)
-	}, specialCAStart-windup)
+	}, specialCAStart+windup)
 
-	c.specialChargeDur = specialCAStart - windup
+	c.specialChargeDur = specialCAStart + windup
 
 	return action.Info{
 		Frames: func(next action.Action) int {
 			return c.specialChargeDur + specialChargeEndlag[next]
 		},
 		AnimationLength: 1200,
-		CanQueueAfter:   specialCAStart - windup + specialChargeEndlag[action.ActionDash],
+		CanQueueAfter:   specialCAStart + windup + specialChargeEndlag[action.ActionSwap],
 		State:           action.ChargeAttackState,
 	}, nil
 }
@@ -138,18 +151,18 @@ func (c *char) specialChargeTicker(src int) {
 	case c.prisms > 1:
 		c.specialChargeDur += specialCATick
 		c.QueueCharTask(func() {
-			c.specialChargeSSC()
+			c.specialChargeSSC(0)
 			c.specialChargeTicker(src)
 		}, specialCATick)
 	case c.prisms == 1:
-		c.specialChargeDur += specialCAFinisher
+		c.specialChargeDur += specialCALastTick + specialCAFinisher
 		c.QueueCharTask(func() {
-			c.specialChargeSSC()
-		}, specialCAFinisher)
+			c.specialChargeSSC(specialCAFinisher)
+		}, specialCALastTick)
 	}
 }
 
-func (c *char) specialChargeSSC() {
+func (c *char) specialChargeSSC(delay int) {
 	c.consumePrism(1)
 	ai := info.AttackInfo{
 		ActorIndex:       c.Index(),
@@ -162,5 +175,5 @@ func (c *char) specialChargeSSC() {
 	}
 
 	ap := combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 5)
-	c.Core.QueueAttack(ai, ap, 0, 0)
+	c.Core.QueueAttack(ai, ap, delay, delay)
 }

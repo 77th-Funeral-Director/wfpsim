@@ -18,23 +18,39 @@ var (
 )
 
 const (
-	skillHitmark        = 28
-	skillCDStart        = 22
-	skillHoldHitmark    = 44
-	skillHoldCDStart    = 36
-	skillFirstTickDelay = 72 + 45 - 27
-	skillInterval       = 92
-	maxPrismStacks      = 4
-	skillKey            = "mitya-skill"
-	particleICDKey      = "mitya-particle-icd"
-	skillRecastKey      = "mitya-skill-recast"
-	skillRecastCDKey    = "mitya-skill-recast-cd"
+	skillHitmark     = 23
+	skillCDStart     = 22
+	skillHoldHitmark = 36
+	skillHoldCDStart = 35
+	skillInterval    = 88
+	maxPrismStacks   = 4
+	skillKey         = "mitya-skill"
+	particleICDKey   = "mitya-particle-icd"
+	skillRecastKey   = "mitya-skill-recast"
+	skillRecastCDKey = "mitya-skill-recast-cd"
 )
 
 func init() {
-	skillFrames = frames.InitAbilSlice(24)
-	skillHoldFrames = frames.InitAbilSlice(46)
-	skillRecastFrames = frames.InitAbilSlice(8)
+	skillFrames = frames.InitAbilSlice(29)
+	skillFrames[action.ActionAttack] = 27
+	skillFrames[action.ActionCharge] = 24
+	skillFrames[action.ActionSkill] = 25
+	skillFrames[action.ActionBurst] = 25
+	skillFrames[action.ActionDash] = 29
+	skillFrames[action.ActionJump] = 27
+	skillFrames[action.ActionWalk] = 28
+	skillFrames[action.ActionSwap] = 23
+
+	skillHoldFrames = frames.InitAbilSlice(57)
+	skillHoldFrames[action.ActionAttack] = 55
+	skillHoldFrames[action.ActionCharge] = 55 // TODO: add the normal CA somewhere
+	skillHoldFrames[action.ActionSkill] = 55
+	skillHoldFrames[action.ActionBurst] = 55
+	skillHoldFrames[action.ActionDash] = 44
+	skillHoldFrames[action.ActionJump] = 44
+	skillHoldFrames[action.ActionSwap] = 43
+
+	skillRecastFrames = frames.InitAbilSlice(1)
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
@@ -69,7 +85,6 @@ func (c *char) skillPress() action.Info {
 			skillHitmark-skillCDStart,
 			c.particleCB,
 		)
-
 		c.addSkillState(skillStatePress)
 	}, skillCDStart)
 
@@ -78,7 +93,7 @@ func (c *char) skillPress() action.Info {
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
 		AnimationLength: skillFrames[action.InvalidAction],
-		CanQueueAfter:   skillFrames[action.ActionWalk], // earliest cancel
+		CanQueueAfter:   skillFrames[action.ActionSwap], // earliest cancel
 		State:           action.SkillState,
 	}
 }
@@ -113,7 +128,7 @@ func (c *char) skillHold() action.Info {
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillHoldFrames),
 		AnimationLength: skillHoldFrames[action.InvalidAction],
-		CanQueueAfter:   skillHoldFrames[action.ActionDash], // earliest cancel
+		CanQueueAfter:   skillHoldFrames[action.ActionSwap], // earliest cancel
 		State:           action.SkillState,
 	}
 }
@@ -130,7 +145,7 @@ func (c *char) skillRecast() (action.Info, error) {
 		c.skillState = skillStatePress
 		src := c.Core.F
 		c.skillSrc = src
-		c.Core.Tasks.Add(func() { c.skillTicker(src) }, skillFirstTickDelay)
+		c.Core.Tasks.Add(func() { c.skillTicker(src) }, skillInterval)
 		c.Core.Tasks.Add(func() {
 			if c.skillSrc != src {
 				return
@@ -164,7 +179,7 @@ func (c *char) addSkillState(newState skillState) {
 	}
 
 	c.skillState = newState
-	c.AddStatus(skillRecastKey, 6*60, false)
+	c.AddStatus(skillRecastKey, 283, false)
 	c.AddStatus(skillRecastCDKey, 1.5*60, false)
 	c.AddStatus(skillKey, 25*60, false)
 	c.c1OnSkill()
@@ -173,7 +188,7 @@ func (c *char) addSkillState(newState skillState) {
 	if newState == skillStatePress {
 		src := c.Core.F
 		c.skillSrc = src
-		c.Core.Tasks.Add(func() { c.skillTicker(src) }, skillFirstTickDelay)
+		c.Core.Tasks.Add(func() { c.skillTicker(src) }, skillInterval)
 		c.Core.Tasks.Add(func() {
 			if c.skillSrc != src {
 				return

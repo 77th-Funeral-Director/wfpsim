@@ -56,7 +56,7 @@ func (c *char) NextQueueItemIsValid(k keys.Char, a action.Action, p map[string]i
 
 func (c *char) AnimationStartDelay(k info.AnimationDelayKey) int {
 	if k == info.AnimationXingqiuN0StartDelay {
-		return 6
+		return 17
 	}
 	return c.Character.AnimationStartDelay(k)
 }

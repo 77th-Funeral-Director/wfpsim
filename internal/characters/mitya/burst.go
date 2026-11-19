@@ -15,11 +15,17 @@ var (
 )
 
 const (
-	hitmark = 120
+	hitmark = 116
 )
 
 func init() {
-	burstFrames = frames.InitAbilSlice(115)
+	burstFrames = frames.InitAbilSlice(130)
+	burstFrames[action.ActionAttack] = 109
+	burstFrames[action.ActionCharge] = 106 // TODO: add the normal CA somewhere
+	burstFrames[action.ActionSkill] = 107
+	burstFrames[action.ActionDash] = 107
+	burstFrames[action.ActionJump] = 107
+	burstFrames[action.ActionSwap] = 106
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
@@ -51,7 +57,7 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 	return action.Info{
 		Frames:          frames.NewAbilFunc(burstFrames),
 		AnimationLength: burstFrames[action.InvalidAction],
-		CanQueueAfter:   burstFrames[action.ActionDash], // earliest cancel
+		CanQueueAfter:   burstFrames[action.ActionSwap], // earliest cancel
 		State:           action.BurstState,
 	}, nil
 }
