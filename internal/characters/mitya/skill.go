@@ -179,7 +179,7 @@ func (c *char) addSkillState(newState skillState) {
 	}
 
 	c.skillState = newState
-	c.AddStatus(skillRecastKey, 283, false)
+	c.AddStatus(skillRecastKey, 283+90, false)
 	c.AddStatus(skillRecastCDKey, 1.5*60, false)
 	c.AddStatus(skillKey, 25*60, false)
 	c.c1OnSkill()
