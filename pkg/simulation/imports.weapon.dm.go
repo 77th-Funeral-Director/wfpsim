@@ -44,6 +44,7 @@ import (
 	_ "github.com/genshinsim/gcsim/internal/weapons/bow/seasonedhuntersbow"
 	_ "github.com/genshinsim/gcsim/internal/weapons/bow/sequenceofsolitude"
 	_ "github.com/genshinsim/gcsim/internal/weapons/bow/sharpshooter"
+	_ "github.com/genshinsim/gcsim/internal/weapons/bow/silverdawn"
 	_ "github.com/genshinsim/gcsim/internal/weapons/bow/skyward"
 	_ "github.com/genshinsim/gcsim/internal/weapons/bow/slingshot"
 	_ "github.com/genshinsim/gcsim/internal/weapons/bow/snarehook"

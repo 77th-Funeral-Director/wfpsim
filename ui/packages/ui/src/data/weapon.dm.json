@@ -1253,6 +1253,13 @@
       "weapon_class": "WEAPON_BOW",
       "image_name": "UI_EquipIcon_Bow_Arjuna_Awaken"
     },
+    "silverdawn": {
+      "id": 15517,
+      "key": "silverdawn",
+      "rarity": 5,
+      "weapon_class": "WEAPON_BOW",
+      "image_name": "UI_EquipIcon_Bow_Ullr_Awaken"
+    },
     "silvershowerheartstrings": {
       "id": 15513,
       "key": "silvershowerheartstrings",

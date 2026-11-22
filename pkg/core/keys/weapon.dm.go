@@ -222,6 +222,7 @@ const (
 	SerenitysCall                                 // serenityscall
 	SerpentSpine                                  // serpentspine
 	SharpshootersOath                             // sharpshootersoath
+	Silverdawn                                    // silverdawn
 	SilvershowerHeartstrings                      // silvershowerheartstrings
 	SilverSword                                   // silversword
 	SkyriderGreatsword                            // skyridergreatsword
@@ -472,6 +473,7 @@ var _WeaponNames = [...]string{
 	"serenityscall",
 	"serpentspine",
 	"sharpshootersoath",
+	"silverdawn",
 	"silvershowerheartstrings",
 	"silversword",
 	"skyridergreatsword",
@@ -722,6 +724,7 @@ var _WeaponValues = [...]Weapon{
 	SerenitysCall,
 	SerpentSpine,
 	SharpshootersOath,
+	Silverdawn,
 	SilvershowerHeartstrings,
 	SilverSword,
 	SkyriderGreatsword,
