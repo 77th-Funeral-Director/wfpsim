@@ -48,6 +48,8 @@ var SetNameToKey = map[string]keys.Set{
 	"emblem":                             keys.EmblemOfSeveredFate,
 	"eosf":                               keys.EmblemOfSeveredFate,
 	"esf":                                keys.EmblemOfSeveredFate,
+	"epochaladvent":                      keys.EpochalAdvent,
+	"epochal":                            keys.EpochalAdvent,
 	"finaleofthedeepgalleries":           keys.FinaleOfTheDeepGalleries,
 	"deepgalleries":                      keys.FinaleOfTheDeepGalleries,
 	"flowerofparadiselost":               keys.FlowerOfParadiseLost,

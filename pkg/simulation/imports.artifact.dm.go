@@ -19,6 +19,7 @@ import (
 	_ "github.com/genshinsim/gcsim/internal/artifacts/disenchantmentindeepshadow"
 	_ "github.com/genshinsim/gcsim/internal/artifacts/echoes"
 	_ "github.com/genshinsim/gcsim/internal/artifacts/emblem"
+	_ "github.com/genshinsim/gcsim/internal/artifacts/epochal"
 	_ "github.com/genshinsim/gcsim/internal/artifacts/exile"
 	_ "github.com/genshinsim/gcsim/internal/artifacts/finaleofthedeepgalleries"
 	_ "github.com/genshinsim/gcsim/internal/artifacts/flowerofparadiselost"

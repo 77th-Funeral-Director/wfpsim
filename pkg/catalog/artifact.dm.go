@@ -188,6 +188,18 @@ var ArtifactMap = map[keys.Set]*model.ArtifactData{
 			Circlet: "UI_RelicIcon_15020_3",
 		},
 	},
+	keys.EpochalAdvent: {
+		SetId:     15049,
+		TextMapId: 4241106419,
+		Key:       "epochaladvent",
+		ImageNames: &model.ArtifactImageData{
+			Flower:  "UI_RelicIcon_15049_4",
+			Plume:   "UI_RelicIcon_15049_2",
+			Sands:   "UI_RelicIcon_15049_5",
+			Goblet:  "UI_RelicIcon_15049_1",
+			Circlet: "UI_RelicIcon_15049_3",
+		},
+	},
 	keys.FinaleOfTheDeepGalleries: {
 		SetId:     15040,
 		TextMapId: 2177723555,
