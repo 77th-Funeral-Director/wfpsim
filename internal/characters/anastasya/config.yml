@@ -70,8 +70,8 @@ talents:
 
   - burstLove: burst(To the New World Skill DMG)
   - burstLoveStellar: burst(To the New World Stellar Glimmer Reaction DMG Increase)
-  - burstLoveCrownSSC: burst(Palestar Crown Stellar-Conduct/Stellar Swirl DMG)
-  - burstLoveCrownSSw: burst(Palestar Crown Stellar-Conduct/Stellar Swirl DMG|1)
+  - burstLoveCrownSSC: burst(Palestar Crown Additional Stellar-Conduct/Stellar Swirl DMG)
+  - burstLoveCrownSSw: burst(Palestar Crown Additional Stellar-Conduct/Stellar Swirl DMG|1)
   - burstLoveTriumphSSC: burst(Triumph Stellar-Conduct/Stellar Swirl DMG)
   - burstLoveTriumphSSw: burst(Triumph Stellar-Conduct/Stellar Swirl DMG|1)
   - burstHonorSSC: burst(The Evernight Yields to Dawn Stellar-Conduct/Stellar Swirl DMG)
