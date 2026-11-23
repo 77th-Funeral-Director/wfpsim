@@ -65,7 +65,7 @@ func NewWeapon(c *core.Core, char *character.CharWrapper, p info.WeaponProfile) 
 		if char.StatusIsActive(energyIcdKey) {
 			return
 		}
-		char.AddStatus(energyIcdKey, 15*60, true)
+		char.AddStatus(energyIcdKey, 18*60, true)
 		char.AddEnergy("silverdawn-energy", energy)
 	}
 	c.Events.Subscribe(event.OnSkill, onSkillBurst, "silverdawn-"+char.Base.Key.String())
