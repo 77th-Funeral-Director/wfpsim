@@ -134,19 +134,30 @@ func (c *char) burstInit() {
 	}
 
 	c.Core.Events.Subscribe(event.OnCharacterSwap, func(args ...interface{}) {
-		if !c.burstLoveToSeal {
-			return
-		}
 		prev := args[0].(int)
 		if prev != c.Index() {
 			return
 		}
-		c.burstLoveToSeal = false
-		c.Sealed = true
-		c.unsealPoints = 100
-		c.Core.Tasks.Add(func() {
-			c.burstUnsealTicker(c.burstSrc)
-		}, 12)
+
+		if c.burstLoveToSeal {
+			c.burstLoveToSeal = false
+			c.Sealed = true
+			c.unsealPoints = 100
+			c.Core.Tasks.Add(func() {
+				c.burstUnsealTicker(c.burstSrc)
+			}, 12)
+			return
+		}
+
+		for _, char := range c.Core.Player.Chars() {
+			if char.Index() == c.Index() {
+				continue
+			}
+
+			if c.unsealReady[char.Index()] {
+				char.Sealed = false
+			}
+		}
 	}, "anastasya-burst-seal")
 
 	c.Core.Events.Subscribe(event.OnCharacterSwap, func(args ...interface{}) {

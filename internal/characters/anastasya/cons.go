@@ -153,7 +153,7 @@ func (c *char) c2MultBonus() float64 {
 		return 0
 	}
 	if c.StatusIsActive(c2HonorKey) {
-		return 0.25
+		return 0.3
 	}
 	return 0
 }
